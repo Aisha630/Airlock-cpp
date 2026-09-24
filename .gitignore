@@ -1,0 +1,15 @@
+build/
+build-*/
+.cache/
+compile_commands.json
+
+# Generated JSON reports; the committed text sample lives in docs/.
+captures/reports/*.json
+
+# Real captures are never committed: a monitor-mode capture contains the
+# MAC address and SSID of every device and network in radio range,
+# including neighbours'. Only the synthetic capture is tracked.
+captures/*.pcap
+captures/*.pcapng
+captures/*.wcap
+!captures/synthetic.pcap
