@@ -1,0 +1,409 @@
+Test project /Users/aysha/Desktop/Projects/airlock-cpp/build-benchmark
+        Start   1: Analysis.CaptureParsesWithoutErrors
+  1/202 Test   #1: Analysis.CaptureParsesWithoutErrors .........................................................................................................   Passed    0.00 sec
+        Start   2: Analysis.AllThreeFrameClassesArePresent
+  2/202 Test   #2: Analysis.AllThreeFrameClassesArePresent .....................................................................................................   Passed    0.00 sec
+        Start   3: Analysis.FrameCountsMatchTheGeneratedScenario
+  3/202 Test   #3: Analysis.FrameCountsMatchTheGeneratedScenario ...............................................................................................   Passed    0.00 sec
+        Start   4: Analysis.ExpectedSubtypesAreRecognised
+  4/202 Test   #4: Analysis.ExpectedSubtypesAreRecognised ......................................................................................................   Passed    0.00 sec
+        Start   5: Analysis.FourNetworksAreDiscovered
+  5/202 Test   #5: Analysis.FourNetworksAreDiscovered ..........................................................................................................   Passed    0.00 sec
+        Start   6: Analysis.SecurityGenerationsAreIdentified
+  6/202 Test   #6: Analysis.SecurityGenerationsAreIdentified ...................................................................................................   Passed    0.00 sec
+        Start   7: Analysis.MfpStateIsReadPerNetwork
+  7/202 Test   #7: Analysis.MfpStateIsReadPerNetwork ...........................................................................................................   Passed    0.00 sec
+        Start   8: Analysis.ChannelsComeFromTheDsParameterElement
+  8/202 Test   #8: Analysis.ChannelsComeFromTheDsParameterElement ..............................................................................................   Passed    0.00 sec
+        Start   9: Analysis.StationsAreAttributedToTheirNetwork
+  9/202 Test   #9: Analysis.StationsAreAttributedToTheirNetwork ................................................................................................   Passed    0.00 sec
+        Start  10: Analysis.RadiotapMetadataIsRead
+ 10/202 Test  #10: Analysis.RadiotapMetadataIsRead .............................................................................................................   Passed    0.00 sec
+        Start  11: Analysis.SaeAuthenticationIsDistinguishedFromOpenSystem
+ 11/202 Test  #11: Analysis.SaeAuthenticationIsDistinguishedFromOpenSystem .....................................................................................   Passed    0.00 sec
+        Start  12: Analysis.ProtectedBitIsReadOnDataFrames
+ 12/202 Test  #12: Analysis.ProtectedBitIsReadOnDataFrames .....................................................................................................   Passed    0.00 sec
+        Start  13: Analysis.BothFourWayHandshakesAreReconstructed
+ 13/202 Test  #13: Analysis.BothFourWayHandshakesAreReconstructed ..............................................................................................   Passed    0.00 sec
+        Start  14: Analysis.PmkidIsRecoveredFromTheFirstHandshake
+ 14/202 Test  #14: Analysis.PmkidIsRecoveredFromTheFirstHandshake ..............................................................................................   Passed    0.00 sec
+        Start  15: Analysis.DeauthFloodIsDetected
+ 15/202 Test  #15: Analysis.DeauthFloodIsDetected ..............................................................................................................   Passed    0.00 sec
+        Start  16: Analysis.EvilTwinIsDetected
+ 16/202 Test  #16: Analysis.EvilTwinIsDetected .................................................................................................................   Passed    0.00 sec
+        Start  17: Analysis.MissingMfpIsReported
+ 17/202 Test  #17: Analysis.MissingMfpIsReported ...............................................................................................................   Passed    0.00 sec
+        Start  18: Analysis.Wpa3NetworkRaisesNoConfigurationFindings
+ 18/202 Test  #18: Analysis.Wpa3NetworkRaisesNoConfigurationFindings ...........................................................................................   Passed    0.00 sec
+        Start  19: Analysis.EveryFindingIsActionable
+ 19/202 Test  #19: Analysis.EveryFindingIsActionable ...........................................................................................................   Passed    0.00 sec
+        Start  20: Analysis.FindingsAreSortedBySeverity
+ 20/202 Test  #20: Analysis.FindingsAreSortedBySeverity ........................................................................................................   Passed    0.00 sec
+        Start  21: Analysis.FindingsMatchTheScenario
+ 21/202 Test  #21: Analysis.FindingsMatchTheScenario ...........................................................................................................   Passed    0.00 sec
+        Start  22: Analysis.JsonReportIsComplete
+ 22/202 Test  #22: Analysis.JsonReportIsComplete ...............................................................................................................   Passed    0.00 sec
+        Start  23: Analysis.TextReportHasEverySection
+ 23/202 Test  #23: Analysis.TextReportHasEverySection ..........................................................................................................   Passed    0.00 sec
+        Start  24: Analysis.SyntheticBeaconsAdvertisePrivacyOnlyWhenSecured
+ 24/202 Test  #24: Analysis.SyntheticBeaconsAdvertisePrivacyOnlyWhenSecured ....................................................................................   Passed    0.00 sec
+        Start  25: Attacks.EveryDefendedAttackIsBlocked
+ 25/202 Test  #25: Attacks.EveryDefendedAttackIsBlocked ........................................................................................................   Passed    0.02 sec
+        Start  26: Attacks.TheUnauthenticatedControlSucceeds
+ 26/202 Test  #26: Attacks.TheUnauthenticatedControlSucceeds ...................................................................................................   Passed    0.02 sec
+        Start  27: Channel.RoundTrip
+ 27/202 Test  #27: Channel.RoundTrip ...........................................................................................................................   Passed    0.01 sec
+        Start  28: Channel.BothDirectionsWorkIndependently
+ 28/202 Test  #28: Channel.BothDirectionsWorkIndependently .....................................................................................................   Passed    0.01 sec
+        Start  29: Channel.ReplayIsRejected
+ 29/202 Test  #29: Channel.ReplayIsRejected ....................................................................................................................   Passed    0.01 sec
+        Start  30: Channel.ReorderingIsRejected
+ 30/202 Test  #30: Channel.ReorderingIsRejected ................................................................................................................   Passed    0.01 sec
+        Start  31: Channel.ReflectionIsRejected
+ 31/202 Test  #31: Channel.ReflectionIsRejected ................................................................................................................   Passed    0.01 sec
+        Start  32: Channel.RecordsFromADifferentSessionAreRejected
+ 32/202 Test  #32: Channel.RecordsFromADifferentSessionAreRejected .............................................................................................   Passed    0.01 sec
+        Start  33: Channel.TruncatedRecordIsRejected
+ 33/202 Test  #33: Channel.TruncatedRecordIsRejected ...........................................................................................................   Passed    0.01 sec
+        Start  34: Channel.DeclaredLengthMustMatchTheActualPayload
+ 34/202 Test  #34: Channel.DeclaredLengthMustMatchTheActualPayload .............................................................................................   Passed    0.01 sec
+        Start  35: Channel.SequenceNumbersAdvance
+ 35/202 Test  #35: Channel.SequenceNumbersAdvance ..............................................................................................................   Passed    0.01 sec
+        Start  36: Dh.KeyAgreement
+ 36/202 Test  #36: Dh.KeyAgreement .............................................................................................................................   Passed    0.01 sec
+        Start  37: Dh.KeyAgreementIn3072
+ 37/202 Test  #37: Dh.KeyAgreementIn3072 .......................................................................................................................   Passed    0.01 sec
+        Start  38: Dh.KeyPairsAreDistinct
+ 38/202 Test  #38: Dh.KeyPairsAreDistinct ......................................................................................................................   Passed    0.01 sec
+        Start  39: Dh.PrivateExponentIsInRange
+ 39/202 Test  #39: Dh.PrivateExponentIsInRange .................................................................................................................   Passed    0.01 sec
+        Start  40: Dh.PublicBytesAreFixedWidth
+ 40/202 Test  #40: Dh.PublicBytesAreFixedWidth .................................................................................................................   Passed    0.01 sec
+        Start  41: Dh.SharedSecretIsFixedWidth
+ 41/202 Test  #41: Dh.SharedSecretIsFixedWidth .................................................................................................................   Passed    0.01 sec
+        Start  42: Dh.NonSubgroupPublicKeyIsRejected
+ 42/202 Test  #42: Dh.NonSubgroupPublicKeyIsRejected ...........................................................................................................   Passed    0.01 sec
+        Start  43: Dh.ValidSubgroupElementIsAccepted
+ 43/202 Test  #43: Dh.ValidSubgroupElementIsAccepted ...........................................................................................................   Passed    0.01 sec
+        Start  44: Dh.ExchangeValidatesBeforeComputing
+ 44/202 Test  #44: Dh.ExchangeValidatesBeforeComputing .........................................................................................................   Passed    0.00 sec
+        Start  45: Dh.UnknownGroupIdIsRefused
+ 45/202 Test  #45: Dh.UnknownGroupIdIsRefused ..................................................................................................................   Passed    0.00 sec
+        Start  46: Eapol.MessageTwoAndFourAreToldApartByTheSecureBit
+ 46/202 Test  #46: Eapol.MessageTwoAndFourAreToldApartByTheSecureBit ...........................................................................................   Passed    0.00 sec
+        Start  47: Eapol.GroupKeyHandshakeIsNotMistakenForTheFourWay
+ 47/202 Test  #47: Eapol.GroupKeyHandshakeIsNotMistakenForTheFourWay ...........................................................................................   Passed    0.00 sec
+        Start  48: Eapol.FlagAccessors
+ 48/202 Test  #48: Eapol.FlagAccessors .........................................................................................................................   Passed    0.00 sec
+        Start  49: Eapol.FieldsAreReadFromTheRightOffsets
+ 49/202 Test  #49: Eapol.FieldsAreReadFromTheRightOffsets ......................................................................................................   Passed    0.00 sec
+        Start  50: Eapol.MessageFourCarriesAZeroNonce
+ 50/202 Test  #50: Eapol.MessageFourCarriesAZeroNonce ..........................................................................................................   Passed    0.00 sec
+        Start  51: Eapol.PmkidIsExtractedFromMessageOne
+ 51/202 Test  #51: Eapol.PmkidIsExtractedFromMessageOne ........................................................................................................   Passed    0.00 sec
+        Start  52: Eapol.NoPmkidWhenAbsentOrNotMessageOne
+ 52/202 Test  #52: Eapol.NoPmkidWhenAbsentOrNotMessageOne ......................................................................................................   Passed    0.00 sec
+        Start  53: Eapol.NonKeyEapolPacketsAreRefused
+ 53/202 Test  #53: Eapol.NonKeyEapolPacketsAreRefused ..........................................................................................................   Passed    0.00 sec
+        Start  54: Eapol.LyingKeyDataLengthIsRefused
+ 54/202 Test  #54: Eapol.LyingKeyDataLengthIsRefused ...........................................................................................................   Passed    0.00 sec
+        Start  55: Eapol.TrackerAssemblesACompleteHandshake
+ 55/202 Test  #55: Eapol.TrackerAssemblesACompleteHandshake ....................................................................................................   Passed    0.00 sec
+        Start  56: Eapol.TrackerInfersRolesFromDirection
+ 56/202 Test  #56: Eapol.TrackerInfersRolesFromDirection .......................................................................................................   Passed    0.00 sec
+        Start  57: Eapol.TrackerKeepsSuccessiveHandshakesSeparate
+ 57/202 Test  #57: Eapol.TrackerKeepsSuccessiveHandshakesSeparate ..............................................................................................   Passed    0.00 sec
+        Start  58: Eapol.IncompleteHandshakeIsReportedAsSuch
+ 58/202 Test  #58: Eapol.IncompleteHandshakeIsReportedAsSuch ...................................................................................................   Passed    0.00 sec
+        Start  59: Eapol.OutOfOrderReplayCountersAreNoted
+ 59/202 Test  #59: Eapol.OutOfOrderReplayCountersAreNoted ......................................................................................................   Passed    0.00 sec
+        Start  60: Frames.SubtypeNumbersDoNotCollideAcrossTypes
+ 60/202 Test  #60: Frames.SubtypeNumbersDoNotCollideAcrossTypes ................................................................................................   Passed    0.00 sec
+        Start  61: Frames.UnknownSubtypeIsLabelledNotDropped
+ 61/202 Test  #61: Frames.UnknownSubtypeIsLabelledNotDropped ...................................................................................................   Passed    0.00 sec
+        Start  62: Frames.TypeNamesCoverAllFourTypes
+ 62/202 Test  #62: Frames.TypeNamesCoverAllFourTypes ...........................................................................................................   Passed    0.00 sec
+        Start  63: Frames.FramePredicatesAreMutuallyExclusive
+ 63/202 Test  #63: Frames.FramePredicatesAreMutuallyExclusive ..................................................................................................   Passed    0.00 sec
+        Start  64: Frames.AddressesUseReceiverTransmitterNaming
+ 64/202 Test  #64: Frames.AddressesUseReceiverTransmitterNaming ................................................................................................   Passed    0.00 sec
+        Start  65: Frames.DescribeIncludesTheDecodedReasonCode
+ 65/202 Test  #65: Frames.DescribeIncludesTheDecodedReasonCode .................................................................................................   Passed    0.00 sec
+        Start  66: Kdf.EmptySaltEqualsZeroSalt
+ 66/202 Test  #66: Kdf.EmptySaltEqualsZeroSalt .................................................................................................................   Passed    0.00 sec
+        Start  67: Kdf.DifferentInfoGivesIndependentOutput
+ 67/202 Test  #67: Kdf.DifferentInfoGivesIndependentOutput .....................................................................................................   Passed    0.00 sec
+        Start  68: Kdf.ExpandIsDeterministic
+ 68/202 Test  #68: Kdf.ExpandIsDeterministic ...................................................................................................................   Passed    0.00 sec
+        Start  69: Kdf.ExpandOutputIsAPrefixOfALongerExpansion
+ 69/202 Test  #69: Kdf.ExpandOutputIsAPrefixOfALongerExpansion .................................................................................................   Passed    0.00 sec
+        Start  70: Kdf.ExpandRejectsMoreThan255Blocks
+ 70/202 Test  #70: Kdf.ExpandRejectsMoreThan255Blocks ..........................................................................................................   Passed    0.00 sec
+        Start  71: Kdf.ExpandRejectsShortPrk
+ 71/202 Test  #71: Kdf.ExpandRejectsShortPrk ...................................................................................................................   Passed    0.00 sec
+        Start  72: Kdf.ConstantTimeEq
+ 72/202 Test  #72: Kdf.ConstantTimeEq ..........................................................................................................................   Passed    0.00 sec
+        Start  73: Kdf.HmacMatchesRfc4231Case2
+ 73/202 Test  #73: Kdf.HmacMatchesRfc4231Case2 .................................................................................................................   Passed    0.00 sec
+        Start  74: Pcap.WriteThenReadRoundTrips
+ 74/202 Test  #74: Pcap.WriteThenReadRoundTrips ................................................................................................................   Passed    0.00 sec
+        Start  75: Pcap.TimestampsRoundHalfToEvenAtTheMicrosecond
+ 75/202 Test  #75: Pcap.TimestampsRoundHalfToEvenAtTheMicrosecond ..............................................................................................   Passed    0.00 sec
+        Start  76: Pcap.BigEndianNanosecondFilesAreRead
+ 76/202 Test  #76: Pcap.BigEndianNanosecondFilesAreRead ........................................................................................................   Passed    0.00 sec
+        Start  77: Pcap.PcapngEnhancedPacketBlocksAreRead
+ 77/202 Test  #77: Pcap.PcapngEnhancedPacketBlocksAreRead ......................................................................................................   Passed    0.00 sec
+        Start  78: Pcap.RadiotapFcsIsStrippedBeforeParsing
+ 78/202 Test  #78: Pcap.RadiotapFcsIsStrippedBeforeParsing .....................................................................................................   Passed    0.00 sec
+        Start  79: Pcap.NonCaptureFilesAreRefused
+ 79/202 Test  #79: Pcap.NonCaptureFilesAreRefused ..............................................................................................................   Passed    0.00 sec
+        Start  80: Pcap.OtherLinkTypesAreIgnored
+ 80/202 Test  #80: Pcap.OtherLinkTypesAreIgnored ...............................................................................................................   Passed    0.00 sec
+        Start  81: Text.Utf8DecodingReplacesMaximalInvalidSubparts
+ 81/202 Test  #81: Text.Utf8DecodingReplacesMaximalInvalidSubparts .............................................................................................   Passed    0.00 sec
+        Start  82: Text.ShortestFloatMatchesTheConventionalRepr
+ 82/202 Test  #82: Text.ShortestFloatMatchesTheConventionalRepr ................................................................................................   Passed    0.00 sec
+        Start  83: Protocol.HandshakeAgreesOnAllFourKeys
+ 83/202 Test  #83: Protocol.HandshakeAgreesOnAllFourKeys .......................................................................................................   Passed    0.01 sec
+        Start  84: Protocol.HandshakeAgreesIn3072
+ 84/202 Test  #84: Protocol.HandshakeAgreesIn3072 ..............................................................................................................   Passed    0.01 sec
+        Start  85: Protocol.HandshakeSurvivesAFullWireRoundTrip
+ 85/202 Test  #85: Protocol.HandshakeSurvivesAFullWireRoundTrip ................................................................................................   Passed    0.01 sec
+        Start  86: Protocol.KeysArePairwiseDistinct
+ 86/202 Test  #86: Protocol.KeysArePairwiseDistinct ............................................................................................................   Passed    0.01 sec
+        Start  87: Protocol.EachHandshakeProducesFreshKeys
+ 87/202 Test  #87: Protocol.EachHandshakeProducesFreshKeys .....................................................................................................   Passed    0.01 sec
+        Start  88: Protocol.WrongPskFailsAtTheResponderTag
+ 88/202 Test  #88: Protocol.WrongPskFailsAtTheResponderTag .....................................................................................................   Passed    0.01 sec
+        Start  89: Protocol.InitiatorTagIsCheckedByTheResponder
+ 89/202 Test  #89: Protocol.InitiatorTagIsCheckedByTheResponder ................................................................................................   Passed    0.01 sec
+        Start  90: Protocol.TamperingWithThePublicKeyIsCaughtByValidation
+ 90/202 Test  #90: Protocol.TamperingWithThePublicKeyIsCaughtByValidation ......................................................................................   Passed    0.01 sec
+        Start  91: Protocol.GroupDowngradeIsRefused
+ 91/202 Test  #91: Protocol.GroupDowngradeIsRefused ............................................................................................................   Passed    0.00 sec
+        Start  92: Protocol.ResponderEnforcesItsGroupPolicy
+ 92/202 Test  #92: Protocol.ResponderEnforcesItsGroupPolicy ....................................................................................................   Passed    0.00 sec
+        Start  93: Protocol.ResponderRejectsAWronglySizedPublicKey
+ 93/202 Test  #93: Protocol.ResponderRejectsAWronglySizedPublicKey .............................................................................................   Passed    0.00 sec
+        Start  94: Protocol.ResponderRejectsADegeneratePublicKey
+ 94/202 Test  #94: Protocol.ResponderRejectsADegeneratePublicKey ...............................................................................................   Passed    0.00 sec
+        Start  95: Protocol.ResponderRejectsAnUnknownGroup
+ 95/202 Test  #95: Protocol.ResponderRejectsAnUnknownGroup .....................................................................................................   Passed    0.00 sec
+        Start  96: Protocol.StateMachineRejectsOutOfOrderCalls
+ 96/202 Test  #96: Protocol.StateMachineRejectsOutOfOrderCalls .................................................................................................   Passed    0.00 sec
+        Start  97: Protocol.MitmWithoutThePskCannotForgeATag
+ 97/202 Test  #97: Protocol.MitmWithoutThePskCannotForgeATag ...................................................................................................   Passed    0.01 sec
+        Start  98: Protocol.KeyDerivationBindsEveryInput
+ 98/202 Test  #98: Protocol.KeyDerivationBindsEveryInput .......................................................................................................   Passed    0.00 sec
+        Start  99: Protocol.KeyDerivationIsDeterministic
+ 99/202 Test  #99: Protocol.KeyDerivationIsDeterministic .......................................................................................................   Passed    0.00 sec
+        Start 100: Robustness.MalformedAddressStringIsNotValid
+100/202 Test #100: Robustness.MalformedAddressStringIsNotValid .................................................................................................   Passed    0.00 sec
+        Start 101: Robustness.HandshakeRiskRequiresPskOnlyCapabilities
+101/202 Test #101: Robustness.HandshakeRiskRequiresPskOnlyCapabilities .........................................................................................   Passed    0.00 sec
+        Start 102: Robustness.RepeatedConflictingAssociationResponsesAreFlagged
+102/202 Test #102: Robustness.RepeatedConflictingAssociationResponsesAreFlagged ................................................................................   Passed    0.00 sec
+        Start 103: Robustness.BenignAssociationAndDisconnectCasesDoNotImplySpoofing
+103/202 Test #103: Robustness.BenignAssociationAndDisconnectCasesDoNotImplySpoofing ............................................................................   Passed    0.00 sec
+        Start 104: Robustness.CorruptBeaconDoesNotInventANetwork
+104/202 Test #104: Robustness.CorruptBeaconDoesNotInventANetwork ...............................................................................................   Passed    0.00 sec
+        Start 105: Robustness.SuspectFramesAreCountedNotSilentlyDropped
+105/202 Test #105: Robustness.SuspectFramesAreCountedNotSilentlyDropped ........................................................................................   Passed    0.00 sec
+        Start 106: Robustness.TruncatedInformationElementDoesNotAbortTheCapture
+106/202 Test #106: Robustness.TruncatedInformationElementDoesNotAbortTheCapture ................................................................................   Passed    0.00 sec
+        Start 107: Robustness.MalformedRsnElementIsRecordedAsAParseError
+107/202 Test #107: Robustness.MalformedRsnElementIsRecordedAsAParseError .......................................................................................   Passed    0.00 sec
+        Start 108: Robustness.NonUtf8SsidIsDecodedWithoutRaising
+108/202 Test #108: Robustness.NonUtf8SsidIsDecodedWithoutRaising ...............................................................................................   Passed    0.00 sec
+        Start 109: Robustness.NonAsciiSsidIsEscapedInJson
+109/202 Test #109: Robustness.NonAsciiSsidIsEscapedInJson ......................................................................................................   Passed    0.00 sec
+        Start 110: Robustness.EmptyCaptureIsHandled
+110/202 Test #110: Robustness.EmptyCaptureIsHandled ............................................................................................................   Passed    0.00 sec
+        Start 111: Robustness.FramesTooShortForAnyHeaderAreSkipped
+111/202 Test #111: Robustness.FramesTooShortForAnyHeaderAreSkipped .............................................................................................   Passed    0.00 sec
+        Start 112: Robustness.TruncatedManagementBodiesAreNotRead
+112/202 Test #112: Robustness.TruncatedManagementBodiesAreNotRead ..............................................................................................   Passed    0.00 sec
+        Start 113: Robustness.ProtectedManagementFramesAreNotParsedAsPlaintext
+113/202 Test #113: Robustness.ProtectedManagementFramesAreNotParsedAsPlaintext .................................................................................   Passed    0.00 sec
+        Start 114: Robustness.SingleBeaconNetworkIsNotReportedAsAFinding
+114/202 Test #114: Robustness.SingleBeaconNetworkIsNotReportedAsAFinding .......................................................................................   Passed    0.00 sec
+        Start 115: Robustness.ThresholdIsANamedConstantNotAMagicNumber
+115/202 Test #115: Robustness.ThresholdIsANamedConstantNotAMagicNumber .........................................................................................   Passed    0.00 sec
+        Start 116: Robustness.MissingSsidIsLabelledRatherThanPrintedAsNone
+116/202 Test #116: Robustness.MissingSsidIsLabelledRatherThanPrintedAsNone .....................................................................................   Passed    0.00 sec
+        Start 117: Rsn.Wpa2Psk
+117/202 Test #117: Rsn.Wpa2Psk .................................................................................................................................   Passed    0.00 sec
+        Start 118: Rsn.Wpa3SaeWithMfpRequired
+118/202 Test #118: Rsn.Wpa3SaeWithMfpRequired ..................................................................................................................   Passed    0.00 sec
+        Start 119: Rsn.TransitionModeIsFlaggedAsADowngradePath
+119/202 Test #119: Rsn.TransitionModeIsFlaggedAsADowngradePath .................................................................................................   Passed    0.00 sec
+        Start 120: Rsn.EnterpriseIsRecognised
+120/202 Test #120: Rsn.EnterpriseIsRecognised ..................................................................................................................   Passed    0.00 sec
+        Start 121: Rsn.OweIsRecognised
+121/202 Test #121: Rsn.OweIsRecognised .........................................................................................................................   Passed    0.00 sec
+        Start 122: Rsn.TkipIsReportedAsBroken
+122/202 Test #122: Rsn.TkipIsReportedAsBroken ..................................................................................................................   Passed    0.00 sec
+        Start 123: Rsn.MissingMfpIsAFinding
+123/202 Test #123: Rsn.MissingMfpIsAFinding ....................................................................................................................   Passed    0.00 sec
+        Start 124: Rsn.OptionalMfpIsStillAFinding
+124/202 Test #124: Rsn.OptionalMfpIsStillAFinding ..............................................................................................................   Passed    0.00 sec
+        Start 125: Rsn.BuildAndParseRoundTrip
+125/202 Test #125: Rsn.BuildAndParseRoundTrip ..................................................................................................................   Passed    0.00 sec
+        Start 126: Rsn.TruncatedElementRaisesRatherThanInventingDefaults
+126/202 Test #126: Rsn.TruncatedElementRaisesRatherThanInventingDefaults .......................................................................................   Passed    0.00 sec
+        Start 127: Rsn.PartialElementStopsCleanlyAtAFieldBoundary
+127/202 Test #127: Rsn.PartialElementStopsCleanlyAtAFieldBoundary ..............................................................................................   Passed    0.00 sec
+        Start 128: Rsn.UnknownSuiteTypesAreReportedNotDropped
+128/202 Test #128: Rsn.UnknownSuiteTypesAreReportedNotDropped ..................................................................................................   Passed    0.00 sec
+        Start 129: Rsn.VendorSuiteSelectorsAreLabelledWithTheirOui
+129/202 Test #129: Rsn.VendorSuiteSelectorsAreLabelledWithTheirOui .............................................................................................   Passed    0.00 sec
+        Start 130: Rsn.Wpa1VendorElement
+130/202 Test #130: Rsn.Wpa1VendorElement .......................................................................................................................   Passed    0.00 sec
+        Start 131: Rsn.NonWpaVendorElementIsIgnored
+131/202 Test #131: Rsn.NonWpaVendorElementIsIgnored ............................................................................................................   Passed    0.00 sec
+        Start 132: Wire.InitRoundTrip
+132/202 Test #132: Wire.InitRoundTrip ..........................................................................................................................   Passed    0.00 sec
+        Start 133: Wire.ResponseRoundTrip
+133/202 Test #133: Wire.ResponseRoundTrip ......................................................................................................................   Passed    0.00 sec
+        Start 134: Wire.ConfirmRoundTrip
+134/202 Test #134: Wire.ConfirmRoundTrip .......................................................................................................................   Passed    0.00 sec
+        Start 135: Wire.EncodingIsCanonical
+135/202 Test #135: Wire.EncodingIsCanonical ....................................................................................................................   Passed    0.00 sec
+        Start 136: Wire.ResponseCoreExcludesTheTag
+136/202 Test #136: Wire.ResponseCoreExcludesTheTag .............................................................................................................   Passed    0.00 sec
+        Start 137: Wire.MessageTypesDoNotCrossDecode
+137/202 Test #137: Wire.MessageTypesDoNotCrossDecode ...........................................................................................................   Passed    0.00 sec
+        Start 138: Wire.TranscriptHashIsOrderSensitive
+138/202 Test #138: Wire.TranscriptHashIsOrderSensitive .........................................................................................................   Passed    0.00 sec
+        Start 139: Wire.TranscriptHashResistsSplicing
+139/202 Test #139: Wire.TranscriptHashResistsSplicing ..........................................................................................................   Passed    0.00 sec
+        Start 140: Wire.TranscriptHashIsDeterministic
+140/202 Test #140: Wire.TranscriptHashIsDeterministic ..........................................................................................................   Passed    0.00 sec
+        Start 141: All/EachAttack.ReportsAMechanism/baseline
+141/202 Test #141: All/EachAttack.ReportsAMechanism/baseline ...................................................................................................   Passed    0.01 sec
+        Start 142: All/EachAttack.ReportsAMechanism/wrong_psk
+142/202 Test #142: All/EachAttack.ReportsAMechanism/wrong_psk ..................................................................................................   Passed    0.01 sec
+        Start 143: All/EachAttack.ReportsAMechanism/tamper_with_transcript
+143/202 Test #143: All/EachAttack.ReportsAMechanism/tamper_with_transcript .....................................................................................   Passed    0.01 sec
+        Start 144: All/EachAttack.ReportsAMechanism/tamper_with_record
+144/202 Test #144: All/EachAttack.ReportsAMechanism/tamper_with_record .........................................................................................   Passed    0.01 sec
+        Start 145: All/EachAttack.ReportsAMechanism/replay_record
+145/202 Test #145: All/EachAttack.ReportsAMechanism/replay_record ..............................................................................................   Passed    0.01 sec
+        Start 146: All/EachAttack.ReportsAMechanism/mitm_against_akex
+146/202 Test #146: All/EachAttack.ReportsAMechanism/mitm_against_akex ..........................................................................................   Passed    0.01 sec
+        Start 147: All/EachAttack.ReportsAMechanism/invalid_public_key
+147/202 Test #147: All/EachAttack.ReportsAMechanism/invalid_public_key .........................................................................................   Passed    0.01 sec
+        Start 148: All/EachAttack.ReportsAMechanism/group_downgrade
+148/202 Test #148: All/EachAttack.ReportsAMechanism/group_downgrade ............................................................................................   Passed    0.00 sec
+        Start 149: All/EachAttack.ReportsAMechanism/mitm_unauthenticated_dh
+149/202 Test #149: All/EachAttack.ReportsAMechanism/mitm_unauthenticated_dh ....................................................................................   Passed    0.01 sec
+        Start 150: Offsets/BitFlip.IsDetected/offset_0
+150/202 Test #150: Offsets/BitFlip.IsDetected/offset_0 .........................................................................................................   Passed    0.01 sec
+        Start 151: Offsets/BitFlip.IsDetected/offset_8
+151/202 Test #151: Offsets/BitFlip.IsDetected/offset_8 .........................................................................................................   Passed    0.01 sec
+        Start 152: Offsets/BitFlip.IsDetected/offset_12
+152/202 Test #152: Offsets/BitFlip.IsDetected/offset_12 ........................................................................................................   Passed    0.01 sec
+        Start 153: Offsets/BitFlip.IsDetected/offset_15
+153/202 Test #153: Offsets/BitFlip.IsDetected/offset_15 ........................................................................................................   Passed    0.01 sec
+        Start 154: Offsets/BitFlip.IsDetected/last
+154/202 Test #154: Offsets/BitFlip.IsDetected/last .............................................................................................................   Passed    0.01 sec
+        Start 155: Groups/GroupParameters.AreWellFormed/modp2048
+155/202 Test #155: Groups/GroupParameters.AreWellFormed/modp2048 ...............................................................................................   Passed    0.00 sec
+        Start 156: Groups/GroupParameters.AreWellFormed/modp3072
+156/202 Test #156: Groups/GroupParameters.AreWellFormed/modp3072 ...............................................................................................   Passed    0.01 sec
+        Start 157: Values/DegeneratePublicKey.IsRejected/zero
+157/202 Test #157: Values/DegeneratePublicKey.IsRejected/zero ..................................................................................................   Passed    0.00 sec
+        Start 158: Values/DegeneratePublicKey.IsRejected/order_1_shared_secret_is_always_1
+158/202 Test #158: Values/DegeneratePublicKey.IsRejected/order_1_shared_secret_is_always_1 .....................................................................   Passed    0.00 sec
+        Start 159: Values/DegeneratePublicKey.IsRejected/order_2_shared_secret_is_always_plus_minus_1
+159/202 Test #159: Values/DegeneratePublicKey.IsRejected/order_2_shared_secret_is_always_plus_minus_1 ..........................................................   Passed    0.00 sec
+        Start 160: Values/DegeneratePublicKey.IsRejected/equals_the_modulus
+160/202 Test #160: Values/DegeneratePublicKey.IsRejected/equals_the_modulus ....................................................................................   Passed    0.00 sec
+        Start 161: Values/DegeneratePublicKey.IsRejected/above_the_modulus
+161/202 Test #161: Values/DegeneratePublicKey.IsRejected/above_the_modulus .....................................................................................   Passed    0.00 sec
+        Start 162: Values/DegeneratePublicKey.IsRejected/negative
+162/202 Test #162: Values/DegeneratePublicKey.IsRejected/negative ..............................................................................................   Passed    0.00 sec
+        Start 163: Messages/MessageNumber.IsIdentifiedFromTheFlagBits/M1
+163/202 Test #163: Messages/MessageNumber.IsIdentifiedFromTheFlagBits/M1 .......................................................................................   Passed    0.00 sec
+        Start 164: Messages/MessageNumber.IsIdentifiedFromTheFlagBits/M2
+164/202 Test #164: Messages/MessageNumber.IsIdentifiedFromTheFlagBits/M2 .......................................................................................   Passed    0.00 sec
+        Start 165: Messages/MessageNumber.IsIdentifiedFromTheFlagBits/M3
+165/202 Test #165: Messages/MessageNumber.IsIdentifiedFromTheFlagBits/M3 .......................................................................................   Passed    0.00 sec
+        Start 166: Messages/MessageNumber.IsIdentifiedFromTheFlagBits/M4
+166/202 Test #166: Messages/MessageNumber.IsIdentifiedFromTheFlagBits/M4 .......................................................................................   Passed    0.00 sec
+        Start 167: Payloads/TruncatedFrame.IsRefused/{}
+167/202 Test #167: Payloads/TruncatedFrame.IsRefused/{} ........................................................................................................   Passed    0.00 sec
+        Start 168: Payloads/TruncatedFrame.IsRefused/{ '\x2' (2), '\x3' (3) }
+168/202 Test #168: Payloads/TruncatedFrame.IsRefused/{ '\x2' (2), '\x3' (3) } ..................................................................................   Passed    0.00 sec
+        Start 169: Payloads/TruncatedFrame.IsRefused/{ '\x2' (2), '\x3' (3), '\0', '\x10' (16), '\0', '\0', '\0', '\0', '\0', '\0', '\0', '\0', '\0', '\0' }
+169/202 Test #169: Payloads/TruncatedFrame.IsRefused/{ '\x2' (2), '\x3' (3), '\0', '\x10' (16), '\0', '\0', '\0', '\0', '\0', '\0', '\0', '\0', '\0', '\0' } ...   Passed    0.00 sec
+        Start 170: Table/KnownSubtype.IsNamed/beacon
+170/202 Test #170: Table/KnownSubtype.IsNamed/beacon ...........................................................................................................   Passed    0.00 sec
+        Start 171: Table/KnownSubtype.IsNamed/probe_request
+171/202 Test #171: Table/KnownSubtype.IsNamed/probe_request ....................................................................................................   Passed    0.00 sec
+        Start 172: Table/KnownSubtype.IsNamed/probe_response
+172/202 Test #172: Table/KnownSubtype.IsNamed/probe_response ...................................................................................................   Passed    0.00 sec
+        Start 173: Table/KnownSubtype.IsNamed/authentication
+173/202 Test #173: Table/KnownSubtype.IsNamed/authentication ...................................................................................................   Passed    0.00 sec
+        Start 174: Table/KnownSubtype.IsNamed/deauthentication
+174/202 Test #174: Table/KnownSubtype.IsNamed/deauthentication .................................................................................................   Passed    0.00 sec
+        Start 175: Table/KnownSubtype.IsNamed/disassociation
+175/202 Test #175: Table/KnownSubtype.IsNamed/disassociation ...................................................................................................   Passed    0.00 sec
+        Start 176: Table/KnownSubtype.IsNamed/assoc_request
+176/202 Test #176: Table/KnownSubtype.IsNamed/assoc_request ....................................................................................................   Passed    0.00 sec
+        Start 177: Table/KnownSubtype.IsNamed/ack
+177/202 Test #177: Table/KnownSubtype.IsNamed/ack ..............................................................................................................   Passed    0.00 sec
+        Start 178: Table/KnownSubtype.IsNamed/rts
+178/202 Test #178: Table/KnownSubtype.IsNamed/rts ..............................................................................................................   Passed    0.00 sec
+        Start 179: Table/KnownSubtype.IsNamed/cts
+179/202 Test #179: Table/KnownSubtype.IsNamed/cts ..............................................................................................................   Passed    0.00 sec
+        Start 180: Table/KnownSubtype.IsNamed/block_ack
+180/202 Test #180: Table/KnownSubtype.IsNamed/block_ack ........................................................................................................   Passed    0.00 sec
+        Start 181: Table/KnownSubtype.IsNamed/data
+181/202 Test #181: Table/KnownSubtype.IsNamed/data .............................................................................................................   Passed    0.00 sec
+        Start 182: Table/KnownSubtype.IsNamed/qos_data
+182/202 Test #182: Table/KnownSubtype.IsNamed/qos_data .........................................................................................................   Passed    0.00 sec
+        Start 183: Table/KnownSubtype.IsNamed/null
+183/202 Test #183: Table/KnownSubtype.IsNamed/null .............................................................................................................   Passed    0.00 sec
+        Start 184: Vectors/Rfc5869.HkdfMatchesTheRfc/rfc5869_case_1_basic
+184/202 Test #184: Vectors/Rfc5869.HkdfMatchesTheRfc/rfc5869_case_1_basic ......................................................................................   Passed    0.00 sec
+        Start 185: Vectors/Rfc5869.HkdfMatchesTheRfc/rfc5869_case_2_long_inputs
+185/202 Test #185: Vectors/Rfc5869.HkdfMatchesTheRfc/rfc5869_case_2_long_inputs ................................................................................   Passed    0.01 sec
+        Start 186: Vectors/Rfc5869.HkdfMatchesTheRfc/rfc5869_case_3_empty_salt_and_info
+186/202 Test #186: Vectors/Rfc5869.HkdfMatchesTheRfc/rfc5869_case_3_empty_salt_and_info ........................................................................   Passed    0.01 sec
+        Start 187: Fields/TamperWithMessageTwo.IsDetected/"nonce_r"
+187/202 Test #187: Fields/TamperWithMessageTwo.IsDetected/"nonce_r" ............................................................................................   Passed    0.01 sec
+        Start 188: Fields/TamperWithMessageTwo.IsDetected/"tag_r"
+188/202 Test #188: Fields/TamperWithMessageTwo.IsDetected/"tag_r" ..............................................................................................   Passed    0.01 sec
+        Start 189: Addresses/TransmitterValidity.FollowsTheIndividualGroupBit/(("02:00:00:aa:00:01"), true)
+189/202 Test #189: Addresses/TransmitterValidity.FollowsTheIndividualGroupBit/(("02:00:00:aa:00:01"), true) ....................................................   Passed    0.00 sec
+        Start 190: Addresses/TransmitterValidity.FollowsTheIndividualGroupBit/(("bc:07:1d:7b:88:c7"), true)
+190/202 Test #190: Addresses/TransmitterValidity.FollowsTheIndividualGroupBit/(("bc:07:1d:7b:88:c7"), true) ....................................................   Passed    0.00 sec
+        Start 191: Addresses/TransmitterValidity.FollowsTheIndividualGroupBit/(("01:00:5e:00:00:01"), false)
+191/202 Test #191: Addresses/TransmitterValidity.FollowsTheIndividualGroupBit/(("01:00:5e:00:00:01"), false) ...................................................   Passed    0.00 sec
+        Start 192: Addresses/TransmitterValidity.FollowsTheIndividualGroupBit/(("1f:8a:d7:84:a3:df"), false)
+192/202 Test #192: Addresses/TransmitterValidity.FollowsTheIndividualGroupBit/(("1f:8a:d7:84:a3:df"), false) ...................................................   Passed    0.00 sec
+        Start 193: Addresses/TransmitterValidity.FollowsTheIndividualGroupBit/(("ff:ff:ff:ff:ff:ff"), false)
+193/202 Test #193: Addresses/TransmitterValidity.FollowsTheIndividualGroupBit/(("ff:ff:ff:ff:ff:ff"), false) ...................................................   Passed    0.00 sec
+        Start 194: Addresses/TransmitterValidity.FollowsTheIndividualGroupBit/((nullopt), true)
+194/202 Test #194: Addresses/TransmitterValidity.FollowsTheIndividualGroupBit/((nullopt), true) ................................................................   Passed    0.00 sec
+        Start 195: Words/MfpBits.AreReadFromTheRightPositions/(0, false, false)
+195/202 Test #195: Words/MfpBits.AreReadFromTheRightPositions/(0, false, false) ................................................................................   Passed    0.00 sec
+        Start 196: Words/MfpBits.AreReadFromTheRightPositions/(128, true, false)
+196/202 Test #196: Words/MfpBits.AreReadFromTheRightPositions/(128, true, false) ...............................................................................   Passed    0.00 sec
+        Start 197: Words/MfpBits.AreReadFromTheRightPositions/(192, true, true)
+197/202 Test #197: Words/MfpBits.AreReadFromTheRightPositions/(192, true, true) ................................................................................   Passed    0.00 sec
+        Start 198: Words/MfpBits.AreReadFromTheRightPositions/(64, false, true)
+198/202 Test #198: Words/MfpBits.AreReadFromTheRightPositions/(64, false, true) ................................................................................   Passed    0.00 sec
+        Start 199: Corruptions/MalformedInit.IsRefused/bad_magic
+199/202 Test #199: Corruptions/MalformedInit.IsRefused/bad_magic ...............................................................................................   Passed    0.00 sec
+        Start 200: Corruptions/MalformedInit.IsRefused/one_byte_short
+200/202 Test #200: Corruptions/MalformedInit.IsRefused/one_byte_short ..........................................................................................   Passed    0.00 sec
+        Start 201: Corruptions/MalformedInit.IsRefused/one_byte_long
+201/202 Test #201: Corruptions/MalformedInit.IsRefused/one_byte_long ...........................................................................................   Passed    0.00 sec
+        Start 202: Corruptions/MalformedInit.IsRefused/header_only
+202/202 Test #202: Corruptions/MalformedInit.IsRefused/header_only .............................................................................................   Passed    0.00 sec
+
+100% tests passed out of 202
+
+Total Test time (real) =   0.89 sec

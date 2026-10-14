@@ -27,6 +27,8 @@ int severity_rank(const std::string& severity);
 // capture and are arguments to the detector so they can be re-tuned.
 inline constexpr double DEAUTH_WINDOW_SECONDS = 5.0;
 inline constexpr int DEAUTH_BURST_THRESHOLD = 8;
+inline constexpr double ASSOCIATION_REPLY_WINDOW_SECONDS = 1.0;
+inline constexpr std::size_t MIN_CONFLICTING_ASSOCIATIONS = 2;
 
 // An access point beacons roughly ten times a second, so over any capture of
 // reasonable length a real network produces many beacons. A BSSID seen once is
@@ -62,10 +64,13 @@ std::vector<Finding> detect_deauth_flood(const Capture& capture,
 
 // Flag networks whose deauths are unprotected because MFP is off.
 //
-// This is the pairing that matters: an MFP-required network makes the
-// forged-deauth attack impossible, so the same burst of frames means something
-// quite different depending on what the beacon advertised.
+// PMF protects established associations. Before key installation an
+// unprotected disconnect can still disrupt setup, even when PMF is required.
 std::vector<Finding> detect_unprotected_deauth(const Capture& capture);
+
+// Repeated association attempts receiving both an unprotected disconnect and
+// a successful association response from the same claimed AP.
+std::vector<Finding> detect_association_disruption(const Capture& capture);
 
 // Flag one SSID advertised from more than one BSSID with different security.
 //

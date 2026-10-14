@@ -1,0 +1,338 @@
+{
+  "capture": {
+    "path": "/Users/aysha/Desktop/Projects/airlock-cpp/.cache/wifi-benchmark/53c66ffad83ba9c9.pcap",
+    "frames": 2000,
+    "duration_seconds": 20.88,
+    "suspect_frames": 0,
+    "parse_errors": []
+  },
+  "frame_classes": {
+    "management": 489,
+    "control": 291,
+    "data": 1220
+  },
+  "frame_subtypes": {
+    "block-ack": 181,
+    "rts": 109,
+    "beacon": 191,
+    "data": 83,
+    "deauthentication": 139,
+    "action": 90,
+    "block-ack-request": 1,
+    "qos-null": 1102,
+    "probe-request": 19,
+    "probe-response": 9,
+    "authentication": 21,
+    "assoc-response": 12,
+    "qos-data": 35,
+    "assoc-request": 7,
+    "disassociation": 1
+  },
+  "networks": [
+    {
+      "bssid": "04:42:1a:19:88:f8",
+      "ssid": "testnetworkRPT88",
+      "channel": 1,
+      "security": "WPA3-Personal (SAE)",
+      "group_cipher": "CCMP-128",
+      "pairwise_ciphers": [
+        "CCMP-128"
+      ],
+      "akm_suites": [
+        "SAE"
+      ],
+      "mfp": "required",
+      "beacons": 191,
+      "clients": [
+        "01:00:5e:7f:ff:fa",
+        "01:80:c2:00:00:00",
+        "01:80:c2:00:00:0e",
+        "22:d0:61:a8:5e:8e",
+        "33:33:00:00:00:02",
+        "33:33:00:00:00:16",
+        "f0:d4:15:7f:4c:07"
+      ]
+    }
+  ],
+  "handshakes": [
+    {
+      "ap": "04:42:1a:19:88:f8",
+      "station": "22:d0:61:a8:5e:8e",
+      "messages_seen": [
+        1,
+        2,
+        3
+      ],
+      "complete": false,
+      "duration_ms": null,
+      "pmkid": "d4e417295fd47caf0ebe76361210162a",
+      "notes": [
+        "incomplete: saw messages [1, 2, 3], missing [4] (capture may have started late, or the handshake failed)",
+        "AP included a PMKID (d4e417295fd47caf...) in message 1; a PMKID alone does not establish an offline dictionary attack without identifying the authentication method"
+      ]
+    },
+    {
+      "ap": "04:42:1a:19:88:f8",
+      "station": "22:d0:61:a8:5e:8e",
+      "messages_seen": [
+        1,
+        2,
+        3
+      ],
+      "complete": false,
+      "duration_ms": null,
+      "pmkid": "d4e417295fd47caf0ebe76361210162a",
+      "notes": [
+        "incomplete: saw messages [1, 2, 3], missing [4] (capture may have started late, or the handshake failed)",
+        "AP included a PMKID (d4e417295fd47caf...) in message 1; a PMKID alone does not establish an offline dictionary attack without identifying the authentication method"
+      ]
+    },
+    {
+      "ap": "04:42:1a:19:88:f8",
+      "station": "22:d0:61:a8:5e:8e",
+      "messages_seen": [
+        1
+      ],
+      "complete": false,
+      "duration_ms": null,
+      "pmkid": "d4e417295fd47caf0ebe76361210162a",
+      "notes": [
+        "incomplete: saw messages [1], missing [2, 3, 4] (capture may have started late, or the handshake failed)",
+        "AP included a PMKID (d4e417295fd47caf...) in message 1; a PMKID alone does not establish an offline dictionary attack without identifying the authentication method"
+      ]
+    },
+    {
+      "ap": "04:42:1a:19:88:f8",
+      "station": "22:d0:61:a8:5e:8e",
+      "messages_seen": [
+        1
+      ],
+      "complete": false,
+      "duration_ms": null,
+      "pmkid": "d4e417295fd47caf0ebe76361210162a",
+      "notes": [
+        "incomplete: saw messages [1], missing [2, 3, 4] (capture may have started late, or the handshake failed)",
+        "AP included a PMKID (d4e417295fd47caf...) in message 1; a PMKID alone does not establish an offline dictionary attack without identifying the authentication method"
+      ]
+    },
+    {
+      "ap": "04:42:1a:19:88:f8",
+      "station": "22:d0:61:a8:5e:8e",
+      "messages_seen": [
+        1
+      ],
+      "complete": false,
+      "duration_ms": null,
+      "pmkid": "d4e417295fd47caf0ebe76361210162a",
+      "notes": [
+        "incomplete: saw messages [1], missing [2, 3, 4] (capture may have started late, or the handshake failed)",
+        "AP included a PMKID (d4e417295fd47caf...) in message 1; a PMKID alone does not establish an offline dictionary attack without identifying the authentication method"
+      ]
+    },
+    {
+      "ap": "04:42:1a:19:88:f8",
+      "station": "22:d0:61:a8:5e:8e",
+      "messages_seen": [
+        1
+      ],
+      "complete": false,
+      "duration_ms": null,
+      "pmkid": "d4e417295fd47caf0ebe76361210162a",
+      "notes": [
+        "incomplete: saw messages [1], missing [2, 3, 4] (capture may have started late, or the handshake failed)",
+        "AP included a PMKID (d4e417295fd47caf...) in message 1; a PMKID alone does not establish an offline dictionary attack without identifying the authentication method"
+      ]
+    },
+    {
+      "ap": "04:42:1a:19:88:f8",
+      "station": "22:d0:61:a8:5e:8e",
+      "messages_seen": [
+        1
+      ],
+      "complete": false,
+      "duration_ms": null,
+      "pmkid": "d4e417295fd47caf0ebe76361210162a",
+      "notes": [
+        "incomplete: saw messages [1], missing [2, 3, 4] (capture may have started late, or the handshake failed)",
+        "AP included a PMKID (d4e417295fd47caf...) in message 1; a PMKID alone does not establish an offline dictionary attack without identifying the authentication method"
+      ]
+    },
+    {
+      "ap": "04:42:1a:19:88:f8",
+      "station": "22:d0:61:a8:5e:8e",
+      "messages_seen": [
+        1
+      ],
+      "complete": false,
+      "duration_ms": null,
+      "pmkid": "d4e417295fd47caf0ebe76361210162a",
+      "notes": [
+        "incomplete: saw messages [1], missing [2, 3, 4] (capture may have started late, or the handshake failed)",
+        "AP included a PMKID (d4e417295fd47caf...) in message 1; a PMKID alone does not establish an offline dictionary attack without identifying the authentication method"
+      ]
+    },
+    {
+      "ap": "04:42:1a:19:88:f8",
+      "station": "22:d0:61:a8:5e:8e",
+      "messages_seen": [
+        1
+      ],
+      "complete": false,
+      "duration_ms": null,
+      "pmkid": "d4e417295fd47caf0ebe76361210162a",
+      "notes": [
+        "incomplete: saw messages [1], missing [2, 3, 4] (capture may have started late, or the handshake failed)",
+        "AP included a PMKID (d4e417295fd47caf...) in message 1; a PMKID alone does not establish an offline dictionary attack without identifying the authentication method"
+      ]
+    }
+  ],
+  "findings": [
+    {
+      "severity": "high",
+      "title": "Deauthentication / disassociation flood",
+      "detail": "30 deauth-class frames from 04:42:1a:19:88:f8 inside a 5-second window -- the signature of a forced disconnect, used either as denial of service or to make a client reconnect so its four-way handshake can be captured",
+      "evidence": [
+        "34 frames total, peak 30 within 5 s starting at t+0.00 s",
+        "source 04:42:1a:19:88:f8 -> target 04:42:1a:19:88:f8",
+        "reason codes seen: 7 (class 3 frame received from nonassociated STA)",
+        "0/34 frames were cryptographically protected",
+        "none were protected, so every one of them is forgeable by any device in range"
+      ],
+      "benign_explanation": "an access point rebooting, shedding clients under load, or steering a client to another band also emits deauths, though rarely this many this fast from one address"
+    },
+    {
+      "severity": "high",
+      "title": "Deauthentication / disassociation flood",
+      "detail": "20 deauth-class frames from 04:42:1a:19:88:f8 inside a 5-second window -- the signature of a forced disconnect, used either as denial of service or to make a client reconnect so its four-way handshake can be captured",
+      "evidence": [
+        "23 frames total, peak 20 within 5 s starting at t+0.00 s",
+        "source 04:42:1a:19:88:f8 -> target 22:d0:61:a8:5e:8e",
+        "reason codes seen: 6 (class 2 frame received from nonauthenticated STA), 7 (class 3 frame received from nonassociated STA)",
+        "0/23 frames were cryptographically protected",
+        "none were protected, so every one of them is forgeable by any device in range"
+      ],
+      "benign_explanation": "an access point rebooting, shedding clients under load, or steering a client to another band also emits deauths, though rarely this many this fast from one address"
+    },
+    {
+      "severity": "high",
+      "title": "Deauthentication / disassociation flood",
+      "detail": "62 deauth-class frames from 04:42:1a:19:88:f8 inside a 5-second window -- the signature of a forced disconnect, used either as denial of service or to make a client reconnect so its four-way handshake can be captured",
+      "evidence": [
+        "81 frames total, peak 62 within 5 s starting at t+0.00 s",
+        "source 04:42:1a:19:88:f8 -> target f0:d4:15:7f:4c:07",
+        "reason codes seen: 7 (class 3 frame received from nonassociated STA)",
+        "0/81 frames were cryptographically protected",
+        "none were protected, so every one of them is forgeable by any device in range"
+      ],
+      "benign_explanation": "an access point rebooting, shedding clients under load, or steering a client to another band also emits deauths, though rarely this many this fast from one address"
+    },
+    {
+      "severity": "low",
+      "title": "Unprotected deauth on an MFP-required network",
+      "detail": "\"testnetworkRPT88\" (04:42:1a:19:88:f8) requires management frame protection. Established protected associations should reject forged unprotected disconnects, but frames sent before key installation can still disrupt connection setup; this capture alone does not establish whether the frames were effective",
+      "evidence": [
+        "RSN capabilities: MFP required"
+      ],
+      "benign_explanation": ""
+    },
+    {
+      "severity": "info",
+      "title": "Handshake metadata observed",
+      "detail": "AP 04:42:1a:19:88:f8 (\"testnetworkRPT88\"): handshake material was captured, but its presence alone does not establish offline password-guessing exposure. SAE, enterprise and OWE key establishment differ from PSK; mixed or unknown AKMs require confirmation of the authentication method used by this station",
+      "evidence": [
+        "advertised security: WPA3-Personal (SAE)",
+        "station 22:d0:61:a8:5e:8e",
+        "PMKID d4e417295fd47caf0ebe76361210162a"
+      ],
+      "benign_explanation": ""
+    },
+    {
+      "severity": "info",
+      "title": "Handshake metadata observed",
+      "detail": "AP 04:42:1a:19:88:f8 (\"testnetworkRPT88\"): handshake material was captured, but its presence alone does not establish offline password-guessing exposure. SAE, enterprise and OWE key establishment differ from PSK; mixed or unknown AKMs require confirmation of the authentication method used by this station",
+      "evidence": [
+        "advertised security: WPA3-Personal (SAE)",
+        "station 22:d0:61:a8:5e:8e",
+        "PMKID d4e417295fd47caf0ebe76361210162a"
+      ],
+      "benign_explanation": ""
+    },
+    {
+      "severity": "info",
+      "title": "Handshake metadata observed",
+      "detail": "AP 04:42:1a:19:88:f8 (\"testnetworkRPT88\"): handshake material was captured, but its presence alone does not establish offline password-guessing exposure. SAE, enterprise and OWE key establishment differ from PSK; mixed or unknown AKMs require confirmation of the authentication method used by this station",
+      "evidence": [
+        "advertised security: WPA3-Personal (SAE)",
+        "station 22:d0:61:a8:5e:8e",
+        "PMKID d4e417295fd47caf0ebe76361210162a"
+      ],
+      "benign_explanation": ""
+    },
+    {
+      "severity": "info",
+      "title": "Handshake metadata observed",
+      "detail": "AP 04:42:1a:19:88:f8 (\"testnetworkRPT88\"): handshake material was captured, but its presence alone does not establish offline password-guessing exposure. SAE, enterprise and OWE key establishment differ from PSK; mixed or unknown AKMs require confirmation of the authentication method used by this station",
+      "evidence": [
+        "advertised security: WPA3-Personal (SAE)",
+        "station 22:d0:61:a8:5e:8e",
+        "PMKID d4e417295fd47caf0ebe76361210162a"
+      ],
+      "benign_explanation": ""
+    },
+    {
+      "severity": "info",
+      "title": "Handshake metadata observed",
+      "detail": "AP 04:42:1a:19:88:f8 (\"testnetworkRPT88\"): handshake material was captured, but its presence alone does not establish offline password-guessing exposure. SAE, enterprise and OWE key establishment differ from PSK; mixed or unknown AKMs require confirmation of the authentication method used by this station",
+      "evidence": [
+        "advertised security: WPA3-Personal (SAE)",
+        "station 22:d0:61:a8:5e:8e",
+        "PMKID d4e417295fd47caf0ebe76361210162a"
+      ],
+      "benign_explanation": ""
+    },
+    {
+      "severity": "info",
+      "title": "Handshake metadata observed",
+      "detail": "AP 04:42:1a:19:88:f8 (\"testnetworkRPT88\"): handshake material was captured, but its presence alone does not establish offline password-guessing exposure. SAE, enterprise and OWE key establishment differ from PSK; mixed or unknown AKMs require confirmation of the authentication method used by this station",
+      "evidence": [
+        "advertised security: WPA3-Personal (SAE)",
+        "station 22:d0:61:a8:5e:8e",
+        "PMKID d4e417295fd47caf0ebe76361210162a"
+      ],
+      "benign_explanation": ""
+    },
+    {
+      "severity": "info",
+      "title": "Handshake metadata observed",
+      "detail": "AP 04:42:1a:19:88:f8 (\"testnetworkRPT88\"): handshake material was captured, but its presence alone does not establish offline password-guessing exposure. SAE, enterprise and OWE key establishment differ from PSK; mixed or unknown AKMs require confirmation of the authentication method used by this station",
+      "evidence": [
+        "advertised security: WPA3-Personal (SAE)",
+        "station 22:d0:61:a8:5e:8e",
+        "PMKID d4e417295fd47caf0ebe76361210162a"
+      ],
+      "benign_explanation": ""
+    },
+    {
+      "severity": "info",
+      "title": "Handshake metadata observed",
+      "detail": "AP 04:42:1a:19:88:f8 (\"testnetworkRPT88\"): handshake material was captured, but its presence alone does not establish offline password-guessing exposure. SAE, enterprise and OWE key establishment differ from PSK; mixed or unknown AKMs require confirmation of the authentication method used by this station",
+      "evidence": [
+        "advertised security: WPA3-Personal (SAE)",
+        "station 22:d0:61:a8:5e:8e",
+        "PMKID d4e417295fd47caf0ebe76361210162a"
+      ],
+      "benign_explanation": ""
+    },
+    {
+      "severity": "info",
+      "title": "Handshake metadata observed",
+      "detail": "AP 04:42:1a:19:88:f8 (\"testnetworkRPT88\"): handshake material was captured, but its presence alone does not establish offline password-guessing exposure. SAE, enterprise and OWE key establishment differ from PSK; mixed or unknown AKMs require confirmation of the authentication method used by this station",
+      "evidence": [
+        "advertised security: WPA3-Personal (SAE)",
+        "station 22:d0:61:a8:5e:8e",
+        "PMKID d4e417295fd47caf0ebe76361210162a"
+      ],
+      "benign_explanation": ""
+    }
+  ]
+}

@@ -160,14 +160,15 @@ std::vector<Finding> detect_unprotected_deauth(const Capture& capture) {
     if (network == nullptr || !network->rsn) continue;
     const RSNInfo& rsn = *network->rsn;
     if (rsn.mfp_required) {
-      // MFP required and yet an unprotected deauth was on the air: worth
-      // seeing, since a compliant client should ignore it.
+      // PMF protects established associations, not every pre-key exchange.
       findings.push_back(Finding{
           "low",
           "Unprotected deauth on an MFP-required network",
           "\"" + or_none(network->ssid) + "\" (" + bssid +
-              ") requires management frame protection, so compliant clients will ignore these "
-              "unprotected frames -- the attack is visible but ineffective",
+              ") requires management frame protection. Established protected associations "
+              "should reject forged unprotected disconnects, but frames sent before key "
+              "installation can still disrupt connection setup; this capture alone does not "
+              "establish whether the frames were effective",
           {"RSN capabilities: MFP " + rsn.mfp_state()},
           "",
       });
@@ -187,6 +188,72 @@ std::vector<Finding> detect_unprotected_deauth(const Capture& capture) {
             "optional in WPA2",
         },
         "",
+    });
+  }
+  return findings;
+}
+
+std::vector<Finding> detect_association_disruption(const Capture& capture) {
+  struct Attempt {
+    const FrameInfo* request;
+    const FrameInfo* disconnect = nullptr;
+  };
+  using Pair = std::pair<std::string, std::string>;  // AP, station
+  std::map<Pair, Attempt> pending;
+  std::map<Pair, std::vector<std::pair<const FrameInfo*, const FrameInfo*>>> conflicts;
+  std::vector<const FrameInfo*> ordered;
+  for (const FrameInfo& frame : capture.frames) ordered.push_back(&frame);
+  std::stable_sort(ordered.begin(), ordered.end(), [](const FrameInfo* a, const FrameInfo* b) {
+    return a->timestamp < b->timestamp;
+  });
+  for (const FrameInfo* f : ordered) {
+    if (f->suspect || f->retry || f->is_protected || !f->transmitter_is_valid() ||
+        !f->addr1 || !f->addr2 || !f->bssid) continue;
+    const Network* n = capture.find_network(*f->bssid);
+    if (!n || !well_attested(*n)) continue;
+    if ((f->subtype_name == "assoc-request" || f->subtype_name == "reassoc-request") &&
+        *f->addr1 == *f->bssid && *f->addr2 != *f->bssid) {
+      pending.insert_or_assign({*f->addr1, *f->addr2}, Attempt{f});
+      continue;
+    }
+    if (*f->addr2 != *f->bssid) continue;
+    const Pair key{*f->addr2, *f->addr1};
+    auto it = pending.find(key);
+    if (it == pending.end()) continue;
+    if (f->timestamp - it->second.request->timestamp > ASSOCIATION_REPLY_WINDOW_SECONDS) {
+      pending.erase(it);
+      continue;
+    }
+    if (is_deauth_class(*f) && (f->reason_code == 6 || f->reason_code == 7)) {
+      it->second.disconnect = f;
+    } else if (f->subtype_name == "assoc-response" || f->subtype_name == "reassoc-response") {
+      if (f->status_code == 0 && it->second.disconnect) {
+        conflicts[key].push_back({it->second.request, it->second.disconnect});
+      }
+      pending.erase(it);
+    }
+  }
+  std::vector<Finding> findings;
+  for (const auto& [key, attempts] : conflicts) {
+    if (attempts.size() < MIN_CONFLICTING_ASSOCIATIONS) continue;
+    std::vector<std::string> evidence;
+    for (std::size_t i = 0; i < attempts.size() && i < 5; ++i) {
+      const auto& [request, disconnect] = attempts[i];
+      evidence.push_back(std::format(
+          "association request frame {}, unprotected disconnect frame {} (reason {}), "
+          "followed by successful association response within {:g} s", request->index,
+          disconnect->index, *disconnect->reason_code, ASSOCIATION_REPLY_WINDOW_SECONDS));
+    }
+    findings.push_back(Finding{
+        "medium", "Possible association disruption: conflicting AP responses",
+        std::format("{} connection attempts by {} to AP {} received an unprotected "
+                    "disconnect and then a successful association response from the same "
+                    "claimed AP. This inconsistent state can indicate spoofed pre-key "
+                    "disconnects, including on PMF-required networks", attempts.size(),
+                    key.second, key.first),
+        evidence,
+        "capture reordering, stale retransmissions, or an AP firmware/state mismatch may "
+        "also produce conflicting responses; this is a suspected disruption, not proof",
     });
   }
   return findings;
@@ -324,14 +391,36 @@ std::vector<Finding> detect_handshake_exposure(const Capture& capture,
   for (const Handshake& handshake : handshakes) {
     const Network* network = capture.find_network(handshake.ap);
     const std::string ssid = network ? or_none(network->ssid) : "unknown";
+    // Advertised capabilities do not identify the selected AKM in transition
+    // mode. Only make a PSK risk claim when every advertised AKM is PSK.
+    const bool psk_only = network && network->rsn && !network->rsn->akm_suites.empty() &&
+        std::all_of(network->rsn->akm_suites.begin(), network->rsn->akm_suites.end(),
+                    [](const std::string& akm) { return akm == "PSK" || akm == "PSK-SHA256"; });
+    if (!psk_only) {
+      if (handshake.pmkid || handshake.complete()) {
+        findings.push_back(Finding{
+            "info", "Handshake metadata observed",
+            "AP " + handshake.ap + " (\"" + ssid +
+                "\"): handshake material was captured, but its presence alone does not "
+                "establish offline password-guessing exposure. SAE, enterprise and OWE "
+                "key establishment differ from PSK; mixed or unknown AKMs require "
+                "confirmation of the authentication method used by this station",
+            {"advertised security: " + (network ? network->security() : "unknown"),
+             "station " + handshake.station,
+             handshake.pmkid ? "PMKID " + to_hex(*handshake.pmkid) : "complete four-way handshake"},
+            "",
+        });
+      }
+      continue;
+    }
     if (handshake.pmkid) {
       findings.push_back(Finding{
           "high",
           "PMKID disclosed in EAPOL message 1",
           "AP " + handshake.ap + " (\"" + ssid +
-              "\") included a PMKID in message 1. Because the PMKID is HMAC-SHA1(PMK, \"PMK "
-              "Name\" || AP || STA), this one frame supports an offline dictionary attack on "
-              "the passphrase with no client and no full handshake required",
+              "\") advertises only PSK authentication and included a PMKID in message 1. "
+              "When PSK authentication is used, this material allows offline passphrase "
+              "guesses without a full handshake; the PMKID calculation depends on the AKM",
           {
               "PMKID " + to_hex(*handshake.pmkid),
               "station " + handshake.station,
@@ -370,6 +459,7 @@ std::vector<Finding> run_all_detectors(const Capture& capture,
   std::vector<Finding> findings;
   extend(findings, detect_deauth_flood(capture));
   extend(findings, detect_unprotected_deauth(capture));
+  extend(findings, detect_association_disruption(capture));
   extend(findings, detect_evil_twin(capture));
   extend(findings, detect_weak_security(capture));
   extend(findings, detect_handshake_exposure(capture, handshakes));

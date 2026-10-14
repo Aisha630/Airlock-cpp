@@ -1,0 +1,396 @@
+{
+  "capture": {
+    "path": "/Users/aysha/Desktop/Projects/airlock-cpp/.cache/wifi-benchmark/42bff38f80c2c811.pcap",
+    "frames": 2000,
+    "duration_seconds": 96.154,
+    "suspect_frames": 0,
+    "parse_errors": []
+  },
+  "frame_classes": {
+    "management": 1089,
+    "control": 102,
+    "data": 809
+  },
+  "frame_subtypes": {
+    "deauthentication": 438,
+    "qos-null": 522,
+    "data": 264,
+    "beacon": 222,
+    "rts": 79,
+    "block-ack": 23,
+    "action": 51,
+    "probe-request": 242,
+    "probe-response": 33,
+    "authentication": 85,
+    "assoc-request": 5,
+    "assoc-response": 7,
+    "qos-data": 23,
+    "reassoc-request": 2,
+    "reassoc-response": 4
+  },
+  "networks": [
+    {
+      "bssid": "04:42:1a:19:88:f8",
+      "ssid": "testnetworkRPT88",
+      "channel": 1,
+      "security": "WPA3-Personal (SAE)",
+      "group_cipher": "CCMP-128",
+      "pairwise_ciphers": [
+        "CCMP-128"
+      ],
+      "akm_suites": [
+        "SAE"
+      ],
+      "mfp": "required",
+      "beacons": 222,
+      "clients": [
+        "01:00:5e:7f:ff:fa",
+        "01:40:96:ff:ff:00",
+        "01:60:1d:00:01:00",
+        "01:80:c2:00:00:00",
+        "01:80:c2:00:00:0e",
+        "33:33:00:00:00:0c",
+        "a8:42:a1:0e:7f:b2",
+        "f0:d4:15:7f:4c:07"
+      ]
+    }
+  ],
+  "handshakes": [
+    {
+      "ap": "04:42:1a:19:88:f8",
+      "station": "a8:42:a1:0e:7f:b2",
+      "messages_seen": [
+        1
+      ],
+      "complete": false,
+      "duration_ms": null,
+      "pmkid": null,
+      "notes": [
+        "incomplete: saw messages [1], missing [2, 3, 4] (capture may have started late, or the handshake failed)"
+      ]
+    },
+    {
+      "ap": "04:42:1a:19:88:f8",
+      "station": "a8:42:a1:0e:7f:b2",
+      "messages_seen": [
+        1
+      ],
+      "complete": false,
+      "duration_ms": null,
+      "pmkid": null,
+      "notes": [
+        "incomplete: saw messages [1], missing [2, 3, 4] (capture may have started late, or the handshake failed)"
+      ]
+    },
+    {
+      "ap": "04:42:1a:19:88:f8",
+      "station": "a8:42:a1:0e:7f:b2",
+      "messages_seen": [
+        1
+      ],
+      "complete": false,
+      "duration_ms": null,
+      "pmkid": null,
+      "notes": [
+        "incomplete: saw messages [1], missing [2, 3, 4] (capture may have started late, or the handshake failed)"
+      ]
+    },
+    {
+      "ap": "04:42:1a:19:88:f8",
+      "station": "a8:42:a1:0e:7f:b2",
+      "messages_seen": [
+        1
+      ],
+      "complete": false,
+      "duration_ms": null,
+      "pmkid": null,
+      "notes": [
+        "incomplete: saw messages [1], missing [2, 3, 4] (capture may have started late, or the handshake failed)"
+      ]
+    },
+    {
+      "ap": "04:42:1a:19:88:f8",
+      "station": "a8:42:a1:0e:7f:b2",
+      "messages_seen": [
+        1
+      ],
+      "complete": false,
+      "duration_ms": null,
+      "pmkid": null,
+      "notes": [
+        "incomplete: saw messages [1], missing [2, 3, 4] (capture may have started late, or the handshake failed)"
+      ]
+    },
+    {
+      "ap": "04:42:1a:19:88:f8",
+      "station": "a8:42:a1:0e:7f:b2",
+      "messages_seen": [
+        1
+      ],
+      "complete": false,
+      "duration_ms": null,
+      "pmkid": null,
+      "notes": [
+        "incomplete: saw messages [1], missing [2, 3, 4] (capture may have started late, or the handshake failed)"
+      ]
+    },
+    {
+      "ap": "04:42:1a:19:88:f8",
+      "station": "a8:42:a1:0e:7f:b2",
+      "messages_seen": [
+        1
+      ],
+      "complete": false,
+      "duration_ms": null,
+      "pmkid": null,
+      "notes": [
+        "incomplete: saw messages [1], missing [2, 3, 4] (capture may have started late, or the handshake failed)"
+      ]
+    },
+    {
+      "ap": "04:42:1a:19:88:f8",
+      "station": "a8:42:a1:0e:7f:b2",
+      "messages_seen": [
+        1
+      ],
+      "complete": false,
+      "duration_ms": null,
+      "pmkid": null,
+      "notes": [
+        "incomplete: saw messages [1], missing [2, 3, 4] (capture may have started late, or the handshake failed)"
+      ]
+    },
+    {
+      "ap": "04:42:1a:19:88:f8",
+      "station": "f0:d4:15:7f:4c:07",
+      "messages_seen": [
+        1
+      ],
+      "complete": false,
+      "duration_ms": null,
+      "pmkid": null,
+      "notes": [
+        "incomplete: saw messages [1], missing [2, 3, 4] (capture may have started late, or the handshake failed)"
+      ]
+    },
+    {
+      "ap": "04:42:1a:19:88:f8",
+      "station": "f0:d4:15:7f:4c:07",
+      "messages_seen": [
+        1
+      ],
+      "complete": false,
+      "duration_ms": null,
+      "pmkid": null,
+      "notes": [
+        "incomplete: saw messages [1], missing [2, 3, 4] (capture may have started late, or the handshake failed)"
+      ]
+    },
+    {
+      "ap": "04:42:1a:19:88:f8",
+      "station": "f0:d4:15:7f:4c:07",
+      "messages_seen": [
+        1
+      ],
+      "complete": false,
+      "duration_ms": null,
+      "pmkid": null,
+      "notes": [
+        "incomplete: saw messages [1], missing [2, 3, 4] (capture may have started late, or the handshake failed)"
+      ]
+    },
+    {
+      "ap": "04:42:1a:19:88:f8",
+      "station": "f0:d4:15:7f:4c:07",
+      "messages_seen": [
+        1
+      ],
+      "complete": false,
+      "duration_ms": null,
+      "pmkid": null,
+      "notes": [
+        "incomplete: saw messages [1], missing [2, 3, 4] (capture may have started late, or the handshake failed)"
+      ]
+    },
+    {
+      "ap": "04:42:1a:19:88:f8",
+      "station": "f0:d4:15:7f:4c:07",
+      "messages_seen": [
+        1
+      ],
+      "complete": false,
+      "duration_ms": null,
+      "pmkid": null,
+      "notes": [
+        "incomplete: saw messages [1], missing [2, 3, 4] (capture may have started late, or the handshake failed)"
+      ]
+    },
+    {
+      "ap": "04:42:1a:19:88:f8",
+      "station": "f0:d4:15:7f:4c:07",
+      "messages_seen": [
+        1
+      ],
+      "complete": false,
+      "duration_ms": null,
+      "pmkid": null,
+      "notes": [
+        "incomplete: saw messages [1], missing [2, 3, 4] (capture may have started late, or the handshake failed)"
+      ]
+    },
+    {
+      "ap": "04:42:1a:19:88:f8",
+      "station": "f0:d4:15:7f:4c:07",
+      "messages_seen": [
+        1
+      ],
+      "complete": false,
+      "duration_ms": null,
+      "pmkid": null,
+      "notes": [
+        "incomplete: saw messages [1], missing [2, 3, 4] (capture may have started late, or the handshake failed)"
+      ]
+    },
+    {
+      "ap": "04:42:1a:19:88:f8",
+      "station": "f0:d4:15:7f:4c:07",
+      "messages_seen": [
+        1
+      ],
+      "complete": false,
+      "duration_ms": null,
+      "pmkid": null,
+      "notes": [
+        "incomplete: saw messages [1], missing [2, 3, 4] (capture may have started late, or the handshake failed)"
+      ]
+    },
+    {
+      "ap": "04:42:1a:19:88:f8",
+      "station": "f0:d4:15:7f:4c:07",
+      "messages_seen": [
+        1
+      ],
+      "complete": false,
+      "duration_ms": null,
+      "pmkid": null,
+      "notes": [
+        "incomplete: saw messages [1], missing [2, 3, 4] (capture may have started late, or the handshake failed)"
+      ]
+    },
+    {
+      "ap": "04:42:1a:19:88:f8",
+      "station": "f0:d4:15:7f:4c:07",
+      "messages_seen": [
+        1
+      ],
+      "complete": false,
+      "duration_ms": null,
+      "pmkid": null,
+      "notes": [
+        "incomplete: saw messages [1], missing [2, 3, 4] (capture may have started late, or the handshake failed)"
+      ]
+    },
+    {
+      "ap": "04:42:1a:19:88:f8",
+      "station": "f0:d4:15:7f:4c:07",
+      "messages_seen": [
+        1
+      ],
+      "complete": false,
+      "duration_ms": null,
+      "pmkid": null,
+      "notes": [
+        "incomplete: saw messages [1], missing [2, 3, 4] (capture may have started late, or the handshake failed)"
+      ]
+    },
+    {
+      "ap": "04:42:1a:19:88:f8",
+      "station": "f0:d4:15:7f:4c:07",
+      "messages_seen": [
+        1
+      ],
+      "complete": false,
+      "duration_ms": null,
+      "pmkid": null,
+      "notes": [
+        "incomplete: saw messages [1], missing [2, 3, 4] (capture may have started late, or the handshake failed)"
+      ]
+    },
+    {
+      "ap": "04:42:1a:19:88:f8",
+      "station": "f0:d4:15:7f:4c:07",
+      "messages_seen": [
+        1
+      ],
+      "complete": false,
+      "duration_ms": null,
+      "pmkid": null,
+      "notes": [
+        "incomplete: saw messages [1], missing [2, 3, 4] (capture may have started late, or the handshake failed)"
+      ]
+    },
+    {
+      "ap": "04:42:1a:19:88:f8",
+      "station": "f0:d4:15:7f:4c:07",
+      "messages_seen": [
+        1
+      ],
+      "complete": false,
+      "duration_ms": null,
+      "pmkid": null,
+      "notes": [
+        "incomplete: saw messages [1], missing [2, 3, 4] (capture may have started late, or the handshake failed)"
+      ]
+    },
+    {
+      "ap": "04:42:1a:19:88:f8",
+      "station": "f0:d4:15:7f:4c:07",
+      "messages_seen": [
+        1
+      ],
+      "complete": false,
+      "duration_ms": null,
+      "pmkid": null,
+      "notes": [
+        "incomplete: saw messages [1], missing [2, 3, 4] (capture may have started late, or the handshake failed)"
+      ]
+    }
+  ],
+  "findings": [
+    {
+      "severity": "high",
+      "title": "Deauthentication / disassociation flood",
+      "detail": "20 deauth-class frames from 04:42:1a:19:88:f8 inside a 5-second window -- the signature of a forced disconnect, used either as denial of service or to make a client reconnect so its four-way handshake can be captured",
+      "evidence": [
+        "57 frames total, peak 20 within 5 s starting at t+44.24 s",
+        "source 04:42:1a:19:88:f8 -> target 04:42:1a:19:88:f8",
+        "reason codes seen: 7 (class 3 frame received from nonassociated STA)",
+        "0/57 frames were cryptographically protected",
+        "none were protected, so every one of them is forgeable by any device in range"
+      ],
+      "benign_explanation": "an access point rebooting, shedding clients under load, or steering a client to another band also emits deauths, though rarely this many this fast from one address"
+    },
+    {
+      "severity": "high",
+      "title": "Deauthentication / disassociation flood",
+      "detail": "90 deauth-class frames from 04:42:1a:19:88:f8 inside a 5-second window -- the signature of a forced disconnect, used either as denial of service or to make a client reconnect so its four-way handshake can be captured",
+      "evidence": [
+        "369 frames total, peak 90 within 5 s starting at t+71.99 s",
+        "source 04:42:1a:19:88:f8 -> target f0:d4:15:7f:4c:07",
+        "reason codes seen: 6 (class 2 frame received from nonauthenticated STA), 7 (class 3 frame received from nonassociated STA)",
+        "0/369 frames were cryptographically protected",
+        "none were protected, so every one of them is forgeable by any device in range"
+      ],
+      "benign_explanation": "an access point rebooting, shedding clients under load, or steering a client to another band also emits deauths, though rarely this many this fast from one address"
+    },
+    {
+      "severity": "low",
+      "title": "Unprotected deauth on an MFP-required network",
+      "detail": "\"testnetworkRPT88\" (04:42:1a:19:88:f8) requires management frame protection, so compliant clients will ignore these unprotected frames -- the attack is visible but ineffective",
+      "evidence": [
+        "RSN capabilities: MFP required"
+      ],
+      "benign_explanation": ""
+    }
+  ]
+}

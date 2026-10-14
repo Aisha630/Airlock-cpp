@@ -96,6 +96,91 @@ TEST(Robustness, MalformedAddressStringIsNotValid) {
   EXPECT_FALSE(frame.transmitter_is_valid());
 }
 
+TEST(Robustness, HandshakeRiskRequiresPskOnlyCapabilities) {
+  Handshake handshake;
+  handshake.ap = GOOD;
+  handshake.station = "02:00:00:aa:00:02";
+  handshake.pmkid = Bytes(16, 0x42);
+  handshake.messages = {{1, 1.0}, {2, 1.1}, {3, 1.2}, {4, 1.3}};
+  handshake.replay_counters = {{1, 1}, {2, 1}, {3, 2}, {4, 2}};
+  for (const std::vector<std::string>& akms :
+       {std::vector<std::string>{"SAE"}, {"FT-SAE"}, {"802.1X"}, {"OWE"},
+        {"SAE", "PSK"}, {"PSK", "unknown-99"}, {}}) {
+    Capture capture("test");
+    auto& network = capture.network_for(GOOD);
+    network.rsn = RSNInfo{};
+    network.rsn->akm_suites = akms;
+    const auto findings = detect_handshake_exposure(capture, {handshake});
+    ASSERT_EQ(findings.size(), 1u);
+    EXPECT_EQ(findings[0].severity, "info");
+  }
+  Capture unknown("test");
+  EXPECT_EQ(detect_handshake_exposure(unknown, {handshake})[0].severity, "info");
+  for (const std::string& akm : {"PSK", "PSK-SHA256"}) {
+    Capture capture("test");
+    auto& network = capture.network_for(GOOD);
+    network.rsn = RSNInfo{};
+    network.rsn->akm_suites = {akm};
+    const auto findings = detect_handshake_exposure(capture, {handshake});
+    ASSERT_EQ(findings.size(), 2u);
+    EXPECT_EQ(findings[0].severity, "high");
+    EXPECT_EQ(findings[1].severity, "medium");
+  }
+  const auto notes = handshake.notes();
+  EXPECT_TRUE(contains(joined(notes), "depends on the authentication method"));
+  EXPECT_FALSE(contains(joined(notes), "this single frame is enough"));
+}
+
+namespace {
+Capture association_scenario(int attempts, std::uint16_t response_status = 0, bool disconnect = true,
+                             double delay = 0.1, bool protected_disconnect = false,
+                             std::string disconnect_station = "02:00:00:aa:00:02") {
+  constexpr const char* station = "02:00:00:aa:00:02";
+  RsnSpec spec;
+  spec.akm_suites = {8};
+  spec.mfp_capable = spec.mfp_required = true;
+  Bytes b = concat({build::radiotap_empty(), build::dot11(0, 8, 0, "ff:ff:ff:ff:ff:ff", GOOD, GOOD),
+                    build::beacon_body(100, 0x0011), build::element(0, to_bytes("SAE")),
+                    build::element(48, build_rsn_element(spec))});
+  std::vector<PcapRecord> records{{0.0, LINKTYPE_IEEE802_11_RADIOTAP, b},
+                                 {0.1, LINKTYPE_IEEE802_11_RADIOTAP, b}};
+  for (int i = 0; i < attempts; ++i) {
+    const double start = 1.0 + i * 7.0;
+    auto add = [&](double time, int subtype, std::uint8_t flags, const std::string& rx,
+                   const std::string& tx, const Bytes& body) {
+      records.push_back({time, LINKTYPE_IEEE802_11_RADIOTAP,
+                        concat({build::radiotap_empty(), build::dot11(0, subtype, flags, rx, tx, GOOD), body})});
+    };
+    add(start, 0, 0, GOOD, station, build::assoc_request_body(0x0011, 10));
+    if (disconnect) add(start + delay, 12, protected_disconnect ? build::FC_PROTECTED : 0,
+                        disconnect_station, GOOD, build::reason_body(6));
+    add(start + delay + 0.1, 1, 0, station, GOOD, build::assoc_response_body(0x0011, response_status, 1));
+  }
+  return load_records("test", records);
+}
+}  // namespace
+
+TEST(Robustness, RepeatedConflictingAssociationResponsesAreFlagged) {
+  const auto findings = detect_association_disruption(association_scenario(2));
+  ASSERT_EQ(findings.size(), 1u);
+  EXPECT_EQ(findings[0].severity, "medium");
+  EXPECT_TRUE(contains(findings[0].detail, "2 connection attempts"));
+  const auto deauth = detect_unprotected_deauth(association_scenario(2));
+  ASSERT_EQ(deauth.size(), 1u);
+  EXPECT_FALSE(contains(deauth[0].detail, "ineffective"));
+  EXPECT_TRUE(contains(deauth[0].detail, "before key installation"));
+}
+
+TEST(Robustness, BenignAssociationAndDisconnectCasesDoNotImplySpoofing) {
+  EXPECT_TRUE(detect_association_disruption(association_scenario(2, 0, false)).empty());
+  EXPECT_TRUE(detect_association_disruption(association_scenario(2, 1)).empty());
+  EXPECT_TRUE(detect_association_disruption(association_scenario(1)).empty());
+  EXPECT_TRUE(detect_association_disruption(association_scenario(2, 0, true, 2.0)).empty());
+  EXPECT_TRUE(detect_association_disruption(association_scenario(2, 0, true, 0.1, true)).empty());
+  EXPECT_TRUE(detect_association_disruption(
+      association_scenario(2, 0, true, 0.1, false, "02:00:00:aa:00:03")).empty());
+}
+
 TEST(Robustness, CorruptBeaconDoesNotInventANetwork) {
   // The defect a real capture exposed: garbled beacons became "networks".
   //

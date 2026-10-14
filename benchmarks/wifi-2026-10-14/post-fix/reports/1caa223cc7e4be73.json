@@ -1,0 +1,116 @@
+{
+  "capture": {
+    "path": "/Users/aysha/Desktop/Projects/airlock-cpp/.cache/wifi-benchmark/1caa223cc7e4be73.pcap",
+    "frames": 2000,
+    "duration_seconds": 4.437,
+    "suspect_frames": 0,
+    "parse_errors": []
+  },
+  "frame_classes": {
+    "management": 120,
+    "control": 1160,
+    "data": 720
+  },
+  "frame_subtypes": {
+    "block-ack": 287,
+    "action": 45,
+    "rts": 808,
+    "qos-data": 409,
+    "beacon": 34,
+    "data": 172,
+    "qos-null": 117,
+    "vht-he-ndp-announcement": 44,
+    "action-no-ack": 29,
+    "block-ack-request": 11,
+    "cf-end": 10,
+    "null": 22,
+    "authentication": 8,
+    "assoc-request": 2,
+    "assoc-response": 2
+  },
+  "networks": [
+    {
+      "bssid": "04:42:1a:19:88:f8",
+      "ssid": "testnetworkRPT88",
+      "channel": 1,
+      "security": "WPA3-Personal (SAE)",
+      "group_cipher": "CCMP-128",
+      "pairwise_ciphers": [
+        "CCMP-128"
+      ],
+      "akm_suites": [
+        "SAE"
+      ],
+      "mfp": "required",
+      "beacons": 34,
+      "clients": [
+        "01:00:5e:00:00:16",
+        "01:00:5e:00:00:fb",
+        "01:00:5e:00:00:fc",
+        "01:00:5e:7f:ff:fa",
+        "01:40:96:ff:ff:00",
+        "01:80:c2:00:00:00",
+        "01:80:c2:00:00:0e",
+        "22:d0:61:a8:5e:8e",
+        "33:33:00:00:00:01",
+        "33:33:00:00:00:02",
+        "33:33:00:00:00:16",
+        "33:33:00:00:00:fb",
+        "33:33:00:01:00:02",
+        "33:33:00:01:00:03",
+        "33:33:ff:91:fa:b0",
+        "33:33:ff:a8:5e:8e",
+        "4c:03:4f:e4:ef:71",
+        "56:09:29:8d:dc:1f",
+        "62:02:b7:f7:a3:c4",
+        "a8:42:a1:0e:7f:b2"
+      ]
+    }
+  ],
+  "handshakes": [
+    {
+      "ap": "04:42:1a:19:88:f8",
+      "station": "4c:03:4f:e4:ef:71",
+      "messages_seen": [
+        3,
+        4
+      ],
+      "complete": false,
+      "duration_ms": null,
+      "pmkid": null,
+      "notes": [
+        "incomplete: saw messages [3, 4], missing [1, 2] (capture may have started late, or the handshake failed)"
+      ]
+    },
+    {
+      "ap": "04:42:1a:19:88:f8",
+      "station": "22:d0:61:a8:5e:8e",
+      "messages_seen": [
+        1,
+        2,
+        3,
+        4
+      ],
+      "complete": true,
+      "duration_ms": 1031.216,
+      "pmkid": "b1f8e059e1b1b2f086af6bd48e100a28",
+      "notes": [
+        "complete four-way handshake in 1031.2 ms; offline password-guessing exposure depends on the authentication method, and cannot be inferred from completeness alone",
+        "AP included a PMKID (b1f8e059e1b1b2f0...) in message 1; a PMKID alone does not establish an offline dictionary attack without identifying the authentication method"
+      ]
+    }
+  ],
+  "findings": [
+    {
+      "severity": "info",
+      "title": "Handshake metadata observed",
+      "detail": "AP 04:42:1a:19:88:f8 (\"testnetworkRPT88\"): handshake material was captured, but its presence alone does not establish offline password-guessing exposure. SAE, enterprise and OWE key establishment differ from PSK; mixed or unknown AKMs require confirmation of the authentication method used by this station",
+      "evidence": [
+        "advertised security: WPA3-Personal (SAE)",
+        "station 22:d0:61:a8:5e:8e",
+        "PMKID b1f8e059e1b1b2f086af6bd48e100a28"
+      ],
+      "benign_explanation": ""
+    }
+  ]
+}

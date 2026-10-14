@@ -1,0 +1,105 @@
+{
+  "benchmark": "AWID3, Deauth and Disas corpora, labeled CSV metadata replay",
+  "source": "suumia/awid3-dataset",
+  "version": 1,
+  "window_seconds": 5,
+  "rows": 3640185,
+  "confusion": {
+    "FP": 0,
+    "TN": 164,
+    "TP": 72,
+    "FN": 0
+  },
+  "false_positive_rate": 0.0,
+  "corpora": [
+    {
+      "corpus": "1.Deauth",
+      "files": 33,
+      "total_rows": 1626469,
+      "label_counts": {
+        "Normal": 1587527,
+        "Deauth": 38942
+      },
+      "duration_seconds": 602.5174000263214,
+      "complete_windows": 118,
+      "numbering_gaps": [
+        {
+          "previous_frame": 424716,
+          "next_frame": 424718,
+          "previous_timestamp": 1608306463.0,
+          "next_timestamp": 1608306463.0,
+          "missing_records": 1
+        },
+        {
+          "previous_frame": 465323,
+          "next_frame": 465325,
+          "previous_timestamp": 1608306471.0,
+          "next_timestamp": 1608306471.0,
+          "missing_records": 1
+        },
+        {
+          "previous_frame": 468043,
+          "next_frame": 468045,
+          "previous_timestamp": 1608306471.0,
+          "next_timestamp": 1608306471.0,
+          "missing_records": 1
+        }
+      ],
+      "missing_records": 3,
+      "excluded_windows_for_gaps": 2,
+      "benign_windows_with_disconnects": 1,
+      "confusion": {
+        "FP": 0,
+        "TN": 82,
+        "TP": 36,
+        "FN": 0
+      },
+      "false_positive_rate": 0.0
+    },
+    {
+      "corpus": "2.Disas",
+      "files": 41,
+      "total_rows": 2013716,
+      "label_counts": {
+        "Normal": 1938585,
+        "Disas": 75131
+      },
+      "duration_seconds": 603.7383940219879,
+      "complete_windows": 118,
+      "numbering_gaps": [
+        {
+          "previous_frame": 156552,
+          "next_frame": 156554,
+          "previous_timestamp": 1608309890.0,
+          "next_timestamp": 1608309890.0,
+          "missing_records": 1
+        },
+        {
+          "previous_frame": 159660,
+          "next_frame": 159662,
+          "previous_timestamp": 1608309890.0,
+          "next_timestamp": 1608309890.0,
+          "missing_records": 1
+        },
+        {
+          "previous_frame": 1477920,
+          "next_frame": 1477922,
+          "previous_timestamp": 1608310113.0,
+          "next_timestamp": 1608310113.0,
+          "missing_records": 1
+        }
+      ],
+      "missing_records": 3,
+      "excluded_windows_for_gaps": 2,
+      "benign_windows_with_disconnects": 2,
+      "confusion": {
+        "FP": 0,
+        "TN": 82,
+        "TP": 36,
+        "FN": 0
+      },
+      "false_positive_rate": 0.0
+    }
+  ],
+  "binary_sha256": "981bf0a92778dd38ac377ede9b0b776ede98837349b0eee0286a016608d9a0a8"
+}

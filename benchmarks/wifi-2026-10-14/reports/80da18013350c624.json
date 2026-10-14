@@ -1,0 +1,54 @@
+{
+  "capture": {
+    "path": "/Users/aysha/Desktop/Projects/airlock-cpp/.cache/wifi-benchmark/80da18013350c624.pcap",
+    "frames": 2000,
+    "duration_seconds": 11.217,
+    "suspect_frames": 0,
+    "parse_errors": []
+  },
+  "frame_classes": {
+    "management": 109,
+    "control": 1826,
+    "data": 65
+  },
+  "frame_subtypes": {
+    "rts": 1363,
+    "block-ack": 453,
+    "beacon": 101,
+    "vht-he-ndp-announcement": 9,
+    "action-no-ack": 8,
+    "qos-data": 14,
+    "qos-null": 39,
+    "data": 7,
+    "cf-end": 1,
+    "null": 5
+  },
+  "networks": [
+    {
+      "bssid": "04:42:1a:19:88:f8",
+      "ssid": "testnetworkRPT88",
+      "channel": 1,
+      "security": "WPA3-Personal (SAE)",
+      "group_cipher": "CCMP-128",
+      "pairwise_ciphers": [
+        "CCMP-128"
+      ],
+      "akm_suites": [
+        "SAE"
+      ],
+      "mfp": "required",
+      "beacons": 101,
+      "clients": [
+        "01:00:5e:00:00:16",
+        "01:80:c2:00:00:00",
+        "01:80:c2:00:00:0e",
+        "22:d0:61:a8:5e:8e",
+        "56:09:29:8d:dc:1f",
+        "62:02:b7:f7:a3:c4",
+        "a8:42:a1:0e:7f:b2"
+      ]
+    }
+  ],
+  "handshakes": [],
+  "findings": []
+}

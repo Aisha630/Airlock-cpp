@@ -1,0 +1,46 @@
+{
+  "capture": {
+    "path": "/Users/aysha/Desktop/Projects/airlock-cpp/.cache/wifi-benchmark/benign-window-022.pcap",
+    "frames": 337,
+    "duration_seconds": 4.885,
+    "suspect_frames": 0,
+    "parse_errors": []
+  },
+  "frame_classes": {
+    "management": 11,
+    "control": 321,
+    "data": 5
+  },
+  "frame_subtypes": {
+    "ack": 38,
+    "data": 5,
+    "cf-end": 5,
+    "cts": 154,
+    "rts": 124,
+    "probe-response": 11
+  },
+  "networks": [
+    {
+      "bssid": "c2:e3:fb:a3:02:d8",
+      "ssid": "SUPERONLINE_WiFi_82AA",
+      "channel": 2,
+      "security": "WPA3-Personal (SAE)",
+      "group_cipher": "CCMP-128",
+      "pairwise_ciphers": [
+        "CCMP-128"
+      ],
+      "akm_suites": [
+        "SAE"
+      ],
+      "mfp": "required",
+      "beacons": 0,
+      "clients": [
+        "4c:5f:70:0c:59:f9",
+        "b6:85:21:61:51:f4",
+        "fa:f1:66:9f:93:89"
+      ]
+    }
+  ],
+  "handshakes": [],
+  "findings": []
+}

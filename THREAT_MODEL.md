@@ -98,10 +98,11 @@ need it before any key exists.
 |---|---|---|
 | Deauthentication flood (DoS, or forcing a handshake capture) | `detect_deauth_flood` | Unprotected deauths are unauthenticated: no MIC, no sequence binding, forgeable by anyone in range |
 | Forgeable management frames | `detect_unprotected_deauth` | Correlates observed deauths against the RSN MFP bits: the same burst means something different on an MFP-required network |
+| Possible pre-key connection disruption | `detect_association_disruption` | Repeated association attempts receive conflicting unprotected disconnects and successful responses from the same claimed AP; PMF does not protect every pre-key exchange |
 | Evil twin / rogue AP | `detect_evil_twin` | A clone can copy an SSID but not the credential, so its advertised security disagrees |
 | Weak or broken ciphers (WEP, TKIP), open networks | `detect_weak_security` | Read directly from the advertised RSN element |
 | WPA3→WPA2 downgrade exposure | `RSNInfo::generation` | Transition mode offers SAE and PSK together; a client can be pushed onto the PSK path |
-| Offline attack material (PMKID, full handshake) | `detect_handshake_exposure` | A PMKID in message 1 needs no client interaction at all |
+| PSK offline attack material (PMKID, full handshake) | `detect_handshake_exposure` | PSK-derived key material permits offline password guesses; risk claims require PSK-only advertised AKMs, with other methods reported as informational observations |
 
 ### Known limitations, stated rather than hidden
 

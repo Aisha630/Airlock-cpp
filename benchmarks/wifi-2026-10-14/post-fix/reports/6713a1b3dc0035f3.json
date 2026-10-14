@@ -1,0 +1,1533 @@
+{
+  "capture": {
+    "path": "/Users/aysha/Desktop/Projects/airlock-cpp/.cache/wifi-benchmark/6713a1b3dc0035f3.pcapng",
+    "frames": 1284,
+    "duration_seconds": 25.244,
+    "suspect_frames": 0,
+    "parse_errors": []
+  },
+  "frame_classes": {
+    "management": 847,
+    "control": 373,
+    "data": 64
+  },
+  "frame_subtypes": {
+    "beacon": 742,
+    "probe-request": 43,
+    "block-ack-request": 289,
+    "cts": 6,
+    "block-ack": 3,
+    "ack": 69,
+    "null": 9,
+    "rts": 4,
+    "probe-response": 38,
+    "authentication": 8,
+    "cf-end": 2,
+    "assoc-request": 2,
+    "deauthentication": 12,
+    "data": 3,
+    "assoc-response": 2,
+    "qos-data": 52
+  },
+  "networks": [
+    {
+      "bssid": "1c:3b:f3:f8:10:52",
+      "ssid": "Krishna",
+      "channel": 1,
+      "security": "WPA2-Personal (PSK)",
+      "group_cipher": "TKIP",
+      "pairwise_ciphers": [
+        "TKIP",
+        "CCMP-128"
+      ],
+      "akm_suites": [
+        "PSK"
+      ],
+      "mfp": "not supported",
+      "beacons": 209,
+      "clients": [
+        "02:b8:af:5c:3a:48",
+        "1a:1f:7d:7b:9e:69",
+        "80:1f:02:e9:f4:68",
+        "da:b3:97:44:dd:6e"
+      ]
+    },
+    {
+      "bssid": "30:49:50:21:48:53",
+      "ssid": "Ankit",
+      "channel": 1,
+      "security": "WPA2-Personal (PSK)",
+      "group_cipher": "CCMP-128",
+      "pairwise_ciphers": [
+        "CCMP-128"
+      ],
+      "akm_suites": [
+        "PSK"
+      ],
+      "mfp": "not supported",
+      "beacons": 142,
+      "clients": []
+    },
+    {
+      "bssid": "30:86:2d:c0:07:c0",
+      "ssid": "WPA3",
+      "channel": 1,
+      "security": "WPA3-Personal (SAE)",
+      "group_cipher": "CCMP-128",
+      "pairwise_ciphers": [
+        "CCMP-128"
+      ],
+      "akm_suites": [
+        "SAE"
+      ],
+      "mfp": "required",
+      "beacons": 248,
+      "clients": [
+        "1a:1f:7d:7b:9e:69",
+        "33:33:00:00:00:01",
+        "38:8b:59:56:3c:87",
+        "52:b7:42:83:47:60",
+        "80:1f:02:e9:f4:68",
+        "80:ad:16:b5:57:d4",
+        "8a:68:6b:07:d0:42",
+        "96:33:36:9d:5b:d8",
+        "da:b3:97:44:dd:6e"
+      ]
+    },
+    {
+      "bssid": "32:49:50:11:48:53",
+      "ssid": "<wildcard/hidden>",
+      "channel": 1,
+      "security": "WPA2-Personal (PSK)",
+      "group_cipher": "CCMP-128",
+      "pairwise_ciphers": [
+        "CCMP-128"
+      ],
+      "akm_suites": [
+        "PSK"
+      ],
+      "mfp": "not supported",
+      "beacons": 139,
+      "clients": []
+    },
+    {
+      "bssid": "80:1f:02:e9:f4:68",
+      "ssid": "Pradnya",
+      "channel": 11,
+      "security": "WPA2-Personal (PSK)",
+      "group_cipher": "CCMP-128",
+      "pairwise_ciphers": [
+        "CCMP-128"
+      ],
+      "akm_suites": [
+        "PSK"
+      ],
+      "mfp": "not supported",
+      "beacons": 2,
+      "clients": []
+    },
+    {
+      "bssid": "d8:47:32:3a:ab:d3",
+      "ssid": "Rnshah",
+      "channel": 1,
+      "security": "WPA2-Personal (PSK)",
+      "group_cipher": "TKIP",
+      "pairwise_ciphers": [
+        "TKIP",
+        "CCMP-128"
+      ],
+      "akm_suites": [
+        "PSK"
+      ],
+      "mfp": "not supported",
+      "beacons": 2,
+      "clients": []
+    }
+  ],
+  "handshakes": [
+    {
+      "ap": "30:86:2d:c0:07:c0",
+      "station": "96:33:36:9d:5b:d8",
+      "messages_seen": [
+        1
+      ],
+      "complete": false,
+      "duration_ms": null,
+      "pmkid": "ea9b8570a6e27efdc08cb3b24f022fe0",
+      "notes": [
+        "incomplete: saw messages [1], missing [2, 3, 4] (capture may have started late, or the handshake failed)",
+        "AP included a PMKID (ea9b8570a6e27efd...) in message 1; a PMKID alone does not establish an offline dictionary attack without identifying the authentication method"
+      ]
+    },
+    {
+      "ap": "30:86:2d:c0:07:c0",
+      "station": "96:33:36:9d:5b:d8",
+      "messages_seen": [
+        1
+      ],
+      "complete": false,
+      "duration_ms": null,
+      "pmkid": "ea9b8570a6e27efdc08cb3b24f022fe0",
+      "notes": [
+        "incomplete: saw messages [1], missing [2, 3, 4] (capture may have started late, or the handshake failed)",
+        "AP included a PMKID (ea9b8570a6e27efd...) in message 1; a PMKID alone does not establish an offline dictionary attack without identifying the authentication method"
+      ]
+    },
+    {
+      "ap": "30:86:2d:c0:07:c0",
+      "station": "96:33:36:9d:5b:d8",
+      "messages_seen": [
+        1
+      ],
+      "complete": false,
+      "duration_ms": null,
+      "pmkid": "ea9b8570a6e27efdc08cb3b24f022fe0",
+      "notes": [
+        "incomplete: saw messages [1], missing [2, 3, 4] (capture may have started late, or the handshake failed)",
+        "AP included a PMKID (ea9b8570a6e27efd...) in message 1; a PMKID alone does not establish an offline dictionary attack without identifying the authentication method"
+      ]
+    },
+    {
+      "ap": "30:86:2d:c0:07:c0",
+      "station": "96:33:36:9d:5b:d8",
+      "messages_seen": [
+        1
+      ],
+      "complete": false,
+      "duration_ms": null,
+      "pmkid": "ea9b8570a6e27efdc08cb3b24f022fe0",
+      "notes": [
+        "incomplete: saw messages [1], missing [2, 3, 4] (capture may have started late, or the handshake failed)",
+        "AP included a PMKID (ea9b8570a6e27efd...) in message 1; a PMKID alone does not establish an offline dictionary attack without identifying the authentication method"
+      ]
+    },
+    {
+      "ap": "30:86:2d:c0:07:c0",
+      "station": "96:33:36:9d:5b:d8",
+      "messages_seen": [
+        1
+      ],
+      "complete": false,
+      "duration_ms": null,
+      "pmkid": "ea9b8570a6e27efdc08cb3b24f022fe0",
+      "notes": [
+        "incomplete: saw messages [1], missing [2, 3, 4] (capture may have started late, or the handshake failed)",
+        "AP included a PMKID (ea9b8570a6e27efd...) in message 1; a PMKID alone does not establish an offline dictionary attack without identifying the authentication method"
+      ]
+    },
+    {
+      "ap": "30:86:2d:c0:07:c0",
+      "station": "96:33:36:9d:5b:d8",
+      "messages_seen": [
+        1
+      ],
+      "complete": false,
+      "duration_ms": null,
+      "pmkid": "ea9b8570a6e27efdc08cb3b24f022fe0",
+      "notes": [
+        "incomplete: saw messages [1], missing [2, 3, 4] (capture may have started late, or the handshake failed)",
+        "AP included a PMKID (ea9b8570a6e27efd...) in message 1; a PMKID alone does not establish an offline dictionary attack without identifying the authentication method"
+      ]
+    },
+    {
+      "ap": "30:86:2d:c0:07:c0",
+      "station": "96:33:36:9d:5b:d8",
+      "messages_seen": [
+        1
+      ],
+      "complete": false,
+      "duration_ms": null,
+      "pmkid": "ea9b8570a6e27efdc08cb3b24f022fe0",
+      "notes": [
+        "incomplete: saw messages [1], missing [2, 3, 4] (capture may have started late, or the handshake failed)",
+        "AP included a PMKID (ea9b8570a6e27efd...) in message 1; a PMKID alone does not establish an offline dictionary attack without identifying the authentication method"
+      ]
+    },
+    {
+      "ap": "30:86:2d:c0:07:c0",
+      "station": "96:33:36:9d:5b:d8",
+      "messages_seen": [
+        1
+      ],
+      "complete": false,
+      "duration_ms": null,
+      "pmkid": "ea9b8570a6e27efdc08cb3b24f022fe0",
+      "notes": [
+        "incomplete: saw messages [1], missing [2, 3, 4] (capture may have started late, or the handshake failed)",
+        "AP included a PMKID (ea9b8570a6e27efd...) in message 1; a PMKID alone does not establish an offline dictionary attack without identifying the authentication method"
+      ]
+    },
+    {
+      "ap": "30:86:2d:c0:07:c0",
+      "station": "96:33:36:9d:5b:d8",
+      "messages_seen": [
+        1
+      ],
+      "complete": false,
+      "duration_ms": null,
+      "pmkid": "ea9b8570a6e27efdc08cb3b24f022fe0",
+      "notes": [
+        "incomplete: saw messages [1], missing [2, 3, 4] (capture may have started late, or the handshake failed)",
+        "AP included a PMKID (ea9b8570a6e27efd...) in message 1; a PMKID alone does not establish an offline dictionary attack without identifying the authentication method"
+      ]
+    },
+    {
+      "ap": "30:86:2d:c0:07:c0",
+      "station": "96:33:36:9d:5b:d8",
+      "messages_seen": [
+        1
+      ],
+      "complete": false,
+      "duration_ms": null,
+      "pmkid": "ea9b8570a6e27efdc08cb3b24f022fe0",
+      "notes": [
+        "incomplete: saw messages [1], missing [2, 3, 4] (capture may have started late, or the handshake failed)",
+        "AP included a PMKID (ea9b8570a6e27efd...) in message 1; a PMKID alone does not establish an offline dictionary attack without identifying the authentication method"
+      ]
+    },
+    {
+      "ap": "30:86:2d:c0:07:c0",
+      "station": "96:33:36:9d:5b:d8",
+      "messages_seen": [
+        1
+      ],
+      "complete": false,
+      "duration_ms": null,
+      "pmkid": "ea9b8570a6e27efdc08cb3b24f022fe0",
+      "notes": [
+        "incomplete: saw messages [1], missing [2, 3, 4] (capture may have started late, or the handshake failed)",
+        "AP included a PMKID (ea9b8570a6e27efd...) in message 1; a PMKID alone does not establish an offline dictionary attack without identifying the authentication method"
+      ]
+    },
+    {
+      "ap": "30:86:2d:c0:07:c0",
+      "station": "96:33:36:9d:5b:d8",
+      "messages_seen": [
+        1
+      ],
+      "complete": false,
+      "duration_ms": null,
+      "pmkid": "ea9b8570a6e27efdc08cb3b24f022fe0",
+      "notes": [
+        "incomplete: saw messages [1], missing [2, 3, 4] (capture may have started late, or the handshake failed)",
+        "AP included a PMKID (ea9b8570a6e27efd...) in message 1; a PMKID alone does not establish an offline dictionary attack without identifying the authentication method"
+      ]
+    },
+    {
+      "ap": "30:86:2d:c0:07:c0",
+      "station": "96:33:36:9d:5b:d8",
+      "messages_seen": [
+        1
+      ],
+      "complete": false,
+      "duration_ms": null,
+      "pmkid": "ea9b8570a6e27efdc08cb3b24f022fe0",
+      "notes": [
+        "incomplete: saw messages [1], missing [2, 3, 4] (capture may have started late, or the handshake failed)",
+        "AP included a PMKID (ea9b8570a6e27efd...) in message 1; a PMKID alone does not establish an offline dictionary attack without identifying the authentication method"
+      ]
+    },
+    {
+      "ap": "30:86:2d:c0:07:c0",
+      "station": "96:33:36:9d:5b:d8",
+      "messages_seen": [
+        1
+      ],
+      "complete": false,
+      "duration_ms": null,
+      "pmkid": "ea9b8570a6e27efdc08cb3b24f022fe0",
+      "notes": [
+        "incomplete: saw messages [1], missing [2, 3, 4] (capture may have started late, or the handshake failed)",
+        "AP included a PMKID (ea9b8570a6e27efd...) in message 1; a PMKID alone does not establish an offline dictionary attack without identifying the authentication method"
+      ]
+    },
+    {
+      "ap": "30:86:2d:c0:07:c0",
+      "station": "96:33:36:9d:5b:d8",
+      "messages_seen": [
+        1
+      ],
+      "complete": false,
+      "duration_ms": null,
+      "pmkid": "ea9b8570a6e27efdc08cb3b24f022fe0",
+      "notes": [
+        "incomplete: saw messages [1], missing [2, 3, 4] (capture may have started late, or the handshake failed)",
+        "AP included a PMKID (ea9b8570a6e27efd...) in message 1; a PMKID alone does not establish an offline dictionary attack without identifying the authentication method"
+      ]
+    },
+    {
+      "ap": "30:86:2d:c0:07:c0",
+      "station": "96:33:36:9d:5b:d8",
+      "messages_seen": [
+        1
+      ],
+      "complete": false,
+      "duration_ms": null,
+      "pmkid": "ea9b8570a6e27efdc08cb3b24f022fe0",
+      "notes": [
+        "incomplete: saw messages [1], missing [2, 3, 4] (capture may have started late, or the handshake failed)",
+        "AP included a PMKID (ea9b8570a6e27efd...) in message 1; a PMKID alone does not establish an offline dictionary attack without identifying the authentication method"
+      ]
+    },
+    {
+      "ap": "30:86:2d:c0:07:c0",
+      "station": "96:33:36:9d:5b:d8",
+      "messages_seen": [
+        1
+      ],
+      "complete": false,
+      "duration_ms": null,
+      "pmkid": "ea9b8570a6e27efdc08cb3b24f022fe0",
+      "notes": [
+        "incomplete: saw messages [1], missing [2, 3, 4] (capture may have started late, or the handshake failed)",
+        "AP included a PMKID (ea9b8570a6e27efd...) in message 1; a PMKID alone does not establish an offline dictionary attack without identifying the authentication method"
+      ]
+    },
+    {
+      "ap": "30:86:2d:c0:07:c0",
+      "station": "96:33:36:9d:5b:d8",
+      "messages_seen": [
+        1
+      ],
+      "complete": false,
+      "duration_ms": null,
+      "pmkid": "ea9b8570a6e27efdc08cb3b24f022fe0",
+      "notes": [
+        "incomplete: saw messages [1], missing [2, 3, 4] (capture may have started late, or the handshake failed)",
+        "AP included a PMKID (ea9b8570a6e27efd...) in message 1; a PMKID alone does not establish an offline dictionary attack without identifying the authentication method"
+      ]
+    },
+    {
+      "ap": "30:86:2d:c0:07:c0",
+      "station": "96:33:36:9d:5b:d8",
+      "messages_seen": [
+        1
+      ],
+      "complete": false,
+      "duration_ms": null,
+      "pmkid": "ea9b8570a6e27efdc08cb3b24f022fe0",
+      "notes": [
+        "incomplete: saw messages [1], missing [2, 3, 4] (capture may have started late, or the handshake failed)",
+        "AP included a PMKID (ea9b8570a6e27efd...) in message 1; a PMKID alone does not establish an offline dictionary attack without identifying the authentication method"
+      ]
+    },
+    {
+      "ap": "30:86:2d:c0:07:c0",
+      "station": "96:33:36:9d:5b:d8",
+      "messages_seen": [
+        1
+      ],
+      "complete": false,
+      "duration_ms": null,
+      "pmkid": "ea9b8570a6e27efdc08cb3b24f022fe0",
+      "notes": [
+        "incomplete: saw messages [1], missing [2, 3, 4] (capture may have started late, or the handshake failed)",
+        "AP included a PMKID (ea9b8570a6e27efd...) in message 1; a PMKID alone does not establish an offline dictionary attack without identifying the authentication method"
+      ]
+    },
+    {
+      "ap": "30:86:2d:c0:07:c0",
+      "station": "96:33:36:9d:5b:d8",
+      "messages_seen": [
+        1
+      ],
+      "complete": false,
+      "duration_ms": null,
+      "pmkid": "ea9b8570a6e27efdc08cb3b24f022fe0",
+      "notes": [
+        "incomplete: saw messages [1], missing [2, 3, 4] (capture may have started late, or the handshake failed)",
+        "AP included a PMKID (ea9b8570a6e27efd...) in message 1; a PMKID alone does not establish an offline dictionary attack without identifying the authentication method"
+      ]
+    },
+    {
+      "ap": "30:86:2d:c0:07:c0",
+      "station": "96:33:36:9d:5b:d8",
+      "messages_seen": [
+        1
+      ],
+      "complete": false,
+      "duration_ms": null,
+      "pmkid": "ea9b8570a6e27efdc08cb3b24f022fe0",
+      "notes": [
+        "incomplete: saw messages [1], missing [2, 3, 4] (capture may have started late, or the handshake failed)",
+        "AP included a PMKID (ea9b8570a6e27efd...) in message 1; a PMKID alone does not establish an offline dictionary attack without identifying the authentication method"
+      ]
+    },
+    {
+      "ap": "30:86:2d:c0:07:c0",
+      "station": "96:33:36:9d:5b:d8",
+      "messages_seen": [
+        1
+      ],
+      "complete": false,
+      "duration_ms": null,
+      "pmkid": "ea9b8570a6e27efdc08cb3b24f022fe0",
+      "notes": [
+        "incomplete: saw messages [1], missing [2, 3, 4] (capture may have started late, or the handshake failed)",
+        "AP included a PMKID (ea9b8570a6e27efd...) in message 1; a PMKID alone does not establish an offline dictionary attack without identifying the authentication method"
+      ]
+    },
+    {
+      "ap": "30:86:2d:c0:07:c0",
+      "station": "96:33:36:9d:5b:d8",
+      "messages_seen": [
+        1
+      ],
+      "complete": false,
+      "duration_ms": null,
+      "pmkid": "ea9b8570a6e27efdc08cb3b24f022fe0",
+      "notes": [
+        "incomplete: saw messages [1], missing [2, 3, 4] (capture may have started late, or the handshake failed)",
+        "AP included a PMKID (ea9b8570a6e27efd...) in message 1; a PMKID alone does not establish an offline dictionary attack without identifying the authentication method"
+      ]
+    },
+    {
+      "ap": "30:86:2d:c0:07:c0",
+      "station": "96:33:36:9d:5b:d8",
+      "messages_seen": [
+        1
+      ],
+      "complete": false,
+      "duration_ms": null,
+      "pmkid": "ea9b8570a6e27efdc08cb3b24f022fe0",
+      "notes": [
+        "incomplete: saw messages [1], missing [2, 3, 4] (capture may have started late, or the handshake failed)",
+        "AP included a PMKID (ea9b8570a6e27efd...) in message 1; a PMKID alone does not establish an offline dictionary attack without identifying the authentication method"
+      ]
+    },
+    {
+      "ap": "30:86:2d:c0:07:c0",
+      "station": "96:33:36:9d:5b:d8",
+      "messages_seen": [
+        1
+      ],
+      "complete": false,
+      "duration_ms": null,
+      "pmkid": "ea9b8570a6e27efdc08cb3b24f022fe0",
+      "notes": [
+        "incomplete: saw messages [1], missing [2, 3, 4] (capture may have started late, or the handshake failed)",
+        "AP included a PMKID (ea9b8570a6e27efd...) in message 1; a PMKID alone does not establish an offline dictionary attack without identifying the authentication method"
+      ]
+    },
+    {
+      "ap": "30:86:2d:c0:07:c0",
+      "station": "96:33:36:9d:5b:d8",
+      "messages_seen": [
+        1
+      ],
+      "complete": false,
+      "duration_ms": null,
+      "pmkid": "ea9b8570a6e27efdc08cb3b24f022fe0",
+      "notes": [
+        "incomplete: saw messages [1], missing [2, 3, 4] (capture may have started late, or the handshake failed)",
+        "AP included a PMKID (ea9b8570a6e27efd...) in message 1; a PMKID alone does not establish an offline dictionary attack without identifying the authentication method"
+      ]
+    },
+    {
+      "ap": "30:86:2d:c0:07:c0",
+      "station": "96:33:36:9d:5b:d8",
+      "messages_seen": [
+        1
+      ],
+      "complete": false,
+      "duration_ms": null,
+      "pmkid": "2f65beca8713fa9de7a929da07bafd6f",
+      "notes": [
+        "incomplete: saw messages [1], missing [2, 3, 4] (capture may have started late, or the handshake failed)",
+        "AP included a PMKID (2f65beca8713fa9d...) in message 1; a PMKID alone does not establish an offline dictionary attack without identifying the authentication method"
+      ]
+    },
+    {
+      "ap": "30:86:2d:c0:07:c0",
+      "station": "96:33:36:9d:5b:d8",
+      "messages_seen": [
+        1
+      ],
+      "complete": false,
+      "duration_ms": null,
+      "pmkid": "2f65beca8713fa9de7a929da07bafd6f",
+      "notes": [
+        "incomplete: saw messages [1], missing [2, 3, 4] (capture may have started late, or the handshake failed)",
+        "AP included a PMKID (2f65beca8713fa9d...) in message 1; a PMKID alone does not establish an offline dictionary attack without identifying the authentication method"
+      ]
+    },
+    {
+      "ap": "30:86:2d:c0:07:c0",
+      "station": "96:33:36:9d:5b:d8",
+      "messages_seen": [
+        1
+      ],
+      "complete": false,
+      "duration_ms": null,
+      "pmkid": "2f65beca8713fa9de7a929da07bafd6f",
+      "notes": [
+        "incomplete: saw messages [1], missing [2, 3, 4] (capture may have started late, or the handshake failed)",
+        "AP included a PMKID (2f65beca8713fa9d...) in message 1; a PMKID alone does not establish an offline dictionary attack without identifying the authentication method"
+      ]
+    },
+    {
+      "ap": "30:86:2d:c0:07:c0",
+      "station": "96:33:36:9d:5b:d8",
+      "messages_seen": [
+        1
+      ],
+      "complete": false,
+      "duration_ms": null,
+      "pmkid": "2f65beca8713fa9de7a929da07bafd6f",
+      "notes": [
+        "incomplete: saw messages [1], missing [2, 3, 4] (capture may have started late, or the handshake failed)",
+        "AP included a PMKID (2f65beca8713fa9d...) in message 1; a PMKID alone does not establish an offline dictionary attack without identifying the authentication method"
+      ]
+    },
+    {
+      "ap": "30:86:2d:c0:07:c0",
+      "station": "96:33:36:9d:5b:d8",
+      "messages_seen": [
+        1
+      ],
+      "complete": false,
+      "duration_ms": null,
+      "pmkid": "2f65beca8713fa9de7a929da07bafd6f",
+      "notes": [
+        "incomplete: saw messages [1], missing [2, 3, 4] (capture may have started late, or the handshake failed)",
+        "AP included a PMKID (2f65beca8713fa9d...) in message 1; a PMKID alone does not establish an offline dictionary attack without identifying the authentication method"
+      ]
+    },
+    {
+      "ap": "30:86:2d:c0:07:c0",
+      "station": "96:33:36:9d:5b:d8",
+      "messages_seen": [
+        1
+      ],
+      "complete": false,
+      "duration_ms": null,
+      "pmkid": "2f65beca8713fa9de7a929da07bafd6f",
+      "notes": [
+        "incomplete: saw messages [1], missing [2, 3, 4] (capture may have started late, or the handshake failed)",
+        "AP included a PMKID (2f65beca8713fa9d...) in message 1; a PMKID alone does not establish an offline dictionary attack without identifying the authentication method"
+      ]
+    },
+    {
+      "ap": "30:86:2d:c0:07:c0",
+      "station": "96:33:36:9d:5b:d8",
+      "messages_seen": [
+        1
+      ],
+      "complete": false,
+      "duration_ms": null,
+      "pmkid": "2f65beca8713fa9de7a929da07bafd6f",
+      "notes": [
+        "incomplete: saw messages [1], missing [2, 3, 4] (capture may have started late, or the handshake failed)",
+        "AP included a PMKID (2f65beca8713fa9d...) in message 1; a PMKID alone does not establish an offline dictionary attack without identifying the authentication method"
+      ]
+    },
+    {
+      "ap": "30:86:2d:c0:07:c0",
+      "station": "96:33:36:9d:5b:d8",
+      "messages_seen": [
+        1
+      ],
+      "complete": false,
+      "duration_ms": null,
+      "pmkid": "2f65beca8713fa9de7a929da07bafd6f",
+      "notes": [
+        "incomplete: saw messages [1], missing [2, 3, 4] (capture may have started late, or the handshake failed)",
+        "AP included a PMKID (2f65beca8713fa9d...) in message 1; a PMKID alone does not establish an offline dictionary attack without identifying the authentication method"
+      ]
+    },
+    {
+      "ap": "30:86:2d:c0:07:c0",
+      "station": "96:33:36:9d:5b:d8",
+      "messages_seen": [
+        1
+      ],
+      "complete": false,
+      "duration_ms": null,
+      "pmkid": "2f65beca8713fa9de7a929da07bafd6f",
+      "notes": [
+        "incomplete: saw messages [1], missing [2, 3, 4] (capture may have started late, or the handshake failed)",
+        "AP included a PMKID (2f65beca8713fa9d...) in message 1; a PMKID alone does not establish an offline dictionary attack without identifying the authentication method"
+      ]
+    },
+    {
+      "ap": "30:86:2d:c0:07:c0",
+      "station": "96:33:36:9d:5b:d8",
+      "messages_seen": [
+        1
+      ],
+      "complete": false,
+      "duration_ms": null,
+      "pmkid": "2f65beca8713fa9de7a929da07bafd6f",
+      "notes": [
+        "incomplete: saw messages [1], missing [2, 3, 4] (capture may have started late, or the handshake failed)",
+        "AP included a PMKID (2f65beca8713fa9d...) in message 1; a PMKID alone does not establish an offline dictionary attack without identifying the authentication method"
+      ]
+    },
+    {
+      "ap": "30:86:2d:c0:07:c0",
+      "station": "96:33:36:9d:5b:d8",
+      "messages_seen": [
+        1
+      ],
+      "complete": false,
+      "duration_ms": null,
+      "pmkid": "2f65beca8713fa9de7a929da07bafd6f",
+      "notes": [
+        "incomplete: saw messages [1], missing [2, 3, 4] (capture may have started late, or the handshake failed)",
+        "AP included a PMKID (2f65beca8713fa9d...) in message 1; a PMKID alone does not establish an offline dictionary attack without identifying the authentication method"
+      ]
+    },
+    {
+      "ap": "30:86:2d:c0:07:c0",
+      "station": "96:33:36:9d:5b:d8",
+      "messages_seen": [
+        1
+      ],
+      "complete": false,
+      "duration_ms": null,
+      "pmkid": "2f65beca8713fa9de7a929da07bafd6f",
+      "notes": [
+        "incomplete: saw messages [1], missing [2, 3, 4] (capture may have started late, or the handshake failed)",
+        "AP included a PMKID (2f65beca8713fa9d...) in message 1; a PMKID alone does not establish an offline dictionary attack without identifying the authentication method"
+      ]
+    },
+    {
+      "ap": "30:86:2d:c0:07:c0",
+      "station": "96:33:36:9d:5b:d8",
+      "messages_seen": [
+        1
+      ],
+      "complete": false,
+      "duration_ms": null,
+      "pmkid": "2f65beca8713fa9de7a929da07bafd6f",
+      "notes": [
+        "incomplete: saw messages [1], missing [2, 3, 4] (capture may have started late, or the handshake failed)",
+        "AP included a PMKID (2f65beca8713fa9d...) in message 1; a PMKID alone does not establish an offline dictionary attack without identifying the authentication method"
+      ]
+    },
+    {
+      "ap": "30:86:2d:c0:07:c0",
+      "station": "96:33:36:9d:5b:d8",
+      "messages_seen": [
+        1
+      ],
+      "complete": false,
+      "duration_ms": null,
+      "pmkid": "2f65beca8713fa9de7a929da07bafd6f",
+      "notes": [
+        "incomplete: saw messages [1], missing [2, 3, 4] (capture may have started late, or the handshake failed)",
+        "AP included a PMKID (2f65beca8713fa9d...) in message 1; a PMKID alone does not establish an offline dictionary attack without identifying the authentication method"
+      ]
+    },
+    {
+      "ap": "30:86:2d:c0:07:c0",
+      "station": "96:33:36:9d:5b:d8",
+      "messages_seen": [
+        1
+      ],
+      "complete": false,
+      "duration_ms": null,
+      "pmkid": "2f65beca8713fa9de7a929da07bafd6f",
+      "notes": [
+        "incomplete: saw messages [1], missing [2, 3, 4] (capture may have started late, or the handshake failed)",
+        "AP included a PMKID (2f65beca8713fa9d...) in message 1; a PMKID alone does not establish an offline dictionary attack without identifying the authentication method"
+      ]
+    },
+    {
+      "ap": "30:86:2d:c0:07:c0",
+      "station": "96:33:36:9d:5b:d8",
+      "messages_seen": [
+        1
+      ],
+      "complete": false,
+      "duration_ms": null,
+      "pmkid": "2f65beca8713fa9de7a929da07bafd6f",
+      "notes": [
+        "incomplete: saw messages [1], missing [2, 3, 4] (capture may have started late, or the handshake failed)",
+        "AP included a PMKID (2f65beca8713fa9d...) in message 1; a PMKID alone does not establish an offline dictionary attack without identifying the authentication method"
+      ]
+    },
+    {
+      "ap": "30:86:2d:c0:07:c0",
+      "station": "96:33:36:9d:5b:d8",
+      "messages_seen": [
+        1
+      ],
+      "complete": false,
+      "duration_ms": null,
+      "pmkid": "2f65beca8713fa9de7a929da07bafd6f",
+      "notes": [
+        "incomplete: saw messages [1], missing [2, 3, 4] (capture may have started late, or the handshake failed)",
+        "AP included a PMKID (2f65beca8713fa9d...) in message 1; a PMKID alone does not establish an offline dictionary attack without identifying the authentication method"
+      ]
+    },
+    {
+      "ap": "30:86:2d:c0:07:c0",
+      "station": "96:33:36:9d:5b:d8",
+      "messages_seen": [
+        1
+      ],
+      "complete": false,
+      "duration_ms": null,
+      "pmkid": "2f65beca8713fa9de7a929da07bafd6f",
+      "notes": [
+        "incomplete: saw messages [1], missing [2, 3, 4] (capture may have started late, or the handshake failed)",
+        "AP included a PMKID (2f65beca8713fa9d...) in message 1; a PMKID alone does not establish an offline dictionary attack without identifying the authentication method"
+      ]
+    },
+    {
+      "ap": "30:86:2d:c0:07:c0",
+      "station": "96:33:36:9d:5b:d8",
+      "messages_seen": [
+        1
+      ],
+      "complete": false,
+      "duration_ms": null,
+      "pmkid": "2f65beca8713fa9de7a929da07bafd6f",
+      "notes": [
+        "incomplete: saw messages [1], missing [2, 3, 4] (capture may have started late, or the handshake failed)",
+        "AP included a PMKID (2f65beca8713fa9d...) in message 1; a PMKID alone does not establish an offline dictionary attack without identifying the authentication method"
+      ]
+    },
+    {
+      "ap": "30:86:2d:c0:07:c0",
+      "station": "96:33:36:9d:5b:d8",
+      "messages_seen": [
+        1
+      ],
+      "complete": false,
+      "duration_ms": null,
+      "pmkid": "2f65beca8713fa9de7a929da07bafd6f",
+      "notes": [
+        "incomplete: saw messages [1], missing [2, 3, 4] (capture may have started late, or the handshake failed)",
+        "AP included a PMKID (2f65beca8713fa9d...) in message 1; a PMKID alone does not establish an offline dictionary attack without identifying the authentication method"
+      ]
+    },
+    {
+      "ap": "30:86:2d:c0:07:c0",
+      "station": "96:33:36:9d:5b:d8",
+      "messages_seen": [
+        1
+      ],
+      "complete": false,
+      "duration_ms": null,
+      "pmkid": "2f65beca8713fa9de7a929da07bafd6f",
+      "notes": [
+        "incomplete: saw messages [1], missing [2, 3, 4] (capture may have started late, or the handshake failed)",
+        "AP included a PMKID (2f65beca8713fa9d...) in message 1; a PMKID alone does not establish an offline dictionary attack without identifying the authentication method"
+      ]
+    },
+    {
+      "ap": "30:86:2d:c0:07:c0",
+      "station": "96:33:36:9d:5b:d8",
+      "messages_seen": [
+        1
+      ],
+      "complete": false,
+      "duration_ms": null,
+      "pmkid": "2f65beca8713fa9de7a929da07bafd6f",
+      "notes": [
+        "incomplete: saw messages [1], missing [2, 3, 4] (capture may have started late, or the handshake failed)",
+        "AP included a PMKID (2f65beca8713fa9d...) in message 1; a PMKID alone does not establish an offline dictionary attack without identifying the authentication method"
+      ]
+    },
+    {
+      "ap": "30:86:2d:c0:07:c0",
+      "station": "96:33:36:9d:5b:d8",
+      "messages_seen": [
+        1
+      ],
+      "complete": false,
+      "duration_ms": null,
+      "pmkid": "2f65beca8713fa9de7a929da07bafd6f",
+      "notes": [
+        "incomplete: saw messages [1], missing [2, 3, 4] (capture may have started late, or the handshake failed)",
+        "AP included a PMKID (2f65beca8713fa9d...) in message 1; a PMKID alone does not establish an offline dictionary attack without identifying the authentication method"
+      ]
+    },
+    {
+      "ap": "30:86:2d:c0:07:c0",
+      "station": "96:33:36:9d:5b:d8",
+      "messages_seen": [
+        1
+      ],
+      "complete": false,
+      "duration_ms": null,
+      "pmkid": "2f65beca8713fa9de7a929da07bafd6f",
+      "notes": [
+        "incomplete: saw messages [1], missing [2, 3, 4] (capture may have started late, or the handshake failed)",
+        "AP included a PMKID (2f65beca8713fa9d...) in message 1; a PMKID alone does not establish an offline dictionary attack without identifying the authentication method"
+      ]
+    },
+    {
+      "ap": "30:86:2d:c0:07:c0",
+      "station": "96:33:36:9d:5b:d8",
+      "messages_seen": [
+        1
+      ],
+      "complete": false,
+      "duration_ms": null,
+      "pmkid": "2f65beca8713fa9de7a929da07bafd6f",
+      "notes": [
+        "incomplete: saw messages [1], missing [2, 3, 4] (capture may have started late, or the handshake failed)",
+        "AP included a PMKID (2f65beca8713fa9d...) in message 1; a PMKID alone does not establish an offline dictionary attack without identifying the authentication method"
+      ]
+    }
+  ],
+  "findings": [
+    {
+      "severity": "high",
+      "title": "Weak configuration: WPA2-Personal (PSK)",
+      "detail": "\"Krishna\" (1c:3b:f3:f8:10:52): TKIP is offered; it is cryptographically broken and its presence in the group cipher weakens every client",
+      "evidence": [
+        "group cipher TKIP, pairwise TKIP/CCMP-128, AKM PSK, MFP not supported"
+      ],
+      "benign_explanation": ""
+    },
+    {
+      "severity": "high",
+      "title": "Weak configuration: WPA2-Personal (PSK)",
+      "detail": "\"Rnshah\" (d8:47:32:3a:ab:d3): TKIP is offered; it is cryptographically broken and its presence in the group cipher weakens every client",
+      "evidence": [
+        "group cipher TKIP, pairwise TKIP/CCMP-128, AKM PSK, MFP not supported"
+      ],
+      "benign_explanation": ""
+    },
+    {
+      "severity": "medium",
+      "title": "Possible association disruption: conflicting AP responses",
+      "detail": "2 connection attempts by 96:33:36:9d:5b:d8 to AP 30:86:2d:c0:07:c0 received an unprotected disconnect and then a successful association response from the same claimed AP. This inconsistent state can indicate spoofed pre-key disconnects, including on PMF-required networks",
+      "evidence": [
+        "association request frame 632, unprotected disconnect frame 634 (reason 6), followed by successful association response within 1 s",
+        "association request frame 995, unprotected disconnect frame 997 (reason 6), followed by successful association response within 1 s"
+      ],
+      "benign_explanation": "capture reordering, stale retransmissions, or an AP firmware/state mismatch may also produce conflicting responses; this is a suspected disruption, not proof"
+    },
+    {
+      "severity": "medium",
+      "title": "Weak configuration: WPA2-Personal (PSK)",
+      "detail": "\"Krishna\" (1c:3b:f3:f8:10:52): management frame protection is not supported, so deauthentication and disassociation frames are forgeable",
+      "evidence": [
+        "group cipher TKIP, pairwise TKIP/CCMP-128, AKM PSK, MFP not supported"
+      ],
+      "benign_explanation": ""
+    },
+    {
+      "severity": "medium",
+      "title": "Weak configuration: WPA2-Personal (PSK)",
+      "detail": "\"Ankit\" (30:49:50:21:48:53): management frame protection is not supported, so deauthentication and disassociation frames are forgeable",
+      "evidence": [
+        "group cipher CCMP-128, pairwise CCMP-128, AKM PSK, MFP not supported"
+      ],
+      "benign_explanation": ""
+    },
+    {
+      "severity": "medium",
+      "title": "Weak configuration: WPA2-Personal (PSK)",
+      "detail": "\"<wildcard/hidden>\" (32:49:50:11:48:53): management frame protection is not supported, so deauthentication and disassociation frames are forgeable",
+      "evidence": [
+        "group cipher CCMP-128, pairwise CCMP-128, AKM PSK, MFP not supported"
+      ],
+      "benign_explanation": ""
+    },
+    {
+      "severity": "medium",
+      "title": "Weak configuration: WPA2-Personal (PSK)",
+      "detail": "\"Pradnya\" (80:1f:02:e9:f4:68): management frame protection is not supported, so deauthentication and disassociation frames are forgeable",
+      "evidence": [
+        "group cipher CCMP-128, pairwise CCMP-128, AKM PSK, MFP not supported"
+      ],
+      "benign_explanation": ""
+    },
+    {
+      "severity": "medium",
+      "title": "Weak configuration: WPA2-Personal (PSK)",
+      "detail": "\"Rnshah\" (d8:47:32:3a:ab:d3): management frame protection is not supported, so deauthentication and disassociation frames are forgeable",
+      "evidence": [
+        "group cipher TKIP, pairwise TKIP/CCMP-128, AKM PSK, MFP not supported"
+      ],
+      "benign_explanation": ""
+    },
+    {
+      "severity": "low",
+      "title": "Unprotected deauth on an MFP-required network",
+      "detail": "\"WPA3\" (30:86:2d:c0:07:c0) requires management frame protection. Established protected associations should reject forged unprotected disconnects, but frames sent before key installation can still disrupt connection setup; this capture alone does not establish whether the frames were effective",
+      "evidence": [
+        "RSN capabilities: MFP required"
+      ],
+      "benign_explanation": ""
+    },
+    {
+      "severity": "info",
+      "title": "Handshake metadata observed",
+      "detail": "AP 30:86:2d:c0:07:c0 (\"WPA3\"): handshake material was captured, but its presence alone does not establish offline password-guessing exposure. SAE, enterprise and OWE key establishment differ from PSK; mixed or unknown AKMs require confirmation of the authentication method used by this station",
+      "evidence": [
+        "advertised security: WPA3-Personal (SAE)",
+        "station 96:33:36:9d:5b:d8",
+        "PMKID ea9b8570a6e27efdc08cb3b24f022fe0"
+      ],
+      "benign_explanation": ""
+    },
+    {
+      "severity": "info",
+      "title": "Handshake metadata observed",
+      "detail": "AP 30:86:2d:c0:07:c0 (\"WPA3\"): handshake material was captured, but its presence alone does not establish offline password-guessing exposure. SAE, enterprise and OWE key establishment differ from PSK; mixed or unknown AKMs require confirmation of the authentication method used by this station",
+      "evidence": [
+        "advertised security: WPA3-Personal (SAE)",
+        "station 96:33:36:9d:5b:d8",
+        "PMKID ea9b8570a6e27efdc08cb3b24f022fe0"
+      ],
+      "benign_explanation": ""
+    },
+    {
+      "severity": "info",
+      "title": "Handshake metadata observed",
+      "detail": "AP 30:86:2d:c0:07:c0 (\"WPA3\"): handshake material was captured, but its presence alone does not establish offline password-guessing exposure. SAE, enterprise and OWE key establishment differ from PSK; mixed or unknown AKMs require confirmation of the authentication method used by this station",
+      "evidence": [
+        "advertised security: WPA3-Personal (SAE)",
+        "station 96:33:36:9d:5b:d8",
+        "PMKID ea9b8570a6e27efdc08cb3b24f022fe0"
+      ],
+      "benign_explanation": ""
+    },
+    {
+      "severity": "info",
+      "title": "Handshake metadata observed",
+      "detail": "AP 30:86:2d:c0:07:c0 (\"WPA3\"): handshake material was captured, but its presence alone does not establish offline password-guessing exposure. SAE, enterprise and OWE key establishment differ from PSK; mixed or unknown AKMs require confirmation of the authentication method used by this station",
+      "evidence": [
+        "advertised security: WPA3-Personal (SAE)",
+        "station 96:33:36:9d:5b:d8",
+        "PMKID ea9b8570a6e27efdc08cb3b24f022fe0"
+      ],
+      "benign_explanation": ""
+    },
+    {
+      "severity": "info",
+      "title": "Handshake metadata observed",
+      "detail": "AP 30:86:2d:c0:07:c0 (\"WPA3\"): handshake material was captured, but its presence alone does not establish offline password-guessing exposure. SAE, enterprise and OWE key establishment differ from PSK; mixed or unknown AKMs require confirmation of the authentication method used by this station",
+      "evidence": [
+        "advertised security: WPA3-Personal (SAE)",
+        "station 96:33:36:9d:5b:d8",
+        "PMKID ea9b8570a6e27efdc08cb3b24f022fe0"
+      ],
+      "benign_explanation": ""
+    },
+    {
+      "severity": "info",
+      "title": "Handshake metadata observed",
+      "detail": "AP 30:86:2d:c0:07:c0 (\"WPA3\"): handshake material was captured, but its presence alone does not establish offline password-guessing exposure. SAE, enterprise and OWE key establishment differ from PSK; mixed or unknown AKMs require confirmation of the authentication method used by this station",
+      "evidence": [
+        "advertised security: WPA3-Personal (SAE)",
+        "station 96:33:36:9d:5b:d8",
+        "PMKID ea9b8570a6e27efdc08cb3b24f022fe0"
+      ],
+      "benign_explanation": ""
+    },
+    {
+      "severity": "info",
+      "title": "Handshake metadata observed",
+      "detail": "AP 30:86:2d:c0:07:c0 (\"WPA3\"): handshake material was captured, but its presence alone does not establish offline password-guessing exposure. SAE, enterprise and OWE key establishment differ from PSK; mixed or unknown AKMs require confirmation of the authentication method used by this station",
+      "evidence": [
+        "advertised security: WPA3-Personal (SAE)",
+        "station 96:33:36:9d:5b:d8",
+        "PMKID ea9b8570a6e27efdc08cb3b24f022fe0"
+      ],
+      "benign_explanation": ""
+    },
+    {
+      "severity": "info",
+      "title": "Handshake metadata observed",
+      "detail": "AP 30:86:2d:c0:07:c0 (\"WPA3\"): handshake material was captured, but its presence alone does not establish offline password-guessing exposure. SAE, enterprise and OWE key establishment differ from PSK; mixed or unknown AKMs require confirmation of the authentication method used by this station",
+      "evidence": [
+        "advertised security: WPA3-Personal (SAE)",
+        "station 96:33:36:9d:5b:d8",
+        "PMKID ea9b8570a6e27efdc08cb3b24f022fe0"
+      ],
+      "benign_explanation": ""
+    },
+    {
+      "severity": "info",
+      "title": "Handshake metadata observed",
+      "detail": "AP 30:86:2d:c0:07:c0 (\"WPA3\"): handshake material was captured, but its presence alone does not establish offline password-guessing exposure. SAE, enterprise and OWE key establishment differ from PSK; mixed or unknown AKMs require confirmation of the authentication method used by this station",
+      "evidence": [
+        "advertised security: WPA3-Personal (SAE)",
+        "station 96:33:36:9d:5b:d8",
+        "PMKID ea9b8570a6e27efdc08cb3b24f022fe0"
+      ],
+      "benign_explanation": ""
+    },
+    {
+      "severity": "info",
+      "title": "Handshake metadata observed",
+      "detail": "AP 30:86:2d:c0:07:c0 (\"WPA3\"): handshake material was captured, but its presence alone does not establish offline password-guessing exposure. SAE, enterprise and OWE key establishment differ from PSK; mixed or unknown AKMs require confirmation of the authentication method used by this station",
+      "evidence": [
+        "advertised security: WPA3-Personal (SAE)",
+        "station 96:33:36:9d:5b:d8",
+        "PMKID ea9b8570a6e27efdc08cb3b24f022fe0"
+      ],
+      "benign_explanation": ""
+    },
+    {
+      "severity": "info",
+      "title": "Handshake metadata observed",
+      "detail": "AP 30:86:2d:c0:07:c0 (\"WPA3\"): handshake material was captured, but its presence alone does not establish offline password-guessing exposure. SAE, enterprise and OWE key establishment differ from PSK; mixed or unknown AKMs require confirmation of the authentication method used by this station",
+      "evidence": [
+        "advertised security: WPA3-Personal (SAE)",
+        "station 96:33:36:9d:5b:d8",
+        "PMKID ea9b8570a6e27efdc08cb3b24f022fe0"
+      ],
+      "benign_explanation": ""
+    },
+    {
+      "severity": "info",
+      "title": "Handshake metadata observed",
+      "detail": "AP 30:86:2d:c0:07:c0 (\"WPA3\"): handshake material was captured, but its presence alone does not establish offline password-guessing exposure. SAE, enterprise and OWE key establishment differ from PSK; mixed or unknown AKMs require confirmation of the authentication method used by this station",
+      "evidence": [
+        "advertised security: WPA3-Personal (SAE)",
+        "station 96:33:36:9d:5b:d8",
+        "PMKID ea9b8570a6e27efdc08cb3b24f022fe0"
+      ],
+      "benign_explanation": ""
+    },
+    {
+      "severity": "info",
+      "title": "Handshake metadata observed",
+      "detail": "AP 30:86:2d:c0:07:c0 (\"WPA3\"): handshake material was captured, but its presence alone does not establish offline password-guessing exposure. SAE, enterprise and OWE key establishment differ from PSK; mixed or unknown AKMs require confirmation of the authentication method used by this station",
+      "evidence": [
+        "advertised security: WPA3-Personal (SAE)",
+        "station 96:33:36:9d:5b:d8",
+        "PMKID ea9b8570a6e27efdc08cb3b24f022fe0"
+      ],
+      "benign_explanation": ""
+    },
+    {
+      "severity": "info",
+      "title": "Handshake metadata observed",
+      "detail": "AP 30:86:2d:c0:07:c0 (\"WPA3\"): handshake material was captured, but its presence alone does not establish offline password-guessing exposure. SAE, enterprise and OWE key establishment differ from PSK; mixed or unknown AKMs require confirmation of the authentication method used by this station",
+      "evidence": [
+        "advertised security: WPA3-Personal (SAE)",
+        "station 96:33:36:9d:5b:d8",
+        "PMKID ea9b8570a6e27efdc08cb3b24f022fe0"
+      ],
+      "benign_explanation": ""
+    },
+    {
+      "severity": "info",
+      "title": "Handshake metadata observed",
+      "detail": "AP 30:86:2d:c0:07:c0 (\"WPA3\"): handshake material was captured, but its presence alone does not establish offline password-guessing exposure. SAE, enterprise and OWE key establishment differ from PSK; mixed or unknown AKMs require confirmation of the authentication method used by this station",
+      "evidence": [
+        "advertised security: WPA3-Personal (SAE)",
+        "station 96:33:36:9d:5b:d8",
+        "PMKID ea9b8570a6e27efdc08cb3b24f022fe0"
+      ],
+      "benign_explanation": ""
+    },
+    {
+      "severity": "info",
+      "title": "Handshake metadata observed",
+      "detail": "AP 30:86:2d:c0:07:c0 (\"WPA3\"): handshake material was captured, but its presence alone does not establish offline password-guessing exposure. SAE, enterprise and OWE key establishment differ from PSK; mixed or unknown AKMs require confirmation of the authentication method used by this station",
+      "evidence": [
+        "advertised security: WPA3-Personal (SAE)",
+        "station 96:33:36:9d:5b:d8",
+        "PMKID ea9b8570a6e27efdc08cb3b24f022fe0"
+      ],
+      "benign_explanation": ""
+    },
+    {
+      "severity": "info",
+      "title": "Handshake metadata observed",
+      "detail": "AP 30:86:2d:c0:07:c0 (\"WPA3\"): handshake material was captured, but its presence alone does not establish offline password-guessing exposure. SAE, enterprise and OWE key establishment differ from PSK; mixed or unknown AKMs require confirmation of the authentication method used by this station",
+      "evidence": [
+        "advertised security: WPA3-Personal (SAE)",
+        "station 96:33:36:9d:5b:d8",
+        "PMKID ea9b8570a6e27efdc08cb3b24f022fe0"
+      ],
+      "benign_explanation": ""
+    },
+    {
+      "severity": "info",
+      "title": "Handshake metadata observed",
+      "detail": "AP 30:86:2d:c0:07:c0 (\"WPA3\"): handshake material was captured, but its presence alone does not establish offline password-guessing exposure. SAE, enterprise and OWE key establishment differ from PSK; mixed or unknown AKMs require confirmation of the authentication method used by this station",
+      "evidence": [
+        "advertised security: WPA3-Personal (SAE)",
+        "station 96:33:36:9d:5b:d8",
+        "PMKID ea9b8570a6e27efdc08cb3b24f022fe0"
+      ],
+      "benign_explanation": ""
+    },
+    {
+      "severity": "info",
+      "title": "Handshake metadata observed",
+      "detail": "AP 30:86:2d:c0:07:c0 (\"WPA3\"): handshake material was captured, but its presence alone does not establish offline password-guessing exposure. SAE, enterprise and OWE key establishment differ from PSK; mixed or unknown AKMs require confirmation of the authentication method used by this station",
+      "evidence": [
+        "advertised security: WPA3-Personal (SAE)",
+        "station 96:33:36:9d:5b:d8",
+        "PMKID ea9b8570a6e27efdc08cb3b24f022fe0"
+      ],
+      "benign_explanation": ""
+    },
+    {
+      "severity": "info",
+      "title": "Handshake metadata observed",
+      "detail": "AP 30:86:2d:c0:07:c0 (\"WPA3\"): handshake material was captured, but its presence alone does not establish offline password-guessing exposure. SAE, enterprise and OWE key establishment differ from PSK; mixed or unknown AKMs require confirmation of the authentication method used by this station",
+      "evidence": [
+        "advertised security: WPA3-Personal (SAE)",
+        "station 96:33:36:9d:5b:d8",
+        "PMKID ea9b8570a6e27efdc08cb3b24f022fe0"
+      ],
+      "benign_explanation": ""
+    },
+    {
+      "severity": "info",
+      "title": "Handshake metadata observed",
+      "detail": "AP 30:86:2d:c0:07:c0 (\"WPA3\"): handshake material was captured, but its presence alone does not establish offline password-guessing exposure. SAE, enterprise and OWE key establishment differ from PSK; mixed or unknown AKMs require confirmation of the authentication method used by this station",
+      "evidence": [
+        "advertised security: WPA3-Personal (SAE)",
+        "station 96:33:36:9d:5b:d8",
+        "PMKID ea9b8570a6e27efdc08cb3b24f022fe0"
+      ],
+      "benign_explanation": ""
+    },
+    {
+      "severity": "info",
+      "title": "Handshake metadata observed",
+      "detail": "AP 30:86:2d:c0:07:c0 (\"WPA3\"): handshake material was captured, but its presence alone does not establish offline password-guessing exposure. SAE, enterprise and OWE key establishment differ from PSK; mixed or unknown AKMs require confirmation of the authentication method used by this station",
+      "evidence": [
+        "advertised security: WPA3-Personal (SAE)",
+        "station 96:33:36:9d:5b:d8",
+        "PMKID ea9b8570a6e27efdc08cb3b24f022fe0"
+      ],
+      "benign_explanation": ""
+    },
+    {
+      "severity": "info",
+      "title": "Handshake metadata observed",
+      "detail": "AP 30:86:2d:c0:07:c0 (\"WPA3\"): handshake material was captured, but its presence alone does not establish offline password-guessing exposure. SAE, enterprise and OWE key establishment differ from PSK; mixed or unknown AKMs require confirmation of the authentication method used by this station",
+      "evidence": [
+        "advertised security: WPA3-Personal (SAE)",
+        "station 96:33:36:9d:5b:d8",
+        "PMKID ea9b8570a6e27efdc08cb3b24f022fe0"
+      ],
+      "benign_explanation": ""
+    },
+    {
+      "severity": "info",
+      "title": "Handshake metadata observed",
+      "detail": "AP 30:86:2d:c0:07:c0 (\"WPA3\"): handshake material was captured, but its presence alone does not establish offline password-guessing exposure. SAE, enterprise and OWE key establishment differ from PSK; mixed or unknown AKMs require confirmation of the authentication method used by this station",
+      "evidence": [
+        "advertised security: WPA3-Personal (SAE)",
+        "station 96:33:36:9d:5b:d8",
+        "PMKID ea9b8570a6e27efdc08cb3b24f022fe0"
+      ],
+      "benign_explanation": ""
+    },
+    {
+      "severity": "info",
+      "title": "Handshake metadata observed",
+      "detail": "AP 30:86:2d:c0:07:c0 (\"WPA3\"): handshake material was captured, but its presence alone does not establish offline password-guessing exposure. SAE, enterprise and OWE key establishment differ from PSK; mixed or unknown AKMs require confirmation of the authentication method used by this station",
+      "evidence": [
+        "advertised security: WPA3-Personal (SAE)",
+        "station 96:33:36:9d:5b:d8",
+        "PMKID ea9b8570a6e27efdc08cb3b24f022fe0"
+      ],
+      "benign_explanation": ""
+    },
+    {
+      "severity": "info",
+      "title": "Handshake metadata observed",
+      "detail": "AP 30:86:2d:c0:07:c0 (\"WPA3\"): handshake material was captured, but its presence alone does not establish offline password-guessing exposure. SAE, enterprise and OWE key establishment differ from PSK; mixed or unknown AKMs require confirmation of the authentication method used by this station",
+      "evidence": [
+        "advertised security: WPA3-Personal (SAE)",
+        "station 96:33:36:9d:5b:d8",
+        "PMKID ea9b8570a6e27efdc08cb3b24f022fe0"
+      ],
+      "benign_explanation": ""
+    },
+    {
+      "severity": "info",
+      "title": "Handshake metadata observed",
+      "detail": "AP 30:86:2d:c0:07:c0 (\"WPA3\"): handshake material was captured, but its presence alone does not establish offline password-guessing exposure. SAE, enterprise and OWE key establishment differ from PSK; mixed or unknown AKMs require confirmation of the authentication method used by this station",
+      "evidence": [
+        "advertised security: WPA3-Personal (SAE)",
+        "station 96:33:36:9d:5b:d8",
+        "PMKID ea9b8570a6e27efdc08cb3b24f022fe0"
+      ],
+      "benign_explanation": ""
+    },
+    {
+      "severity": "info",
+      "title": "Handshake metadata observed",
+      "detail": "AP 30:86:2d:c0:07:c0 (\"WPA3\"): handshake material was captured, but its presence alone does not establish offline password-guessing exposure. SAE, enterprise and OWE key establishment differ from PSK; mixed or unknown AKMs require confirmation of the authentication method used by this station",
+      "evidence": [
+        "advertised security: WPA3-Personal (SAE)",
+        "station 96:33:36:9d:5b:d8",
+        "PMKID 2f65beca8713fa9de7a929da07bafd6f"
+      ],
+      "benign_explanation": ""
+    },
+    {
+      "severity": "info",
+      "title": "Handshake metadata observed",
+      "detail": "AP 30:86:2d:c0:07:c0 (\"WPA3\"): handshake material was captured, but its presence alone does not establish offline password-guessing exposure. SAE, enterprise and OWE key establishment differ from PSK; mixed or unknown AKMs require confirmation of the authentication method used by this station",
+      "evidence": [
+        "advertised security: WPA3-Personal (SAE)",
+        "station 96:33:36:9d:5b:d8",
+        "PMKID 2f65beca8713fa9de7a929da07bafd6f"
+      ],
+      "benign_explanation": ""
+    },
+    {
+      "severity": "info",
+      "title": "Handshake metadata observed",
+      "detail": "AP 30:86:2d:c0:07:c0 (\"WPA3\"): handshake material was captured, but its presence alone does not establish offline password-guessing exposure. SAE, enterprise and OWE key establishment differ from PSK; mixed or unknown AKMs require confirmation of the authentication method used by this station",
+      "evidence": [
+        "advertised security: WPA3-Personal (SAE)",
+        "station 96:33:36:9d:5b:d8",
+        "PMKID 2f65beca8713fa9de7a929da07bafd6f"
+      ],
+      "benign_explanation": ""
+    },
+    {
+      "severity": "info",
+      "title": "Handshake metadata observed",
+      "detail": "AP 30:86:2d:c0:07:c0 (\"WPA3\"): handshake material was captured, but its presence alone does not establish offline password-guessing exposure. SAE, enterprise and OWE key establishment differ from PSK; mixed or unknown AKMs require confirmation of the authentication method used by this station",
+      "evidence": [
+        "advertised security: WPA3-Personal (SAE)",
+        "station 96:33:36:9d:5b:d8",
+        "PMKID 2f65beca8713fa9de7a929da07bafd6f"
+      ],
+      "benign_explanation": ""
+    },
+    {
+      "severity": "info",
+      "title": "Handshake metadata observed",
+      "detail": "AP 30:86:2d:c0:07:c0 (\"WPA3\"): handshake material was captured, but its presence alone does not establish offline password-guessing exposure. SAE, enterprise and OWE key establishment differ from PSK; mixed or unknown AKMs require confirmation of the authentication method used by this station",
+      "evidence": [
+        "advertised security: WPA3-Personal (SAE)",
+        "station 96:33:36:9d:5b:d8",
+        "PMKID 2f65beca8713fa9de7a929da07bafd6f"
+      ],
+      "benign_explanation": ""
+    },
+    {
+      "severity": "info",
+      "title": "Handshake metadata observed",
+      "detail": "AP 30:86:2d:c0:07:c0 (\"WPA3\"): handshake material was captured, but its presence alone does not establish offline password-guessing exposure. SAE, enterprise and OWE key establishment differ from PSK; mixed or unknown AKMs require confirmation of the authentication method used by this station",
+      "evidence": [
+        "advertised security: WPA3-Personal (SAE)",
+        "station 96:33:36:9d:5b:d8",
+        "PMKID 2f65beca8713fa9de7a929da07bafd6f"
+      ],
+      "benign_explanation": ""
+    },
+    {
+      "severity": "info",
+      "title": "Handshake metadata observed",
+      "detail": "AP 30:86:2d:c0:07:c0 (\"WPA3\"): handshake material was captured, but its presence alone does not establish offline password-guessing exposure. SAE, enterprise and OWE key establishment differ from PSK; mixed or unknown AKMs require confirmation of the authentication method used by this station",
+      "evidence": [
+        "advertised security: WPA3-Personal (SAE)",
+        "station 96:33:36:9d:5b:d8",
+        "PMKID 2f65beca8713fa9de7a929da07bafd6f"
+      ],
+      "benign_explanation": ""
+    },
+    {
+      "severity": "info",
+      "title": "Handshake metadata observed",
+      "detail": "AP 30:86:2d:c0:07:c0 (\"WPA3\"): handshake material was captured, but its presence alone does not establish offline password-guessing exposure. SAE, enterprise and OWE key establishment differ from PSK; mixed or unknown AKMs require confirmation of the authentication method used by this station",
+      "evidence": [
+        "advertised security: WPA3-Personal (SAE)",
+        "station 96:33:36:9d:5b:d8",
+        "PMKID 2f65beca8713fa9de7a929da07bafd6f"
+      ],
+      "benign_explanation": ""
+    },
+    {
+      "severity": "info",
+      "title": "Handshake metadata observed",
+      "detail": "AP 30:86:2d:c0:07:c0 (\"WPA3\"): handshake material was captured, but its presence alone does not establish offline password-guessing exposure. SAE, enterprise and OWE key establishment differ from PSK; mixed or unknown AKMs require confirmation of the authentication method used by this station",
+      "evidence": [
+        "advertised security: WPA3-Personal (SAE)",
+        "station 96:33:36:9d:5b:d8",
+        "PMKID 2f65beca8713fa9de7a929da07bafd6f"
+      ],
+      "benign_explanation": ""
+    },
+    {
+      "severity": "info",
+      "title": "Handshake metadata observed",
+      "detail": "AP 30:86:2d:c0:07:c0 (\"WPA3\"): handshake material was captured, but its presence alone does not establish offline password-guessing exposure. SAE, enterprise and OWE key establishment differ from PSK; mixed or unknown AKMs require confirmation of the authentication method used by this station",
+      "evidence": [
+        "advertised security: WPA3-Personal (SAE)",
+        "station 96:33:36:9d:5b:d8",
+        "PMKID 2f65beca8713fa9de7a929da07bafd6f"
+      ],
+      "benign_explanation": ""
+    },
+    {
+      "severity": "info",
+      "title": "Handshake metadata observed",
+      "detail": "AP 30:86:2d:c0:07:c0 (\"WPA3\"): handshake material was captured, but its presence alone does not establish offline password-guessing exposure. SAE, enterprise and OWE key establishment differ from PSK; mixed or unknown AKMs require confirmation of the authentication method used by this station",
+      "evidence": [
+        "advertised security: WPA3-Personal (SAE)",
+        "station 96:33:36:9d:5b:d8",
+        "PMKID 2f65beca8713fa9de7a929da07bafd6f"
+      ],
+      "benign_explanation": ""
+    },
+    {
+      "severity": "info",
+      "title": "Handshake metadata observed",
+      "detail": "AP 30:86:2d:c0:07:c0 (\"WPA3\"): handshake material was captured, but its presence alone does not establish offline password-guessing exposure. SAE, enterprise and OWE key establishment differ from PSK; mixed or unknown AKMs require confirmation of the authentication method used by this station",
+      "evidence": [
+        "advertised security: WPA3-Personal (SAE)",
+        "station 96:33:36:9d:5b:d8",
+        "PMKID 2f65beca8713fa9de7a929da07bafd6f"
+      ],
+      "benign_explanation": ""
+    },
+    {
+      "severity": "info",
+      "title": "Handshake metadata observed",
+      "detail": "AP 30:86:2d:c0:07:c0 (\"WPA3\"): handshake material was captured, but its presence alone does not establish offline password-guessing exposure. SAE, enterprise and OWE key establishment differ from PSK; mixed or unknown AKMs require confirmation of the authentication method used by this station",
+      "evidence": [
+        "advertised security: WPA3-Personal (SAE)",
+        "station 96:33:36:9d:5b:d8",
+        "PMKID 2f65beca8713fa9de7a929da07bafd6f"
+      ],
+      "benign_explanation": ""
+    },
+    {
+      "severity": "info",
+      "title": "Handshake metadata observed",
+      "detail": "AP 30:86:2d:c0:07:c0 (\"WPA3\"): handshake material was captured, but its presence alone does not establish offline password-guessing exposure. SAE, enterprise and OWE key establishment differ from PSK; mixed or unknown AKMs require confirmation of the authentication method used by this station",
+      "evidence": [
+        "advertised security: WPA3-Personal (SAE)",
+        "station 96:33:36:9d:5b:d8",
+        "PMKID 2f65beca8713fa9de7a929da07bafd6f"
+      ],
+      "benign_explanation": ""
+    },
+    {
+      "severity": "info",
+      "title": "Handshake metadata observed",
+      "detail": "AP 30:86:2d:c0:07:c0 (\"WPA3\"): handshake material was captured, but its presence alone does not establish offline password-guessing exposure. SAE, enterprise and OWE key establishment differ from PSK; mixed or unknown AKMs require confirmation of the authentication method used by this station",
+      "evidence": [
+        "advertised security: WPA3-Personal (SAE)",
+        "station 96:33:36:9d:5b:d8",
+        "PMKID 2f65beca8713fa9de7a929da07bafd6f"
+      ],
+      "benign_explanation": ""
+    },
+    {
+      "severity": "info",
+      "title": "Handshake metadata observed",
+      "detail": "AP 30:86:2d:c0:07:c0 (\"WPA3\"): handshake material was captured, but its presence alone does not establish offline password-guessing exposure. SAE, enterprise and OWE key establishment differ from PSK; mixed or unknown AKMs require confirmation of the authentication method used by this station",
+      "evidence": [
+        "advertised security: WPA3-Personal (SAE)",
+        "station 96:33:36:9d:5b:d8",
+        "PMKID 2f65beca8713fa9de7a929da07bafd6f"
+      ],
+      "benign_explanation": ""
+    },
+    {
+      "severity": "info",
+      "title": "Handshake metadata observed",
+      "detail": "AP 30:86:2d:c0:07:c0 (\"WPA3\"): handshake material was captured, but its presence alone does not establish offline password-guessing exposure. SAE, enterprise and OWE key establishment differ from PSK; mixed or unknown AKMs require confirmation of the authentication method used by this station",
+      "evidence": [
+        "advertised security: WPA3-Personal (SAE)",
+        "station 96:33:36:9d:5b:d8",
+        "PMKID 2f65beca8713fa9de7a929da07bafd6f"
+      ],
+      "benign_explanation": ""
+    },
+    {
+      "severity": "info",
+      "title": "Handshake metadata observed",
+      "detail": "AP 30:86:2d:c0:07:c0 (\"WPA3\"): handshake material was captured, but its presence alone does not establish offline password-guessing exposure. SAE, enterprise and OWE key establishment differ from PSK; mixed or unknown AKMs require confirmation of the authentication method used by this station",
+      "evidence": [
+        "advertised security: WPA3-Personal (SAE)",
+        "station 96:33:36:9d:5b:d8",
+        "PMKID 2f65beca8713fa9de7a929da07bafd6f"
+      ],
+      "benign_explanation": ""
+    },
+    {
+      "severity": "info",
+      "title": "Handshake metadata observed",
+      "detail": "AP 30:86:2d:c0:07:c0 (\"WPA3\"): handshake material was captured, but its presence alone does not establish offline password-guessing exposure. SAE, enterprise and OWE key establishment differ from PSK; mixed or unknown AKMs require confirmation of the authentication method used by this station",
+      "evidence": [
+        "advertised security: WPA3-Personal (SAE)",
+        "station 96:33:36:9d:5b:d8",
+        "PMKID 2f65beca8713fa9de7a929da07bafd6f"
+      ],
+      "benign_explanation": ""
+    },
+    {
+      "severity": "info",
+      "title": "Handshake metadata observed",
+      "detail": "AP 30:86:2d:c0:07:c0 (\"WPA3\"): handshake material was captured, but its presence alone does not establish offline password-guessing exposure. SAE, enterprise and OWE key establishment differ from PSK; mixed or unknown AKMs require confirmation of the authentication method used by this station",
+      "evidence": [
+        "advertised security: WPA3-Personal (SAE)",
+        "station 96:33:36:9d:5b:d8",
+        "PMKID 2f65beca8713fa9de7a929da07bafd6f"
+      ],
+      "benign_explanation": ""
+    },
+    {
+      "severity": "info",
+      "title": "Handshake metadata observed",
+      "detail": "AP 30:86:2d:c0:07:c0 (\"WPA3\"): handshake material was captured, but its presence alone does not establish offline password-guessing exposure. SAE, enterprise and OWE key establishment differ from PSK; mixed or unknown AKMs require confirmation of the authentication method used by this station",
+      "evidence": [
+        "advertised security: WPA3-Personal (SAE)",
+        "station 96:33:36:9d:5b:d8",
+        "PMKID 2f65beca8713fa9de7a929da07bafd6f"
+      ],
+      "benign_explanation": ""
+    },
+    {
+      "severity": "info",
+      "title": "Handshake metadata observed",
+      "detail": "AP 30:86:2d:c0:07:c0 (\"WPA3\"): handshake material was captured, but its presence alone does not establish offline password-guessing exposure. SAE, enterprise and OWE key establishment differ from PSK; mixed or unknown AKMs require confirmation of the authentication method used by this station",
+      "evidence": [
+        "advertised security: WPA3-Personal (SAE)",
+        "station 96:33:36:9d:5b:d8",
+        "PMKID 2f65beca8713fa9de7a929da07bafd6f"
+      ],
+      "benign_explanation": ""
+    },
+    {
+      "severity": "info",
+      "title": "Handshake metadata observed",
+      "detail": "AP 30:86:2d:c0:07:c0 (\"WPA3\"): handshake material was captured, but its presence alone does not establish offline password-guessing exposure. SAE, enterprise and OWE key establishment differ from PSK; mixed or unknown AKMs require confirmation of the authentication method used by this station",
+      "evidence": [
+        "advertised security: WPA3-Personal (SAE)",
+        "station 96:33:36:9d:5b:d8",
+        "PMKID 2f65beca8713fa9de7a929da07bafd6f"
+      ],
+      "benign_explanation": ""
+    },
+    {
+      "severity": "info",
+      "title": "Handshake metadata observed",
+      "detail": "AP 30:86:2d:c0:07:c0 (\"WPA3\"): handshake material was captured, but its presence alone does not establish offline password-guessing exposure. SAE, enterprise and OWE key establishment differ from PSK; mixed or unknown AKMs require confirmation of the authentication method used by this station",
+      "evidence": [
+        "advertised security: WPA3-Personal (SAE)",
+        "station 96:33:36:9d:5b:d8",
+        "PMKID 2f65beca8713fa9de7a929da07bafd6f"
+      ],
+      "benign_explanation": ""
+    },
+    {
+      "severity": "info",
+      "title": "Handshake metadata observed",
+      "detail": "AP 30:86:2d:c0:07:c0 (\"WPA3\"): handshake material was captured, but its presence alone does not establish offline password-guessing exposure. SAE, enterprise and OWE key establishment differ from PSK; mixed or unknown AKMs require confirmation of the authentication method used by this station",
+      "evidence": [
+        "advertised security: WPA3-Personal (SAE)",
+        "station 96:33:36:9d:5b:d8",
+        "PMKID 2f65beca8713fa9de7a929da07bafd6f"
+      ],
+      "benign_explanation": ""
+    }
+  ]
+}

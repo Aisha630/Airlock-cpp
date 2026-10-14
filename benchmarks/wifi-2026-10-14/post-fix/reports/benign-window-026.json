@@ -1,0 +1,21 @@
+{
+  "capture": {
+    "path": "/Users/aysha/Desktop/Projects/airlock-cpp/.cache/wifi-benchmark/benign-window-026.pcap",
+    "frames": 234,
+    "duration_seconds": 4.914,
+    "suspect_frames": 0,
+    "parse_errors": []
+  },
+  "frame_classes": {
+    "control": 234
+  },
+  "frame_subtypes": {
+    "ack": 15,
+    "block-ack-request": 5,
+    "rts": 102,
+    "cts": 112
+  },
+  "networks": [],
+  "handshakes": [],
+  "findings": []
+}

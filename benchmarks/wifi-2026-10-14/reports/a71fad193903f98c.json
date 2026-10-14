@@ -1,0 +1,87 @@
+{
+  "capture": {
+    "path": "/Users/aysha/Desktop/Projects/airlock-cpp/.cache/wifi-benchmark/a71fad193903f98c.pcap",
+    "frames": 2000,
+    "duration_seconds": 7.586,
+    "suspect_frames": 0,
+    "parse_errors": []
+  },
+  "frame_classes": {
+    "management": 139,
+    "control": 1615,
+    "data": 246
+  },
+  "frame_subtypes": {
+    "block-ack": 627,
+    "rts": 942,
+    "qos-data": 124,
+    "beacon": 68,
+    "data": 76,
+    "qos-null": 33,
+    "vht-he-ndp-announcement": 27,
+    "action-no-ack": 19,
+    "action": 23,
+    "cf-end": 10,
+    "deauthentication": 1,
+    "null": 13,
+    "probe-request": 15,
+    "probe-response": 7,
+    "block-ack-request": 9,
+    "authentication": 5,
+    "assoc-request": 1
+  },
+  "networks": [
+    {
+      "bssid": "04:42:1a:19:88:f8",
+      "ssid": "testnetworkRPT88",
+      "channel": 1,
+      "security": "WPA3-Personal (SAE)",
+      "group_cipher": "CCMP-128",
+      "pairwise_ciphers": [
+        "CCMP-128"
+      ],
+      "akm_suites": [
+        "SAE"
+      ],
+      "mfp": "required",
+      "beacons": 68,
+      "clients": [
+        "01:00:5e:00:00:16",
+        "01:00:5e:00:00:fb",
+        "01:00:5e:00:00:fc",
+        "01:00:5e:7f:ff:fa",
+        "01:80:c2:00:00:00",
+        "01:80:c2:00:00:0e",
+        "22:d0:61:a8:5e:8e",
+        "33:33:00:00:00:02",
+        "33:33:00:00:00:16",
+        "33:33:00:00:00:fb",
+        "33:33:00:01:00:03",
+        "33:33:ff:05:4f:fb",
+        "4c:03:4f:e4:ef:71",
+        "56:09:29:8d:dc:1f",
+        "62:02:b7:f7:a3:c4",
+        "a8:42:a1:0e:7f:b2",
+        "f0:d4:15:7f:4c:07"
+      ]
+    }
+  ],
+  "handshakes": [
+    {
+      "ap": "04:42:1a:19:88:f8",
+      "station": "f0:d4:15:7f:4c:07",
+      "messages_seen": [
+        1,
+        3,
+        4
+      ],
+      "complete": false,
+      "duration_ms": null,
+      "pmkid": null,
+      "notes": [
+        "incomplete: saw messages [1, 3, 4], missing [2] (capture may have started late, or the handshake failed)"
+      ]
+    }
+  ],
+  "findings": []
+}

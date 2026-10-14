@@ -1,0 +1,19 @@
+{
+  "ref": "suumia/awid3-dataset",
+  "title": "awid3_dataset",
+  "currentVersionNumber": 1,
+  "lastUpdated": "2025-02-17T09:12:40.14Z",
+  "downloadCount": 7402,
+  "evaluation_date": "2026-10-14",
+  "analyzer_base_revision": "5f0da54995adc2c2439d112b3e9b967ff4b4e781",
+  "library_sha256": "934cbd571561db28c72921bd83cc7e5dd9a3c628355a8f301c82db9e2bf3e02c",
+  "threshold": {
+    "seconds": 5,
+    "frames_per_source_destination_pair": 8
+  },
+  "scope": "Production deauthentication/disassociation flood detector via CSV metadata; packet parser and other detectors are not evaluated",
+  "benchmark_sources_sha256": {
+    "evaluate.py": "1fad35ba1bf45cb364a6ba51f25f8a92866dce529a45bddcf716e21d1829480b",
+    "flood_replay.cpp": "4223e68afddd0f4baa34288a7c8d80a61476ec8f32a1f447e48a6b49302fbc64"
+  }
+}

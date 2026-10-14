@@ -92,8 +92,8 @@ WPA four-way handshakes
   M2  t+  0.635s  STA -> AP  replay counter 1  (SNonce + RSN element, MIC present)
   M3  t+  0.642s  AP -> STA  replay counter 2  (install key, encrypted key data, MIC)
   M4  t+  0.649s  STA -> AP  replay counter 2  (zero nonce, acknowledgement only)
-  note: complete four-way handshake in 21.3 ms; an observer who records this and later guesses the passphrase can derive the PTK and decrypt the session offline
-  note: AP volunteered a PMKID (0123456789abcdef...) in message 1; this single frame is enough for an offline dictionary attack, with no client interaction needed
+  note: complete four-way handshake in 21.3 ms; offline password-guessing exposure depends on the authentication method, and cannot be inferred from completeness alone
+  note: AP included a PMKID (0123456789abcdef...) in message 1; a PMKID alone does not establish an offline dictionary attack without identifying the authentication method
 
 02:00:00:11:11:11 <-> 02:00:00:aa:00:01 ("TestNet-WPA2")
 --------------------------------------------------------
@@ -101,7 +101,7 @@ WPA four-way handshakes
   M2  t+  2.085s  STA -> AP  replay counter 5  (SNonce + RSN element, MIC present)
   M3  t+  2.092s  AP -> STA  replay counter 6  (install key, encrypted key data, MIC)
   M4  t+  2.098s  STA -> AP  replay counter 6  (zero nonce, acknowledgement only)
-  note: complete four-way handshake in 21.3 ms; an observer who records this and later guesses the passphrase can derive the PTK and decrypt the session offline
+  note: complete four-way handshake in 21.3 ms; offline password-guessing exposure depends on the authentication method, and cannot be inferred from completeness alone
 
 Security findings
 =================
@@ -136,7 +136,7 @@ Security findings
          - 5 beacons observed
 
 [  HIGH] PMKID disclosed in EAPOL message 1
-         AP 02:00:00:aa:00:01 ("TestNet-WPA2") included a PMKID in message 1. Because the PMKID is HMAC-SHA1(PMK, "PMK Name" || AP || STA), this one frame supports an offline dictionary attack on the passphrase with no client and no full handshake required
+         AP 02:00:00:aa:00:01 ("TestNet-WPA2") advertises only PSK authentication and included a PMKID in message 1. When PSK authentication is used, this material allows offline passphrase guesses without a full handshake; the PMKID calculation depends on the AKM
          - PMKID 0123456789abcdef0123456789abcdef
          - station 02:00:00:11:11:11
          - remediation: WPA3-SAE, or disable PMKID caching on the AP
@@ -172,6 +172,3 @@ Security findings
 [MEDIUM] Weak configuration: WPA2-Personal (PSK)
          "TestNet-Legacy" (02:00:00:cc:00:01): management frame protection is not supported, so deauthentication and disassociation frames are forgeable
          - group cipher TKIP, pairwise TKIP/CCMP-128, AKM PSK, MFP not supported
-
-
-JSON report written to captures/reports/synthetic.json

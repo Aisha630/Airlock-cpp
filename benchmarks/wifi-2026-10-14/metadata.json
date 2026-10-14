@@ -1,0 +1,15 @@
+{
+  "evaluation_date": "2026-10-14",
+  "analyzer_git_revision": "5f0da54995adc2c2439d112b3e9b967ff4b4e781",
+  "analyzer_binary_sha256": "f5087e9a2df5680c57ddcf70c08e7c7c2e23b53c22bd9f110b8ac5a1f87fa2bc",
+  "build_commands": [
+    "cmake -S . -B build-benchmark -DAIRLOCK_BUILD_TESTS=OFF",
+    "cmake --build build-benchmark -j 4"
+  ],
+  "run_command": "python3 benchmarks/wifi-2026-10-14/run.py",
+  "threshold": {
+    "window_seconds": 5,
+    "frames_per_source_destination_pair": 8
+  },
+  "detector_changed": false
+}

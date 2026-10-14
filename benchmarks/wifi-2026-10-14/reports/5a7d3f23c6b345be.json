@@ -1,0 +1,231 @@
+{
+  "capture": {
+    "path": "/Users/aysha/Desktop/Projects/airlock-cpp/.cache/wifi-benchmark/5a7d3f23c6b345be.pcap",
+    "frames": 2000,
+    "duration_seconds": 51.889,
+    "suspect_frames": 0,
+    "parse_errors": []
+  },
+  "frame_classes": {
+    "management": 1009,
+    "control": 189,
+    "data": 802
+  },
+  "frame_subtypes": {
+    "qos-null": 558,
+    "beacon": 481,
+    "data": 195,
+    "deauthentication": 355,
+    "action": 82,
+    "authentication": 34,
+    "assoc-response": 13,
+    "assoc-request": 10,
+    "block-ack": 43,
+    "rts": 118,
+    "qos-data": 49,
+    "probe-request": 23,
+    "probe-response": 11,
+    "block-ack-request": 28
+  },
+  "networks": [
+    {
+      "bssid": "04:42:1a:19:88:f8",
+      "ssid": "testnetworkRPT88",
+      "channel": 1,
+      "security": "WPA3-Personal (SAE)",
+      "group_cipher": "CCMP-128",
+      "pairwise_ciphers": [
+        "CCMP-128"
+      ],
+      "akm_suites": [
+        "SAE"
+      ],
+      "mfp": "required",
+      "beacons": 481,
+      "clients": [
+        "00:00:00:00:00:00",
+        "01:00:5e:7f:ff:fa",
+        "01:80:c2:00:00:00",
+        "01:80:c2:00:00:0e",
+        "22:d0:61:a8:5e:8e",
+        "33:33:00:00:00:02",
+        "33:33:00:00:00:16",
+        "33:33:ff:a8:5e:8e",
+        "56:09:29:8d:dc:1f",
+        "f0:d4:15:7f:4c:07"
+      ]
+    }
+  ],
+  "handshakes": [
+    {
+      "ap": "04:42:1a:19:88:f8",
+      "station": "22:d0:61:a8:5e:8e",
+      "messages_seen": [
+        1,
+        2,
+        3,
+        4
+      ],
+      "complete": true,
+      "duration_ms": 12.722,
+      "pmkid": "e5926ca0ecc222cf3c5125360d5123b9",
+      "notes": [
+        "complete four-way handshake in 12.7 ms; an observer who records this and later guesses the passphrase can derive the PTK and decrypt the session offline",
+        "AP volunteered a PMKID (e5926ca0ecc222cf...) in message 1; this single frame is enough for an offline dictionary attack, with no client interaction needed"
+      ]
+    },
+    {
+      "ap": "04:42:1a:19:88:f8",
+      "station": "22:d0:61:a8:5e:8e",
+      "messages_seen": [
+        1,
+        3,
+        4
+      ],
+      "complete": false,
+      "duration_ms": null,
+      "pmkid": "5ca91deae314a12fe23ade1f083ec942",
+      "notes": [
+        "incomplete: saw messages [1, 3, 4], missing [2] (capture may have started late, or the handshake failed)",
+        "AP volunteered a PMKID (5ca91deae314a12f...) in message 1; this single frame is enough for an offline dictionary attack, with no client interaction needed"
+      ]
+    },
+    {
+      "ap": "04:42:1a:19:88:f8",
+      "station": "22:d0:61:a8:5e:8e",
+      "messages_seen": [
+        1,
+        2,
+        3,
+        4
+      ],
+      "complete": true,
+      "duration_ms": 13.852,
+      "pmkid": "0fd5d85224ca8c973087b3716767d43a",
+      "notes": [
+        "complete four-way handshake in 13.9 ms; an observer who records this and later guesses the passphrase can derive the PTK and decrypt the session offline",
+        "AP volunteered a PMKID (0fd5d85224ca8c97...) in message 1; this single frame is enough for an offline dictionary attack, with no client interaction needed"
+      ]
+    }
+  ],
+  "findings": [
+    {
+      "severity": "high",
+      "title": "Deauthentication / disassociation flood",
+      "detail": "29 deauth-class frames from 04:42:1a:19:88:f8 inside a 5-second window -- the signature of a forced disconnect, used either as denial of service or to make a client reconnect so its four-way handshake can be captured",
+      "evidence": [
+        "29 frames total, peak 29 within 5 s starting at t+0.00 s",
+        "source 04:42:1a:19:88:f8 -> target 00:00:00:00:00:00",
+        "reason codes seen: 7 (class 3 frame received from nonassociated STA)",
+        "0/29 frames were cryptographically protected",
+        "none were protected, so every one of them is forgeable by any device in range"
+      ],
+      "benign_explanation": "an access point rebooting, shedding clients under load, or steering a client to another band also emits deauths, though rarely this many this fast from one address"
+    },
+    {
+      "severity": "high",
+      "title": "Deauthentication / disassociation flood",
+      "detail": "26 deauth-class frames from 04:42:1a:19:88:f8 inside a 5-second window -- the signature of a forced disconnect, used either as denial of service or to make a client reconnect so its four-way handshake can be captured",
+      "evidence": [
+        "53 frames total, peak 26 within 5 s starting at t+33.05 s",
+        "source 04:42:1a:19:88:f8 -> target 04:42:1a:19:88:f8",
+        "reason codes seen: 7 (class 3 frame received from nonassociated STA)",
+        "0/53 frames were cryptographically protected",
+        "none were protected, so every one of them is forgeable by any device in range"
+      ],
+      "benign_explanation": "an access point rebooting, shedding clients under load, or steering a client to another band also emits deauths, though rarely this many this fast from one address"
+    },
+    {
+      "severity": "high",
+      "title": "Deauthentication / disassociation flood",
+      "detail": "27 deauth-class frames from 04:42:1a:19:88:f8 inside a 5-second window -- the signature of a forced disconnect, used either as denial of service or to make a client reconnect so its four-way handshake can be captured",
+      "evidence": [
+        "31 frames total, peak 27 within 5 s starting at t+40.77 s",
+        "source 04:42:1a:19:88:f8 -> target 22:d0:61:a8:5e:8e",
+        "reason codes seen: 2 (previous authentication no longer valid), 6 (class 2 frame received from nonauthenticated STA), 7 (class 3 frame received from nonassociated STA)",
+        "0/31 frames were cryptographically protected",
+        "none were protected, so every one of them is forgeable by any device in range"
+      ],
+      "benign_explanation": "an access point rebooting, shedding clients under load, or steering a client to another band also emits deauths, though rarely this many this fast from one address"
+    },
+    {
+      "severity": "high",
+      "title": "Deauthentication / disassociation flood",
+      "detail": "58 deauth-class frames from 04:42:1a:19:88:f8 inside a 5-second window -- the signature of a forced disconnect, used either as denial of service or to make a client reconnect so its four-way handshake can be captured",
+      "evidence": [
+        "241 frames total, peak 58 within 5 s starting at t+32.30 s",
+        "source 04:42:1a:19:88:f8 -> target f0:d4:15:7f:4c:07",
+        "reason codes seen: 7 (class 3 frame received from nonassociated STA)",
+        "0/241 frames were cryptographically protected",
+        "none were protected, so every one of them is forgeable by any device in range"
+      ],
+      "benign_explanation": "an access point rebooting, shedding clients under load, or steering a client to another band also emits deauths, though rarely this many this fast from one address"
+    },
+    {
+      "severity": "high",
+      "title": "PMKID disclosed in EAPOL message 1",
+      "detail": "AP 04:42:1a:19:88:f8 (\"testnetworkRPT88\") included a PMKID in message 1. Because the PMKID is HMAC-SHA1(PMK, \"PMK Name\" || AP || STA), this one frame supports an offline dictionary attack on the passphrase with no client and no full handshake required",
+      "evidence": [
+        "PMKID e5926ca0ecc222cf3c5125360d5123b9",
+        "station 22:d0:61:a8:5e:8e",
+        "remediation: WPA3-SAE, or disable PMKID caching on the AP"
+      ],
+      "benign_explanation": ""
+    },
+    {
+      "severity": "high",
+      "title": "PMKID disclosed in EAPOL message 1",
+      "detail": "AP 04:42:1a:19:88:f8 (\"testnetworkRPT88\") included a PMKID in message 1. Because the PMKID is HMAC-SHA1(PMK, \"PMK Name\" || AP || STA), this one frame supports an offline dictionary attack on the passphrase with no client and no full handshake required",
+      "evidence": [
+        "PMKID 5ca91deae314a12fe23ade1f083ec942",
+        "station 22:d0:61:a8:5e:8e",
+        "remediation: WPA3-SAE, or disable PMKID caching on the AP"
+      ],
+      "benign_explanation": ""
+    },
+    {
+      "severity": "high",
+      "title": "PMKID disclosed in EAPOL message 1",
+      "detail": "AP 04:42:1a:19:88:f8 (\"testnetworkRPT88\") included a PMKID in message 1. Because the PMKID is HMAC-SHA1(PMK, \"PMK Name\" || AP || STA), this one frame supports an offline dictionary attack on the passphrase with no client and no full handshake required",
+      "evidence": [
+        "PMKID 0fd5d85224ca8c973087b3716767d43a",
+        "station 22:d0:61:a8:5e:8e",
+        "remediation: WPA3-SAE, or disable PMKID caching on the AP"
+      ],
+      "benign_explanation": ""
+    },
+    {
+      "severity": "medium",
+      "title": "Complete four-way handshake captured",
+      "detail": "the full handshake between 22:d0:61:a8:5e:8e and 04:42:1a:19:88:f8 (\"testnetworkRPT88\") is in this capture. WPA2 derives the PTK from the PMK and the two nonces with no key exchange, so recovering the passphrase later decrypts this session retroactively -- WPA2-PSK has no forward secrecy",
+      "evidence": [
+        "completed in 12.7 ms",
+        "ANonce e918911963fe407c...",
+        "SNonce 1b2673ff13b41fa4...",
+        "remediation: WPA3-SAE runs a Dragonfly key exchange per session, so a later passphrase compromise reveals nothing"
+      ],
+      "benign_explanation": ""
+    },
+    {
+      "severity": "medium",
+      "title": "Complete four-way handshake captured",
+      "detail": "the full handshake between 22:d0:61:a8:5e:8e and 04:42:1a:19:88:f8 (\"testnetworkRPT88\") is in this capture. WPA2 derives the PTK from the PMK and the two nonces with no key exchange, so recovering the passphrase later decrypts this session retroactively -- WPA2-PSK has no forward secrecy",
+      "evidence": [
+        "completed in 13.9 ms",
+        "ANonce f4c396271b488d95...",
+        "SNonce 3790950fe1483803...",
+        "remediation: WPA3-SAE runs a Dragonfly key exchange per session, so a later passphrase compromise reveals nothing"
+      ],
+      "benign_explanation": ""
+    },
+    {
+      "severity": "low",
+      "title": "Unprotected deauth on an MFP-required network",
+      "detail": "\"testnetworkRPT88\" (04:42:1a:19:88:f8) requires management frame protection, so compliant clients will ignore these unprotected frames -- the attack is visible but ineffective",
+      "evidence": [
+        "RSN capabilities: MFP required"
+      ],
+      "benign_explanation": ""
+    }
+  ]
+}

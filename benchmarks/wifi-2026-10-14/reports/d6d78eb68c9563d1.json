@@ -1,0 +1,404 @@
+{
+  "capture": {
+    "path": "/Users/aysha/Desktop/Projects/airlock-cpp/.cache/wifi-benchmark/d6d78eb68c9563d1.pcap",
+    "frames": 2000,
+    "duration_seconds": 24.36,
+    "suspect_frames": 0,
+    "parse_errors": []
+  },
+  "frame_classes": {
+    "management": 559,
+    "control": 155,
+    "data": 1286
+  },
+  "frame_subtypes": {
+    "deauthentication": 213,
+    "qos-null": 1109,
+    "beacon": 222,
+    "data": 125,
+    "probe-request": 20,
+    "probe-response": 4,
+    "authentication": 15,
+    "assoc-request": 4,
+    "action": 48,
+    "qos-data": 52,
+    "block-ack-request": 27,
+    "block-ack": 71,
+    "disassociation": 29,
+    "rts": 56,
+    "cf-end": 1,
+    "assoc-response": 4
+  },
+  "networks": [
+    {
+      "bssid": "04:42:1a:19:88:f8",
+      "ssid": "testnetworkRPT88",
+      "channel": 1,
+      "security": "WPA3-Personal (SAE)",
+      "group_cipher": "CCMP-128",
+      "pairwise_ciphers": [
+        "CCMP-128"
+      ],
+      "akm_suites": [
+        "SAE"
+      ],
+      "mfp": "required",
+      "beacons": 222,
+      "clients": [
+        "01:00:5e:7f:ff:fa",
+        "01:80:c2:00:00:00",
+        "01:80:c2:00:00:0e",
+        "22:d0:61:a8:5e:8e",
+        "33:33:00:00:00:02",
+        "33:33:00:00:00:16",
+        "33:33:ff:a8:5e:8e",
+        "62:02:b7:f7:a3:c4",
+        "f0:d4:15:7f:4c:07"
+      ]
+    }
+  ],
+  "handshakes": [
+    {
+      "ap": "04:42:1a:19:88:f8",
+      "station": "22:d0:61:a8:5e:8e",
+      "messages_seen": [
+        1,
+        2,
+        3,
+        4
+      ],
+      "complete": true,
+      "duration_ms": 29.05,
+      "pmkid": "d4e417295fd47caf0ebe76361210162a",
+      "notes": [
+        "complete four-way handshake in 29.0 ms; an observer who records this and later guesses the passphrase can derive the PTK and decrypt the session offline",
+        "AP volunteered a PMKID (d4e417295fd47caf...) in message 1; this single frame is enough for an offline dictionary attack, with no client interaction needed"
+      ]
+    },
+    {
+      "ap": "04:42:1a:19:88:f8",
+      "station": "62:02:b7:f7:a3:c4",
+      "messages_seen": [
+        1
+      ],
+      "complete": false,
+      "duration_ms": null,
+      "pmkid": "1d2c2fe322670ba54edae0e9c395f627",
+      "notes": [
+        "incomplete: saw messages [1], missing [2, 3, 4] (capture may have started late, or the handshake failed)",
+        "AP volunteered a PMKID (1d2c2fe322670ba5...) in message 1; this single frame is enough for an offline dictionary attack, with no client interaction needed"
+      ]
+    },
+    {
+      "ap": "04:42:1a:19:88:f8",
+      "station": "62:02:b7:f7:a3:c4",
+      "messages_seen": [
+        1,
+        2,
+        3
+      ],
+      "complete": false,
+      "duration_ms": null,
+      "pmkid": "1d2c2fe322670ba54edae0e9c395f627",
+      "notes": [
+        "incomplete: saw messages [1, 2, 3], missing [4] (capture may have started late, or the handshake failed)",
+        "AP volunteered a PMKID (1d2c2fe322670ba5...) in message 1; this single frame is enough for an offline dictionary attack, with no client interaction needed"
+      ]
+    },
+    {
+      "ap": "04:42:1a:19:88:f8",
+      "station": "62:02:b7:f7:a3:c4",
+      "messages_seen": [
+        1
+      ],
+      "complete": false,
+      "duration_ms": null,
+      "pmkid": "79698e8cf07ac1d6bf8dc7078c573ae1",
+      "notes": [
+        "incomplete: saw messages [1], missing [2, 3, 4] (capture may have started late, or the handshake failed)",
+        "AP volunteered a PMKID (79698e8cf07ac1d6...) in message 1; this single frame is enough for an offline dictionary attack, with no client interaction needed"
+      ]
+    },
+    {
+      "ap": "04:42:1a:19:88:f8",
+      "station": "62:02:b7:f7:a3:c4",
+      "messages_seen": [
+        1
+      ],
+      "complete": false,
+      "duration_ms": null,
+      "pmkid": "79698e8cf07ac1d6bf8dc7078c573ae1",
+      "notes": [
+        "incomplete: saw messages [1], missing [2, 3, 4] (capture may have started late, or the handshake failed)",
+        "AP volunteered a PMKID (79698e8cf07ac1d6...) in message 1; this single frame is enough for an offline dictionary attack, with no client interaction needed"
+      ]
+    },
+    {
+      "ap": "04:42:1a:19:88:f8",
+      "station": "62:02:b7:f7:a3:c4",
+      "messages_seen": [
+        1
+      ],
+      "complete": false,
+      "duration_ms": null,
+      "pmkid": "79698e8cf07ac1d6bf8dc7078c573ae1",
+      "notes": [
+        "incomplete: saw messages [1], missing [2, 3, 4] (capture may have started late, or the handshake failed)",
+        "AP volunteered a PMKID (79698e8cf07ac1d6...) in message 1; this single frame is enough for an offline dictionary attack, with no client interaction needed"
+      ]
+    },
+    {
+      "ap": "04:42:1a:19:88:f8",
+      "station": "62:02:b7:f7:a3:c4",
+      "messages_seen": [
+        1
+      ],
+      "complete": false,
+      "duration_ms": null,
+      "pmkid": "79698e8cf07ac1d6bf8dc7078c573ae1",
+      "notes": [
+        "incomplete: saw messages [1], missing [2, 3, 4] (capture may have started late, or the handshake failed)",
+        "AP volunteered a PMKID (79698e8cf07ac1d6...) in message 1; this single frame is enough for an offline dictionary attack, with no client interaction needed"
+      ]
+    },
+    {
+      "ap": "04:42:1a:19:88:f8",
+      "station": "62:02:b7:f7:a3:c4",
+      "messages_seen": [
+        1
+      ],
+      "complete": false,
+      "duration_ms": null,
+      "pmkid": "79698e8cf07ac1d6bf8dc7078c573ae1",
+      "notes": [
+        "incomplete: saw messages [1], missing [2, 3, 4] (capture may have started late, or the handshake failed)",
+        "AP volunteered a PMKID (79698e8cf07ac1d6...) in message 1; this single frame is enough for an offline dictionary attack, with no client interaction needed"
+      ]
+    },
+    {
+      "ap": "04:42:1a:19:88:f8",
+      "station": "62:02:b7:f7:a3:c4",
+      "messages_seen": [
+        1
+      ],
+      "complete": false,
+      "duration_ms": null,
+      "pmkid": "79698e8cf07ac1d6bf8dc7078c573ae1",
+      "notes": [
+        "incomplete: saw messages [1], missing [2, 3, 4] (capture may have started late, or the handshake failed)",
+        "AP volunteered a PMKID (79698e8cf07ac1d6...) in message 1; this single frame is enough for an offline dictionary attack, with no client interaction needed"
+      ]
+    },
+    {
+      "ap": "04:42:1a:19:88:f8",
+      "station": "62:02:b7:f7:a3:c4",
+      "messages_seen": [
+        1
+      ],
+      "complete": false,
+      "duration_ms": null,
+      "pmkid": "79698e8cf07ac1d6bf8dc7078c573ae1",
+      "notes": [
+        "incomplete: saw messages [1], missing [2, 3, 4] (capture may have started late, or the handshake failed)",
+        "AP volunteered a PMKID (79698e8cf07ac1d6...) in message 1; this single frame is enough for an offline dictionary attack, with no client interaction needed"
+      ]
+    },
+    {
+      "ap": "04:42:1a:19:88:f8",
+      "station": "62:02:b7:f7:a3:c4",
+      "messages_seen": [
+        1
+      ],
+      "complete": false,
+      "duration_ms": null,
+      "pmkid": "79698e8cf07ac1d6bf8dc7078c573ae1",
+      "notes": [
+        "incomplete: saw messages [1], missing [2, 3, 4] (capture may have started late, or the handshake failed)",
+        "AP volunteered a PMKID (79698e8cf07ac1d6...) in message 1; this single frame is enough for an offline dictionary attack, with no client interaction needed"
+      ]
+    }
+  ],
+  "findings": [
+    {
+      "severity": "high",
+      "title": "Deauthentication / disassociation flood",
+      "detail": "20 deauth-class frames from 04:42:1a:19:88:f8 inside a 5-second window -- the signature of a forced disconnect, used either as denial of service or to make a client reconnect so its four-way handshake can be captured",
+      "evidence": [
+        "27 frames total, peak 20 within 5 s starting at t+0.00 s",
+        "source 04:42:1a:19:88:f8 -> target 04:42:1a:19:88:f8",
+        "reason codes seen: 7 (class 3 frame received from nonassociated STA)",
+        "0/27 frames were cryptographically protected",
+        "none were protected, so every one of them is forgeable by any device in range"
+      ],
+      "benign_explanation": "an access point rebooting, shedding clients under load, or steering a client to another band also emits deauths, though rarely this many this fast from one address"
+    },
+    {
+      "severity": "high",
+      "title": "Deauthentication / disassociation flood",
+      "detail": "29 deauth-class frames from 04:42:1a:19:88:f8 inside a 5-second window -- the signature of a forced disconnect, used either as denial of service or to make a client reconnect so its four-way handshake can be captured",
+      "evidence": [
+        "29 frames total, peak 29 within 5 s starting at t+0.00 s",
+        "source 04:42:1a:19:88:f8 -> target 22:d0:61:a8:5e:8e",
+        "reason codes seen: 7 (class 3 frame received from nonassociated STA)",
+        "0/29 frames were cryptographically protected",
+        "none were protected, so every one of them is forgeable by any device in range"
+      ],
+      "benign_explanation": "an access point rebooting, shedding clients under load, or steering a client to another band also emits deauths, though rarely this many this fast from one address"
+    },
+    {
+      "severity": "high",
+      "title": "Deauthentication / disassociation flood",
+      "detail": "144 deauth-class frames from 04:42:1a:19:88:f8 inside a 5-second window -- the signature of a forced disconnect, used either as denial of service or to make a client reconnect so its four-way handshake can be captured",
+      "evidence": [
+        "181 frames total, peak 144 within 5 s starting at t+2.92 s",
+        "source 04:42:1a:19:88:f8 -> target f0:d4:15:7f:4c:07",
+        "reason codes seen: 7 (class 3 frame received from nonassociated STA)",
+        "0/181 frames were cryptographically protected",
+        "none were protected, so every one of them is forgeable by any device in range"
+      ],
+      "benign_explanation": "an access point rebooting, shedding clients under load, or steering a client to another band also emits deauths, though rarely this many this fast from one address"
+    },
+    {
+      "severity": "high",
+      "title": "PMKID disclosed in EAPOL message 1",
+      "detail": "AP 04:42:1a:19:88:f8 (\"testnetworkRPT88\") included a PMKID in message 1. Because the PMKID is HMAC-SHA1(PMK, \"PMK Name\" || AP || STA), this one frame supports an offline dictionary attack on the passphrase with no client and no full handshake required",
+      "evidence": [
+        "PMKID d4e417295fd47caf0ebe76361210162a",
+        "station 22:d0:61:a8:5e:8e",
+        "remediation: WPA3-SAE, or disable PMKID caching on the AP"
+      ],
+      "benign_explanation": ""
+    },
+    {
+      "severity": "high",
+      "title": "PMKID disclosed in EAPOL message 1",
+      "detail": "AP 04:42:1a:19:88:f8 (\"testnetworkRPT88\") included a PMKID in message 1. Because the PMKID is HMAC-SHA1(PMK, \"PMK Name\" || AP || STA), this one frame supports an offline dictionary attack on the passphrase with no client and no full handshake required",
+      "evidence": [
+        "PMKID 1d2c2fe322670ba54edae0e9c395f627",
+        "station 62:02:b7:f7:a3:c4",
+        "remediation: WPA3-SAE, or disable PMKID caching on the AP"
+      ],
+      "benign_explanation": ""
+    },
+    {
+      "severity": "high",
+      "title": "PMKID disclosed in EAPOL message 1",
+      "detail": "AP 04:42:1a:19:88:f8 (\"testnetworkRPT88\") included a PMKID in message 1. Because the PMKID is HMAC-SHA1(PMK, \"PMK Name\" || AP || STA), this one frame supports an offline dictionary attack on the passphrase with no client and no full handshake required",
+      "evidence": [
+        "PMKID 1d2c2fe322670ba54edae0e9c395f627",
+        "station 62:02:b7:f7:a3:c4",
+        "remediation: WPA3-SAE, or disable PMKID caching on the AP"
+      ],
+      "benign_explanation": ""
+    },
+    {
+      "severity": "high",
+      "title": "PMKID disclosed in EAPOL message 1",
+      "detail": "AP 04:42:1a:19:88:f8 (\"testnetworkRPT88\") included a PMKID in message 1. Because the PMKID is HMAC-SHA1(PMK, \"PMK Name\" || AP || STA), this one frame supports an offline dictionary attack on the passphrase with no client and no full handshake required",
+      "evidence": [
+        "PMKID 79698e8cf07ac1d6bf8dc7078c573ae1",
+        "station 62:02:b7:f7:a3:c4",
+        "remediation: WPA3-SAE, or disable PMKID caching on the AP"
+      ],
+      "benign_explanation": ""
+    },
+    {
+      "severity": "high",
+      "title": "PMKID disclosed in EAPOL message 1",
+      "detail": "AP 04:42:1a:19:88:f8 (\"testnetworkRPT88\") included a PMKID in message 1. Because the PMKID is HMAC-SHA1(PMK, \"PMK Name\" || AP || STA), this one frame supports an offline dictionary attack on the passphrase with no client and no full handshake required",
+      "evidence": [
+        "PMKID 79698e8cf07ac1d6bf8dc7078c573ae1",
+        "station 62:02:b7:f7:a3:c4",
+        "remediation: WPA3-SAE, or disable PMKID caching on the AP"
+      ],
+      "benign_explanation": ""
+    },
+    {
+      "severity": "high",
+      "title": "PMKID disclosed in EAPOL message 1",
+      "detail": "AP 04:42:1a:19:88:f8 (\"testnetworkRPT88\") included a PMKID in message 1. Because the PMKID is HMAC-SHA1(PMK, \"PMK Name\" || AP || STA), this one frame supports an offline dictionary attack on the passphrase with no client and no full handshake required",
+      "evidence": [
+        "PMKID 79698e8cf07ac1d6bf8dc7078c573ae1",
+        "station 62:02:b7:f7:a3:c4",
+        "remediation: WPA3-SAE, or disable PMKID caching on the AP"
+      ],
+      "benign_explanation": ""
+    },
+    {
+      "severity": "high",
+      "title": "PMKID disclosed in EAPOL message 1",
+      "detail": "AP 04:42:1a:19:88:f8 (\"testnetworkRPT88\") included a PMKID in message 1. Because the PMKID is HMAC-SHA1(PMK, \"PMK Name\" || AP || STA), this one frame supports an offline dictionary attack on the passphrase with no client and no full handshake required",
+      "evidence": [
+        "PMKID 79698e8cf07ac1d6bf8dc7078c573ae1",
+        "station 62:02:b7:f7:a3:c4",
+        "remediation: WPA3-SAE, or disable PMKID caching on the AP"
+      ],
+      "benign_explanation": ""
+    },
+    {
+      "severity": "high",
+      "title": "PMKID disclosed in EAPOL message 1",
+      "detail": "AP 04:42:1a:19:88:f8 (\"testnetworkRPT88\") included a PMKID in message 1. Because the PMKID is HMAC-SHA1(PMK, \"PMK Name\" || AP || STA), this one frame supports an offline dictionary attack on the passphrase with no client and no full handshake required",
+      "evidence": [
+        "PMKID 79698e8cf07ac1d6bf8dc7078c573ae1",
+        "station 62:02:b7:f7:a3:c4",
+        "remediation: WPA3-SAE, or disable PMKID caching on the AP"
+      ],
+      "benign_explanation": ""
+    },
+    {
+      "severity": "high",
+      "title": "PMKID disclosed in EAPOL message 1",
+      "detail": "AP 04:42:1a:19:88:f8 (\"testnetworkRPT88\") included a PMKID in message 1. Because the PMKID is HMAC-SHA1(PMK, \"PMK Name\" || AP || STA), this one frame supports an offline dictionary attack on the passphrase with no client and no full handshake required",
+      "evidence": [
+        "PMKID 79698e8cf07ac1d6bf8dc7078c573ae1",
+        "station 62:02:b7:f7:a3:c4",
+        "remediation: WPA3-SAE, or disable PMKID caching on the AP"
+      ],
+      "benign_explanation": ""
+    },
+    {
+      "severity": "high",
+      "title": "PMKID disclosed in EAPOL message 1",
+      "detail": "AP 04:42:1a:19:88:f8 (\"testnetworkRPT88\") included a PMKID in message 1. Because the PMKID is HMAC-SHA1(PMK, \"PMK Name\" || AP || STA), this one frame supports an offline dictionary attack on the passphrase with no client and no full handshake required",
+      "evidence": [
+        "PMKID 79698e8cf07ac1d6bf8dc7078c573ae1",
+        "station 62:02:b7:f7:a3:c4",
+        "remediation: WPA3-SAE, or disable PMKID caching on the AP"
+      ],
+      "benign_explanation": ""
+    },
+    {
+      "severity": "high",
+      "title": "PMKID disclosed in EAPOL message 1",
+      "detail": "AP 04:42:1a:19:88:f8 (\"testnetworkRPT88\") included a PMKID in message 1. Because the PMKID is HMAC-SHA1(PMK, \"PMK Name\" || AP || STA), this one frame supports an offline dictionary attack on the passphrase with no client and no full handshake required",
+      "evidence": [
+        "PMKID 79698e8cf07ac1d6bf8dc7078c573ae1",
+        "station 62:02:b7:f7:a3:c4",
+        "remediation: WPA3-SAE, or disable PMKID caching on the AP"
+      ],
+      "benign_explanation": ""
+    },
+    {
+      "severity": "medium",
+      "title": "Complete four-way handshake captured",
+      "detail": "the full handshake between 22:d0:61:a8:5e:8e and 04:42:1a:19:88:f8 (\"testnetworkRPT88\") is in this capture. WPA2 derives the PTK from the PMK and the two nonces with no key exchange, so recovering the passphrase later decrypts this session retroactively -- WPA2-PSK has no forward secrecy",
+      "evidence": [
+        "completed in 29.0 ms",
+        "ANonce f30b2f1ade44bd72...",
+        "SNonce 859492953747ce34...",
+        "remediation: WPA3-SAE runs a Dragonfly key exchange per session, so a later passphrase compromise reveals nothing"
+      ],
+      "benign_explanation": ""
+    },
+    {
+      "severity": "low",
+      "title": "Unprotected deauth on an MFP-required network",
+      "detail": "\"testnetworkRPT88\" (04:42:1a:19:88:f8) requires management frame protection, so compliant clients will ignore these unprotected frames -- the attack is visible but ineffective",
+      "evidence": [
+        "RSN capabilities: MFP required"
+      ],
+      "benign_explanation": ""
+    }
+  ]
+}

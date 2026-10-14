@@ -92,8 +92,8 @@ std::vector<std::string> Handshake::notes() const {
   std::vector<std::string> out;
   if (complete()) {
     out.push_back(std::format(
-        "complete four-way handshake in {:.1f} ms; an observer who records this and later "
-        "guesses the passphrase can derive the PTK and decrypt the session offline",
+        "complete four-way handshake in {:.1f} ms; offline password-guessing exposure "
+        "depends on the authentication method, and cannot be inferred from completeness alone",
         *duration_ms()));
   } else {
     std::vector<int> missing;
@@ -107,8 +107,8 @@ std::vector<std::string> Handshake::notes() const {
   }
   if (pmkid) {
     out.push_back(std::format(
-        "AP volunteered a PMKID ({}...) in message 1; this single frame is enough for an "
-        "offline dictionary attack, with no client interaction needed",
+        "AP included a PMKID ({}...) in message 1; a PMKID alone does not establish an "
+        "offline dictionary attack without identifying the authentication method",
         to_hex(*pmkid).substr(0, 16)));
   }
   // Each message should advance or match the AP's replay counter.

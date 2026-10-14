@@ -1,7 +1,7 @@
 # Airlock (C++)
 
 It needs a C++20 compiler, CMake 3.20 or later, and OpenSSL 3. GoogleTest is
-used if installed and fetched otherwise. There are 199 tests.
+used if installed and fetched otherwise. There are 202 tests.
 
 ## Running it
 
@@ -90,10 +90,14 @@ security generation, including WPA3/WPA2 transition mode, which I report
 separately because it allows a downgrade from SAE to PSK. `src/wifi/eapol.cpp`
 identifies each four-way handshake message from its Key Information bits,
 extracts PMKIDs from message 1, and keeps repeated handshakes between the
-same pair separate. Five detectors then look for deauthentication floods,
-forgeable management frames, evil twins, weak configurations and offline
-attack material, and every finding carries its evidence and a benign
-explanation where one exists.
+same pair separate. Detectors then look for deauthentication floods,
+conflicting responses during association, forgeable management frames, evil
+twins, weak configurations and offline attack material. Offline password
+guessing claims require PSK-only advertised authentication; SAE, enterprise,
+mixed and unknown authentication produce informational handshake observations.
+PMF protects established associations but does not guarantee connection setup
+is immune to unprotected disconnects. Every finding carries its evidence and
+a benign explanation where one exists.
 
 ## How I checked the port
 

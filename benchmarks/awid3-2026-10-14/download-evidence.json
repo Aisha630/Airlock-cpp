@@ -1,0 +1,1183 @@
+[
+  {
+    "path": "CSV/1.Deauth/Deauth_0.csv",
+    "bytes": 38582340,
+    "url": "https://www.kaggle.com/api/v1/datasets/download/suumia/awid3-dataset/CSV%2F1.Deauth%2FDeauth_0.csv?datasetVersionNumber=1",
+    "sha256": "9d8f93c1cced0b047007988f85ca96648151b1d49c4343f4148253bf2a21e16f",
+    "labels": {
+      "Normal": 50000
+    },
+    "first_timestamp": 1608306178.4826,
+    "last_timestamp": 1608306382.972822,
+    "first_frame": 1,
+    "last_frame": 50000,
+    "rows": 50000,
+    "numbering_gaps": []
+  },
+  {
+    "path": "CSV/1.Deauth/Deauth_1.csv",
+    "bytes": 48684991,
+    "url": "https://www.kaggle.com/api/v1/datasets/download/suumia/awid3-dataset/CSV%2F1.Deauth%2FDeauth_1.csv?datasetVersionNumber=1",
+    "sha256": "508131f0ae10f4037f50466a600274a1aee101b0c90ecb1c200758c074b641ea",
+    "labels": {
+      "Normal": 50000
+    },
+    "first_timestamp": 1608306382.972824,
+    "last_timestamp": 1608306390.004014,
+    "first_frame": 50001,
+    "last_frame": 100000,
+    "rows": 50000,
+    "numbering_gaps": []
+  },
+  {
+    "path": "CSV/1.Deauth/Deauth_2.csv",
+    "bytes": 60255780,
+    "url": "https://www.kaggle.com/api/v1/datasets/download/suumia/awid3-dataset/CSV%2F1.Deauth%2FDeauth_2.csv?datasetVersionNumber=1",
+    "sha256": "a2f39c3c21ed0f5dc004d574a286f8e57bb3d2582f8715004703294a8e8f650f",
+    "labels": {
+      "Normal": 50000
+    },
+    "first_timestamp": 1608306390.0,
+    "last_timestamp": 1608306401.0,
+    "first_frame": 100001,
+    "last_frame": 150000,
+    "rows": 50000,
+    "numbering_gaps": []
+  },
+  {
+    "path": "CSV/1.Deauth/Deauth_3.csv",
+    "bytes": 57161608,
+    "url": "https://www.kaggle.com/api/v1/datasets/download/suumia/awid3-dataset/CSV%2F1.Deauth%2FDeauth_3.csv?datasetVersionNumber=1",
+    "sha256": "f2b964c1b783b7463f67973c9ebcf43faf062100badb8f9d6ac9baa6bccaaf46",
+    "labels": {
+      "Normal": 50000
+    },
+    "first_timestamp": 1608306401.310089,
+    "last_timestamp": 1608306408.805506,
+    "first_frame": 150001,
+    "last_frame": 200000,
+    "rows": 50000,
+    "numbering_gaps": []
+  },
+  {
+    "path": "CSV/1.Deauth/Deauth_4.csv",
+    "bytes": 64084618,
+    "url": "https://www.kaggle.com/api/v1/datasets/download/suumia/awid3-dataset/CSV%2F1.Deauth%2FDeauth_4.csv?datasetVersionNumber=1",
+    "sha256": "63e9525202bcfce8d0a934af2d99af2bc95622d707c4115eee77c2d9f5f0cac4",
+    "labels": {
+      "Normal": 50000
+    },
+    "first_timestamp": 1608306408.805641,
+    "last_timestamp": 1608306427.41085,
+    "first_frame": 200001,
+    "last_frame": 250000,
+    "rows": 50000,
+    "numbering_gaps": []
+  },
+  {
+    "path": "CSV/1.Deauth/Deauth_5.csv",
+    "bytes": 56759845,
+    "url": "https://www.kaggle.com/api/v1/datasets/download/suumia/awid3-dataset/CSV%2F1.Deauth%2FDeauth_5.csv?datasetVersionNumber=1",
+    "sha256": "b34f23f96d2b4b238991b9e5a1846b960046a8d9f4c7113b360c9258f172cadb",
+    "labels": {
+      "Normal": 50000
+    },
+    "first_timestamp": 1608306427.410855,
+    "last_timestamp": 1608306440.972844,
+    "first_frame": 250001,
+    "last_frame": 300000,
+    "rows": 50000,
+    "numbering_gaps": []
+  },
+  {
+    "path": "CSV/1.Deauth/Deauth_6.csv",
+    "bytes": 57924512,
+    "url": "https://www.kaggle.com/api/v1/datasets/download/suumia/awid3-dataset/CSV%2F1.Deauth%2FDeauth_6.csv?datasetVersionNumber=1",
+    "sha256": "66fb9346a220a36dcb6cf6dbf7846eca74b9194be0fc95df97358631f530276f",
+    "labels": {
+      "Normal": 50000
+    },
+    "first_timestamp": 1608306441.0,
+    "last_timestamp": 1608306449.0,
+    "first_frame": 300001,
+    "last_frame": 350000,
+    "rows": 50000,
+    "numbering_gaps": []
+  },
+  {
+    "path": "CSV/1.Deauth/Deauth_7.csv",
+    "bytes": 73391584,
+    "url": "https://www.kaggle.com/api/v1/datasets/download/suumia/awid3-dataset/CSV%2F1.Deauth%2FDeauth_7.csv?datasetVersionNumber=1",
+    "sha256": "23c4fb8e0a0a968331ed34faa7fb9dbaa9b42072713d6f464e653c001d97d540",
+    "labels": {
+      "Normal": 50000
+    },
+    "first_timestamp": 1608306449.0,
+    "last_timestamp": 1608306457.0,
+    "first_frame": 350001,
+    "last_frame": 400000,
+    "rows": 50000,
+    "numbering_gaps": []
+  },
+  {
+    "path": "CSV/1.Deauth/Deauth_8.csv",
+    "bytes": 68350815,
+    "url": "https://www.kaggle.com/api/v1/datasets/download/suumia/awid3-dataset/CSV%2F1.Deauth%2FDeauth_8.csv?datasetVersionNumber=1",
+    "sha256": "0313ad09368da39c1a22be841d37d4b87bef84b9b9a24a3cf69c1bc516d8dc45",
+    "labels": {
+      "Normal": 49999
+    },
+    "first_timestamp": 1608306457.0,
+    "last_timestamp": 1608306468.0,
+    "first_frame": 400001,
+    "last_frame": 450000,
+    "rows": 49999,
+    "numbering_gaps": [
+      {
+        "previous_frame": 424716,
+        "next_frame": 424718,
+        "previous_timestamp": 1608306463.0,
+        "next_timestamp": 1608306463.0,
+        "missing_records": 1
+      }
+    ]
+  },
+  {
+    "path": "CSV/1.Deauth/Deauth_9.csv",
+    "bytes": 67452854,
+    "url": "https://www.kaggle.com/api/v1/datasets/download/suumia/awid3-dataset/CSV%2F1.Deauth%2FDeauth_9.csv?datasetVersionNumber=1",
+    "sha256": "26c6892a724ff86aa0c797e92e2d13e55af0c19832b9d119f3dd9edb9ac3379c",
+    "labels": {
+      "Normal": 49998
+    },
+    "first_timestamp": 1608306468.0,
+    "last_timestamp": 1608306478.0,
+    "first_frame": 450001,
+    "last_frame": 500000,
+    "rows": 49998,
+    "numbering_gaps": [
+      {
+        "previous_frame": 465323,
+        "next_frame": 465325,
+        "previous_timestamp": 1608306471.0,
+        "next_timestamp": 1608306471.0,
+        "missing_records": 1
+      },
+      {
+        "previous_frame": 468043,
+        "next_frame": 468045,
+        "previous_timestamp": 1608306471.0,
+        "next_timestamp": 1608306471.0,
+        "missing_records": 1
+      }
+    ]
+  },
+  {
+    "path": "CSV/1.Deauth/Deauth_10.csv",
+    "bytes": 73209632,
+    "url": "https://www.kaggle.com/api/v1/datasets/download/suumia/awid3-dataset/CSV%2F1.Deauth%2FDeauth_10.csv?datasetVersionNumber=1",
+    "sha256": "86e88f93e5eca95f1f8cb7a1b8b80a55f18d01dca4589fdf7457e0b58f196821",
+    "labels": {
+      "Normal": 50000
+    },
+    "first_timestamp": 1608306478.088804,
+    "last_timestamp": 1608306486.704795,
+    "first_frame": 500001,
+    "last_frame": 550000,
+    "rows": 50000,
+    "numbering_gaps": []
+  },
+  {
+    "path": "CSV/1.Deauth/Deauth_11.csv",
+    "bytes": 66118309,
+    "url": "https://www.kaggle.com/api/v1/datasets/download/suumia/awid3-dataset/CSV%2F1.Deauth%2FDeauth_11.csv?datasetVersionNumber=1",
+    "sha256": "470b911bacc36180d9ee22f595bfe9c6a40ad2f27b6a23bc539b76389ee086ea",
+    "labels": {
+      "Normal": 50000
+    },
+    "first_timestamp": 1608306486.705178,
+    "last_timestamp": 1608306497.134757,
+    "first_frame": 550001,
+    "last_frame": 600000,
+    "rows": 50000,
+    "numbering_gaps": []
+  },
+  {
+    "path": "CSV/1.Deauth/Deauth_12.csv",
+    "bytes": 44533025,
+    "url": "https://www.kaggle.com/api/v1/datasets/download/suumia/awid3-dataset/CSV%2F1.Deauth%2FDeauth_12.csv?datasetVersionNumber=1",
+    "sha256": "5fbd7a18f48458be87a12208c79b940c14b9e24e2666e6fcc0b5c4c1379aee2c",
+    "labels": {
+      "Normal": 50000
+    },
+    "first_timestamp": 1608306497.134764,
+    "last_timestamp": 1608306505.027585,
+    "first_frame": 600001,
+    "last_frame": 650000,
+    "rows": 50000,
+    "numbering_gaps": []
+  },
+  {
+    "path": "CSV/1.Deauth/Deauth_13.csv",
+    "bytes": 43352351,
+    "url": "https://www.kaggle.com/api/v1/datasets/download/suumia/awid3-dataset/CSV%2F1.Deauth%2FDeauth_13.csv?datasetVersionNumber=1",
+    "sha256": "d6c0250d5c271b6996b1e5a0587817506469b0113f5f4a94a85494621b8792fc",
+    "labels": {
+      "Normal": 50000
+    },
+    "first_timestamp": 1608306505.0,
+    "last_timestamp": 1608306515.0,
+    "first_frame": 650001,
+    "last_frame": 700000,
+    "rows": 50000,
+    "numbering_gaps": []
+  },
+  {
+    "path": "CSV/1.Deauth/Deauth_14.csv",
+    "bytes": 44022153,
+    "url": "https://www.kaggle.com/api/v1/datasets/download/suumia/awid3-dataset/CSV%2F1.Deauth%2FDeauth_14.csv?datasetVersionNumber=1",
+    "sha256": "a4e31c2a150e80f53fef1e00f9c1ef251bd56e20375c58f40bd019c07f4c915a",
+    "labels": {
+      "Normal": 50000
+    },
+    "first_timestamp": 1608306515.036353,
+    "last_timestamp": 1608306527.882459,
+    "first_frame": 700001,
+    "last_frame": 750000,
+    "rows": 50000,
+    "numbering_gaps": []
+  },
+  {
+    "path": "CSV/1.Deauth/Deauth_15.csv",
+    "bytes": 42839594,
+    "url": "https://www.kaggle.com/api/v1/datasets/download/suumia/awid3-dataset/CSV%2F1.Deauth%2FDeauth_15.csv?datasetVersionNumber=1",
+    "sha256": "e23bd3daedd4af86e46acfc6e320f84e968d6d998e49ba430507b80cb3b10d84",
+    "labels": {
+      "Normal": 50000
+    },
+    "first_timestamp": 1608306527.882462,
+    "last_timestamp": 1608306540.856258,
+    "first_frame": 750001,
+    "last_frame": 800000,
+    "rows": 50000,
+    "numbering_gaps": []
+  },
+  {
+    "path": "CSV/1.Deauth/Deauth_16.csv",
+    "bytes": 48674323,
+    "url": "https://www.kaggle.com/api/v1/datasets/download/suumia/awid3-dataset/CSV%2F1.Deauth%2FDeauth_16.csv?datasetVersionNumber=1",
+    "sha256": "4886059c6922da15425de8e0e1342ce49895c6d334a314ea84585a3a5039c50f",
+    "labels": {
+      "Normal": 50000
+    },
+    "first_timestamp": 1608306540.856303,
+    "last_timestamp": 1608306552.34664,
+    "first_frame": 800001,
+    "last_frame": 850000,
+    "rows": 50000,
+    "numbering_gaps": []
+  },
+  {
+    "path": "CSV/1.Deauth/Deauth_17.csv",
+    "bytes": 59027712,
+    "url": "https://www.kaggle.com/api/v1/datasets/download/suumia/awid3-dataset/CSV%2F1.Deauth%2FDeauth_17.csv?datasetVersionNumber=1",
+    "sha256": "31327abfe304247afa15512a31281e18c0147e2d430c21fcfe408966514940fd",
+    "labels": {
+      "Normal": 50000
+    },
+    "first_timestamp": 1608306552.0,
+    "last_timestamp": 1608306563.0,
+    "first_frame": 850001,
+    "last_frame": 900000,
+    "rows": 50000,
+    "numbering_gaps": []
+  },
+  {
+    "path": "CSV/1.Deauth/Deauth_18.csv",
+    "bytes": 62683656,
+    "url": "https://www.kaggle.com/api/v1/datasets/download/suumia/awid3-dataset/CSV%2F1.Deauth%2FDeauth_18.csv?datasetVersionNumber=1",
+    "sha256": "7886466b5bb9ad6fce2cf83993e6e213a309001b2c5c20bb0379c6ae59e2e8b1",
+    "labels": {
+      "Normal": 50000
+    },
+    "first_timestamp": 1608306563.0,
+    "last_timestamp": 1608306577.0,
+    "first_frame": 900001,
+    "last_frame": 950000,
+    "rows": 50000,
+    "numbering_gaps": []
+  },
+  {
+    "path": "CSV/1.Deauth/Deauth_19.csv",
+    "bytes": 72712240,
+    "url": "https://www.kaggle.com/api/v1/datasets/download/suumia/awid3-dataset/CSV%2F1.Deauth%2FDeauth_19.csv?datasetVersionNumber=1",
+    "sha256": "c0e7e031e618c0b73fe9ec3d243913fa782960a8a50b227ff12884afda9a6f7e",
+    "labels": {
+      "Normal": 50000
+    },
+    "first_timestamp": 1608306577.0,
+    "last_timestamp": 1608306586.0,
+    "first_frame": 950001,
+    "last_frame": 1000000,
+    "rows": 50000,
+    "numbering_gaps": []
+  },
+  {
+    "path": "CSV/1.Deauth/Deauth_20.csv",
+    "bytes": 56675899,
+    "url": "https://www.kaggle.com/api/v1/datasets/download/suumia/awid3-dataset/CSV%2F1.Deauth%2FDeauth_20.csv?datasetVersionNumber=1",
+    "sha256": "e9c9e95681c6b4d42ffff886bf656e8d23bc212a056d292ceec1c16a25c5636f",
+    "labels": {
+      "Normal": 50000
+    },
+    "first_timestamp": 1608306585.85933,
+    "last_timestamp": 1608306594.921279,
+    "first_frame": 1000001,
+    "last_frame": 1050000,
+    "rows": 50000,
+    "numbering_gaps": []
+  },
+  {
+    "path": "CSV/1.Deauth/Deauth_21.csv",
+    "bytes": 49575507,
+    "url": "https://www.kaggle.com/api/v1/datasets/download/suumia/awid3-dataset/CSV%2F1.Deauth%2FDeauth_21.csv?datasetVersionNumber=1",
+    "sha256": "f289e839f73dbc677f667394d00762048c41aac64131c1019f60c364d7621e69",
+    "labels": {
+      "Normal": 49115,
+      "Deauth": 885
+    },
+    "first_timestamp": 1608306595.0,
+    "last_timestamp": 1608306606.0,
+    "first_frame": 1050001,
+    "last_frame": 1100000,
+    "rows": 50000,
+    "numbering_gaps": []
+  },
+  {
+    "path": "CSV/1.Deauth/Deauth_22.csv",
+    "bytes": 58216449,
+    "url": "https://www.kaggle.com/api/v1/datasets/download/suumia/awid3-dataset/CSV%2F1.Deauth%2FDeauth_22.csv?datasetVersionNumber=1",
+    "sha256": "c3fac58fa51fb734ac7cd0f67f069d5f8b4e89cdc4e0c21c876d589610928151",
+    "labels": {
+      "Normal": 44799,
+      "Deauth": 5201
+    },
+    "first_timestamp": 1608306606.0,
+    "last_timestamp": 1608306629.0,
+    "first_frame": 1100001,
+    "last_frame": 1150000,
+    "rows": 50000,
+    "numbering_gaps": []
+  },
+  {
+    "path": "CSV/1.Deauth/Deauth_23.csv",
+    "bytes": 60982738,
+    "url": "https://www.kaggle.com/api/v1/datasets/download/suumia/awid3-dataset/CSV%2F1.Deauth%2FDeauth_23.csv?datasetVersionNumber=1",
+    "sha256": "f1b613b0ed741a5be7a3bf033cfaf2883f6a34ad56cc5ef06f7abf00a511092e",
+    "labels": {
+      "Normal": 46384,
+      "Deauth": 3616
+    },
+    "first_timestamp": 1608306629.0,
+    "last_timestamp": 1608306644.0,
+    "first_frame": 1150001,
+    "last_frame": 1200000,
+    "rows": 50000,
+    "numbering_gaps": []
+  },
+  {
+    "path": "CSV/1.Deauth/Deauth_24.csv",
+    "bytes": 102752317,
+    "url": "https://www.kaggle.com/api/v1/datasets/download/suumia/awid3-dataset/CSV%2F1.Deauth%2FDeauth_24.csv?datasetVersionNumber=1",
+    "sha256": "aeda18ab7d77a6020b5a27cfd2efe2fb519fba10d51b56165c833e65f94c248f",
+    "labels": {
+      "Normal": 49091,
+      "Deauth": 909
+    },
+    "first_timestamp": 1608306644.0,
+    "last_timestamp": 1608306652.0,
+    "first_frame": 1200001,
+    "last_frame": 1250000,
+    "rows": 50000,
+    "numbering_gaps": []
+  },
+  {
+    "path": "CSV/1.Deauth/Deauth_25.csv",
+    "bytes": 45557186,
+    "url": "https://www.kaggle.com/api/v1/datasets/download/suumia/awid3-dataset/CSV%2F1.Deauth%2FDeauth_25.csv?datasetVersionNumber=1",
+    "sha256": "7b2299aa36b6388211b6210fc2c25143a443cfd603c21de070c65f076284bc16",
+    "labels": {
+      "Normal": 47433,
+      "Deauth": 2567
+    },
+    "first_timestamp": 1608306652.0,
+    "last_timestamp": 1608306666.0,
+    "first_frame": 1250001,
+    "last_frame": 1300000,
+    "rows": 50000,
+    "numbering_gaps": []
+  },
+  {
+    "path": "CSV/1.Deauth/Deauth_26.csv",
+    "bytes": 60302150,
+    "url": "https://www.kaggle.com/api/v1/datasets/download/suumia/awid3-dataset/CSV%2F1.Deauth%2FDeauth_26.csv?datasetVersionNumber=1",
+    "sha256": "a9e0987d6ca68a439d39c5285f64b119ba3233418c8a3309b5cf9e96cc2720a7",
+    "labels": {
+      "Normal": 47917,
+      "Deauth": 2083
+    },
+    "first_timestamp": 1608306666.0,
+    "last_timestamp": 1608306678.0,
+    "first_frame": 1300001,
+    "last_frame": 1350000,
+    "rows": 50000,
+    "numbering_gaps": []
+  },
+  {
+    "path": "CSV/1.Deauth/Deauth_27.csv",
+    "bytes": 68189741,
+    "url": "https://www.kaggle.com/api/v1/datasets/download/suumia/awid3-dataset/CSV%2F1.Deauth%2FDeauth_27.csv?datasetVersionNumber=1",
+    "sha256": "41c1ea8bc7455b9bc0b4a63a45971d0a4f97e8289a3e08351ba23ec48a2ffaea",
+    "labels": {
+      "Normal": 47076,
+      "Deauth": 2924
+    },
+    "first_timestamp": 1608306678.0,
+    "last_timestamp": 1608306693.0,
+    "first_frame": 1350001,
+    "last_frame": 1400000,
+    "rows": 50000,
+    "numbering_gaps": []
+  },
+  {
+    "path": "CSV/1.Deauth/Deauth_28.csv",
+    "bytes": 69198802,
+    "url": "https://www.kaggle.com/api/v1/datasets/download/suumia/awid3-dataset/CSV%2F1.Deauth%2FDeauth_28.csv?datasetVersionNumber=1",
+    "sha256": "d5cc6b1165c28bbb03bc120a33289ca898163804abac646c8a1eab6370712c4c",
+    "labels": {
+      "Normal": 47268,
+      "Deauth": 2732
+    },
+    "first_timestamp": 1608306693.0,
+    "last_timestamp": 1608306707.0,
+    "first_frame": 1400001,
+    "last_frame": 1450000,
+    "rows": 50000,
+    "numbering_gaps": []
+  },
+  {
+    "path": "CSV/1.Deauth/Deauth_29.csv",
+    "bytes": 51373224,
+    "url": "https://www.kaggle.com/api/v1/datasets/download/suumia/awid3-dataset/CSV%2F1.Deauth%2FDeauth_29.csv?datasetVersionNumber=1",
+    "sha256": "af93a867d357f5759125f2b0bb3a0c9c5f9ebc77eac1d013e60fd2e8e66e3735",
+    "labels": {
+      "Normal": 46664,
+      "Deauth": 3336
+    },
+    "first_timestamp": 1608306707.0,
+    "last_timestamp": 1608306722.0,
+    "first_frame": 1450001,
+    "last_frame": 1500000,
+    "rows": 50000,
+    "numbering_gaps": []
+  },
+  {
+    "path": "CSV/1.Deauth/Deauth_30.csv",
+    "bytes": 59035262,
+    "url": "https://www.kaggle.com/api/v1/datasets/download/suumia/awid3-dataset/CSV%2F1.Deauth%2FDeauth_30.csv?datasetVersionNumber=1",
+    "sha256": "9ff1db49018e14ed24b9b8be6a9d54176218bb607b90fe183b320db910c6a12c",
+    "labels": {
+      "Normal": 41060,
+      "Deauth": 8940
+    },
+    "first_timestamp": 1608306722.0,
+    "last_timestamp": 1608306756.0,
+    "first_frame": 1500001,
+    "last_frame": 1550000,
+    "rows": 50000,
+    "numbering_gaps": []
+  },
+  {
+    "path": "CSV/1.Deauth/Deauth_31.csv",
+    "bytes": 88553087,
+    "url": "https://www.kaggle.com/api/v1/datasets/download/suumia/awid3-dataset/CSV%2F1.Deauth%2FDeauth_31.csv?datasetVersionNumber=1",
+    "sha256": "ea7fe40b3159adda5e62d43a6c1944955b34bf4c0d2f8110a744cf998f55653a",
+    "labels": {
+      "Normal": 45262,
+      "Deauth": 4738
+    },
+    "first_timestamp": 1608306756.0,
+    "last_timestamp": 1608306776.0,
+    "first_frame": 1550001,
+    "last_frame": 1600000,
+    "rows": 50000,
+    "numbering_gaps": []
+  },
+  {
+    "path": "CSV/1.Deauth/Deauth_32.csv",
+    "bytes": 43668141,
+    "url": "https://www.kaggle.com/api/v1/datasets/download/suumia/awid3-dataset/CSV%2F1.Deauth%2FDeauth_32.csv?datasetVersionNumber=1",
+    "sha256": "5bfe7b769a57860ff9a27063dc52249728c8f207cdd31f3e77388357938fb552",
+    "labels": {
+      "Normal": 25461,
+      "Deauth": 1011
+    },
+    "first_timestamp": 1608306776.0,
+    "last_timestamp": 1608306781.0,
+    "first_frame": 1600001,
+    "last_frame": 1626472,
+    "rows": 26472,
+    "numbering_gaps": []
+  },
+  {
+    "path": "CSV/2.Disas/Disas_0.csv",
+    "bytes": 35680344,
+    "url": "https://www.kaggle.com/api/v1/datasets/download/suumia/awid3-dataset/CSV%2F2.Disas%2FDisas_0.csv?datasetVersionNumber=1",
+    "sha256": "8ec40e5f0d83075fc3dc3744490d1426b5cce2df48a2db6b1ac324bbb3c63aa7",
+    "labels": {
+      "Normal": 50000
+    },
+    "first_timestamp": 1608309677.261606,
+    "last_timestamp": 1608309872.515562,
+    "first_frame": 1,
+    "last_frame": 50000,
+    "rows": 50000,
+    "numbering_gaps": []
+  },
+  {
+    "path": "CSV/2.Disas/Disas_1.csv",
+    "bytes": 49291871,
+    "url": "https://www.kaggle.com/api/v1/datasets/download/suumia/awid3-dataset/CSV%2F2.Disas%2FDisas_1.csv?datasetVersionNumber=1",
+    "sha256": "2314ebf70130eff24f54e347ed4835c710cc1709dac30eec8300eefde442c354",
+    "labels": {
+      "Normal": 50000
+    },
+    "first_timestamp": 1608309872.515609,
+    "last_timestamp": 1608309881.980829,
+    "first_frame": 50001,
+    "last_frame": 100000,
+    "rows": 50000,
+    "numbering_gaps": []
+  },
+  {
+    "path": "CSV/2.Disas/Disas_2.csv",
+    "bytes": 71901065,
+    "url": "https://www.kaggle.com/api/v1/datasets/download/suumia/awid3-dataset/CSV%2F2.Disas%2FDisas_2.csv?datasetVersionNumber=1",
+    "sha256": "8f047290f29aa69b9e0c1f11be4966aa3efbd079c7cb268d691651f17c194fd5",
+    "labels": {
+      "Normal": 50000
+    },
+    "first_timestamp": 1608309881.980845,
+    "last_timestamp": 1608309888.808363,
+    "first_frame": 100001,
+    "last_frame": 150000,
+    "rows": 50000,
+    "numbering_gaps": []
+  },
+  {
+    "path": "CSV/2.Disas/Disas_3.csv",
+    "bytes": 52613619,
+    "url": "https://www.kaggle.com/api/v1/datasets/download/suumia/awid3-dataset/CSV%2F2.Disas%2FDisas_3.csv?datasetVersionNumber=1",
+    "sha256": "b516274b5fea0cf116e6a9d077701ad37fc9b9cbd6ea12ca1da637adc8f2636c",
+    "labels": {
+      "Normal": 49998
+    },
+    "first_timestamp": 1608309889.0,
+    "last_timestamp": 1608309896.0,
+    "first_frame": 150001,
+    "last_frame": 200000,
+    "rows": 49998,
+    "numbering_gaps": [
+      {
+        "previous_frame": 156552,
+        "next_frame": 156554,
+        "previous_timestamp": 1608309890.0,
+        "next_timestamp": 1608309890.0,
+        "missing_records": 1
+      },
+      {
+        "previous_frame": 159660,
+        "next_frame": 159662,
+        "previous_timestamp": 1608309890.0,
+        "next_timestamp": 1608309890.0,
+        "missing_records": 1
+      }
+    ]
+  },
+  {
+    "path": "CSV/2.Disas/Disas_4.csv",
+    "bytes": 44026229,
+    "url": "https://www.kaggle.com/api/v1/datasets/download/suumia/awid3-dataset/CSV%2F2.Disas%2FDisas_4.csv?datasetVersionNumber=1",
+    "sha256": "49520b489c9d45d2a2b4364ee42fffc9a594524aed073345e4f14fdf386b3f3d",
+    "labels": {
+      "Normal": 50000
+    },
+    "first_timestamp": 1608309896.0,
+    "last_timestamp": 1608309904.0,
+    "first_frame": 200001,
+    "last_frame": 250000,
+    "rows": 50000,
+    "numbering_gaps": []
+  },
+  {
+    "path": "CSV/2.Disas/Disas_5.csv",
+    "bytes": 53921182,
+    "url": "https://www.kaggle.com/api/v1/datasets/download/suumia/awid3-dataset/CSV%2F2.Disas%2FDisas_5.csv?datasetVersionNumber=1",
+    "sha256": "24eeeb981870d25befd2621efcafc124b35ad894b2ecc42daea3c49abc6fb8e5",
+    "labels": {
+      "Normal": 50000
+    },
+    "first_timestamp": 1608309904.0,
+    "last_timestamp": 1608309910.0,
+    "first_frame": 250001,
+    "last_frame": 300000,
+    "rows": 50000,
+    "numbering_gaps": []
+  },
+  {
+    "path": "CSV/2.Disas/Disas_6.csv",
+    "bytes": 75718023,
+    "url": "https://www.kaggle.com/api/v1/datasets/download/suumia/awid3-dataset/CSV%2F2.Disas%2FDisas_6.csv?datasetVersionNumber=1",
+    "sha256": "4d16be1c7cf288a4d6436012c1212e73d9350abb70141e454f0028a470cab664",
+    "labels": {
+      "Normal": 50000
+    },
+    "first_timestamp": 1608309910.002758,
+    "last_timestamp": 1608309916.141593,
+    "first_frame": 300001,
+    "last_frame": 350000,
+    "rows": 50000,
+    "numbering_gaps": []
+  },
+  {
+    "path": "CSV/2.Disas/Disas_7.csv",
+    "bytes": 60234134,
+    "url": "https://www.kaggle.com/api/v1/datasets/download/suumia/awid3-dataset/CSV%2F2.Disas%2FDisas_7.csv?datasetVersionNumber=1",
+    "sha256": "56038d5a25c79c902681288f25595e18987547daaeac5fdd7d5a4b68719a0225",
+    "labels": {
+      "Normal": 50000
+    },
+    "first_timestamp": 1608309916.1416,
+    "last_timestamp": 1608309931.498455,
+    "first_frame": 350001,
+    "last_frame": 400000,
+    "rows": 50000,
+    "numbering_gaps": []
+  },
+  {
+    "path": "CSV/2.Disas/Disas_8.csv",
+    "bytes": 77939628,
+    "url": "https://www.kaggle.com/api/v1/datasets/download/suumia/awid3-dataset/CSV%2F2.Disas%2FDisas_8.csv?datasetVersionNumber=1",
+    "sha256": "17e9a56d1ea9f5e244f7fbb1ee04fd3dbc4511a151c162efc0e42ec0158d0a38",
+    "labels": {
+      "Normal": 50000
+    },
+    "first_timestamp": 1608309931.0,
+    "last_timestamp": 1608309940.0,
+    "first_frame": 400001,
+    "last_frame": 450000,
+    "rows": 50000,
+    "numbering_gaps": []
+  },
+  {
+    "path": "CSV/2.Disas/Disas_9.csv",
+    "bytes": 72522641,
+    "url": "https://www.kaggle.com/api/v1/datasets/download/suumia/awid3-dataset/CSV%2F2.Disas%2FDisas_9.csv?datasetVersionNumber=1",
+    "sha256": "d35a609b0c4ac0f0f6f262d7a9921d07a846ae4aa982c59834d8081f22d3a433",
+    "labels": {
+      "Normal": 50000
+    },
+    "first_timestamp": 1608309940.312489,
+    "last_timestamp": 1608309946.508814,
+    "first_frame": 450001,
+    "last_frame": 500000,
+    "rows": 50000,
+    "numbering_gaps": []
+  },
+  {
+    "path": "CSV/2.Disas/Disas_10.csv",
+    "bytes": 77426002,
+    "url": "https://www.kaggle.com/api/v1/datasets/download/suumia/awid3-dataset/CSV%2F2.Disas%2FDisas_10.csv?datasetVersionNumber=1",
+    "sha256": "66a04889498651d1a5dc9de5b20f107a5b4ecb7c16554380e109014d375a4ed0",
+    "labels": {
+      "Normal": 50000
+    },
+    "first_timestamp": 1608309946.508864,
+    "last_timestamp": 1608309953.439489,
+    "first_frame": 500001,
+    "last_frame": 550000,
+    "rows": 50000,
+    "numbering_gaps": []
+  },
+  {
+    "path": "CSV/2.Disas/Disas_11.csv",
+    "bytes": 79540851,
+    "url": "https://www.kaggle.com/api/v1/datasets/download/suumia/awid3-dataset/CSV%2F2.Disas%2FDisas_11.csv?datasetVersionNumber=1",
+    "sha256": "66d79a1331594b4c91f665d119dd4e9785ee1eca6a2ffdd018b58a0c28dbd59b",
+    "labels": {
+      "Normal": 50000
+    },
+    "first_timestamp": 1608309953.439492,
+    "last_timestamp": 1608309963.967724,
+    "first_frame": 550001,
+    "last_frame": 600000,
+    "rows": 50000,
+    "numbering_gaps": []
+  },
+  {
+    "path": "CSV/2.Disas/Disas_12.csv",
+    "bytes": 60077771,
+    "url": "https://www.kaggle.com/api/v1/datasets/download/suumia/awid3-dataset/CSV%2F2.Disas%2FDisas_12.csv?datasetVersionNumber=1",
+    "sha256": "caaecfeca9cd1fb370c8083f4dd8dadc58c61373e83bbbb68764eb60cea44a97",
+    "labels": {
+      "Normal": 50000
+    },
+    "first_timestamp": 1608309964.0,
+    "last_timestamp": 1608309971.0,
+    "first_frame": 600001,
+    "last_frame": 650000,
+    "rows": 50000,
+    "numbering_gaps": []
+  },
+  {
+    "path": "CSV/2.Disas/Disas_13.csv",
+    "bytes": 59785841,
+    "url": "https://www.kaggle.com/api/v1/datasets/download/suumia/awid3-dataset/CSV%2F2.Disas%2FDisas_13.csv?datasetVersionNumber=1",
+    "sha256": "a5de1f0ec82f8f52b0953762f5a73d078906ececab1e39af6fd41ae47e8e6be5",
+    "labels": {
+      "Normal": 50000
+    },
+    "first_timestamp": 1608309971.0,
+    "last_timestamp": 1608309982.0,
+    "first_frame": 650001,
+    "last_frame": 700000,
+    "rows": 50000,
+    "numbering_gaps": []
+  },
+  {
+    "path": "CSV/2.Disas/Disas_14.csv",
+    "bytes": 62724912,
+    "url": "https://www.kaggle.com/api/v1/datasets/download/suumia/awid3-dataset/CSV%2F2.Disas%2FDisas_14.csv?datasetVersionNumber=1",
+    "sha256": "b0eb1925951dba87161f1cb648a1d6c4514255a9334737de43972a9913351af8",
+    "labels": {
+      "Normal": 50000
+    },
+    "first_timestamp": 1608309982.205831,
+    "last_timestamp": 1608309991.376052,
+    "first_frame": 700001,
+    "last_frame": 750000,
+    "rows": 50000,
+    "numbering_gaps": []
+  },
+  {
+    "path": "CSV/2.Disas/Disas_15.csv",
+    "bytes": 69622485,
+    "url": "https://www.kaggle.com/api/v1/datasets/download/suumia/awid3-dataset/CSV%2F2.Disas%2FDisas_15.csv?datasetVersionNumber=1",
+    "sha256": "489d823839fa3ce5f0295b664e2259197a01ae38fd6b510090b3dcb74d8e5260",
+    "labels": {
+      "Normal": 50000
+    },
+    "first_timestamp": 1608309991.0,
+    "last_timestamp": 1608309997.0,
+    "first_frame": 750001,
+    "last_frame": 800000,
+    "rows": 50000,
+    "numbering_gaps": []
+  },
+  {
+    "path": "CSV/2.Disas/Disas_16.csv",
+    "bytes": 69244343,
+    "url": "https://www.kaggle.com/api/v1/datasets/download/suumia/awid3-dataset/CSV%2F2.Disas%2FDisas_16.csv?datasetVersionNumber=1",
+    "sha256": "2280061580dbf3b22b9bb3c74897278223a8d3b156f93b0368015390526df4c2",
+    "labels": {
+      "Normal": 50000
+    },
+    "first_timestamp": 1608309997.0,
+    "last_timestamp": 1608310004.0,
+    "first_frame": 800001,
+    "last_frame": 850000,
+    "rows": 50000,
+    "numbering_gaps": []
+  },
+  {
+    "path": "CSV/2.Disas/Disas_17.csv",
+    "bytes": 60762431,
+    "url": "https://www.kaggle.com/api/v1/datasets/download/suumia/awid3-dataset/CSV%2F2.Disas%2FDisas_17.csv?datasetVersionNumber=1",
+    "sha256": "fca514f92f6d4392610a94425cc30b68ff8690dd2c50f148580e5da026c461e0",
+    "labels": {
+      "Normal": 50000
+    },
+    "first_timestamp": 1608310003.924367,
+    "last_timestamp": 1608310011.266998,
+    "first_frame": 850001,
+    "last_frame": 900000,
+    "rows": 50000,
+    "numbering_gaps": []
+  },
+  {
+    "path": "CSV/2.Disas/Disas_18.csv",
+    "bytes": 57124901,
+    "url": "https://www.kaggle.com/api/v1/datasets/download/suumia/awid3-dataset/CSV%2F2.Disas%2FDisas_18.csv?datasetVersionNumber=1",
+    "sha256": "509711fd547294c12bd7e607813581821b77f25634d3076cbf3dabb91ba1eb8e",
+    "labels": {
+      "Normal": 50000
+    },
+    "first_timestamp": 1608310011.267058,
+    "last_timestamp": 1608310022.387719,
+    "first_frame": 900001,
+    "last_frame": 950000,
+    "rows": 50000,
+    "numbering_gaps": []
+  },
+  {
+    "path": "CSV/2.Disas/Disas_19.csv",
+    "bytes": 67194733,
+    "url": "https://www.kaggle.com/api/v1/datasets/download/suumia/awid3-dataset/CSV%2F2.Disas%2FDisas_19.csv?datasetVersionNumber=1",
+    "sha256": "2ae3a8a6355be3aa165b2c4f3b63501219d00ce0699f0c57ba8445356241a782",
+    "labels": {
+      "Normal": 50000
+    },
+    "first_timestamp": 1608310022.387724,
+    "last_timestamp": 1608310033.207273,
+    "first_frame": 950001,
+    "last_frame": 1000000,
+    "rows": 50000,
+    "numbering_gaps": []
+  },
+  {
+    "path": "CSV/2.Disas/Disas_20.csv",
+    "bytes": 54991909,
+    "url": "https://www.kaggle.com/api/v1/datasets/download/suumia/awid3-dataset/CSV%2F2.Disas%2FDisas_20.csv?datasetVersionNumber=1",
+    "sha256": "df301b42ed8a52563da756fdbf39d12e79c5b6843ec2846fbc7c21bb1f8d9700",
+    "labels": {
+      "Normal": 50000
+    },
+    "first_timestamp": 1608310033.0,
+    "last_timestamp": 1608310042.0,
+    "first_frame": 1000001,
+    "last_frame": 1050000,
+    "rows": 50000,
+    "numbering_gaps": []
+  },
+  {
+    "path": "CSV/2.Disas/Disas_21.csv",
+    "bytes": 78984079,
+    "url": "https://www.kaggle.com/api/v1/datasets/download/suumia/awid3-dataset/CSV%2F2.Disas%2FDisas_21.csv?datasetVersionNumber=1",
+    "sha256": "1a5b56e26f8391a6dfe7b1f48655dada492e38e2d38655286bca65c1071a11fa",
+    "labels": {
+      "Normal": 50000
+    },
+    "first_timestamp": 1608310042.0,
+    "last_timestamp": 1608310048.0,
+    "first_frame": 1050001,
+    "last_frame": 1100000,
+    "rows": 50000,
+    "numbering_gaps": []
+  },
+  {
+    "path": "CSV/2.Disas/Disas_22.csv",
+    "bytes": 77656301,
+    "url": "https://www.kaggle.com/api/v1/datasets/download/suumia/awid3-dataset/CSV%2F2.Disas%2FDisas_22.csv?datasetVersionNumber=1",
+    "sha256": "7fdedd7a6eeb0c6c4d830be37fb0043e4fdb8d74952a7791b04a142758123f12",
+    "labels": {
+      "Normal": 50000
+    },
+    "first_timestamp": 1608310048.0,
+    "last_timestamp": 1608310054.0,
+    "first_frame": 1100001,
+    "last_frame": 1150000,
+    "rows": 50000,
+    "numbering_gaps": []
+  },
+  {
+    "path": "CSV/2.Disas/Disas_23.csv",
+    "bytes": 68584430,
+    "url": "https://www.kaggle.com/api/v1/datasets/download/suumia/awid3-dataset/CSV%2F2.Disas%2FDisas_23.csv?datasetVersionNumber=1",
+    "sha256": "d5bca95f53f8950036c02c5982a38e7b97e2ce50ad7e5414a13f7fd0f23c5eec",
+    "labels": {
+      "Normal": 50000
+    },
+    "first_timestamp": 1608310054.078141,
+    "last_timestamp": 1608310060.906158,
+    "first_frame": 1150001,
+    "last_frame": 1200000,
+    "rows": 50000,
+    "numbering_gaps": []
+  },
+  {
+    "path": "CSV/2.Disas/Disas_24.csv",
+    "bytes": 78388665,
+    "url": "https://www.kaggle.com/api/v1/datasets/download/suumia/awid3-dataset/CSV%2F2.Disas%2FDisas_24.csv?datasetVersionNumber=1",
+    "sha256": "fcdc38cc8ce52a7a7a69b5370daf6895bedd0d3d61d601f07d706780d07de1c7",
+    "labels": {
+      "Normal": 50000
+    },
+    "first_timestamp": 1608310060.906258,
+    "last_timestamp": 1608310067.170726,
+    "first_frame": 1200001,
+    "last_frame": 1250000,
+    "rows": 50000,
+    "numbering_gaps": []
+  },
+  {
+    "path": "CSV/2.Disas/Disas_25.csv",
+    "bytes": 48481045,
+    "url": "https://www.kaggle.com/api/v1/datasets/download/suumia/awid3-dataset/CSV%2F2.Disas%2FDisas_25.csv?datasetVersionNumber=1",
+    "sha256": "e2887ba69c6df54c6d8b76051bf1ad70207f4d6e12a602880f012833c6abaf2a",
+    "labels": {
+      "Normal": 50000
+    },
+    "first_timestamp": 1608310067.170857,
+    "last_timestamp": 1608310075.1318,
+    "first_frame": 1250001,
+    "last_frame": 1300000,
+    "rows": 50000,
+    "numbering_gaps": []
+  },
+  {
+    "path": "CSV/2.Disas/Disas_26.csv",
+    "bytes": 50993542,
+    "url": "https://www.kaggle.com/api/v1/datasets/download/suumia/awid3-dataset/CSV%2F2.Disas%2FDisas_26.csv?datasetVersionNumber=1",
+    "sha256": "d3b28b97d2df95536b1a08aa6b500a28c976cb8b02c175b6030002befd2c7d6f",
+    "labels": {
+      "Normal": 50000
+    },
+    "first_timestamp": 1608310075.131801,
+    "last_timestamp": 1608310086.039886,
+    "first_frame": 1300001,
+    "last_frame": 1350000,
+    "rows": 50000,
+    "numbering_gaps": []
+  },
+  {
+    "path": "CSV/2.Disas/Disas_27.csv",
+    "bytes": 44162803,
+    "url": "https://www.kaggle.com/api/v1/datasets/download/suumia/awid3-dataset/CSV%2F2.Disas%2FDisas_27.csv?datasetVersionNumber=1",
+    "sha256": "202bb3059502938503865c6e89fccf1bb717e51d122f5cb77864cb2a641e0160",
+    "labels": {
+      "Normal": 50000
+    },
+    "first_timestamp": 1608310086.03995,
+    "last_timestamp": 1608310095.271833,
+    "first_frame": 1350001,
+    "last_frame": 1400000,
+    "rows": 50000,
+    "numbering_gaps": []
+  },
+  {
+    "path": "CSV/2.Disas/Disas_28.csv",
+    "bytes": 56920173,
+    "url": "https://www.kaggle.com/api/v1/datasets/download/suumia/awid3-dataset/CSV%2F2.Disas%2FDisas_28.csv?datasetVersionNumber=1",
+    "sha256": "54b4fae12d66e46eea394b8949dcf2274a763a8bf25cb8e07d2b2edffeddf796",
+    "labels": {
+      "Normal": 47881,
+      "Disas": 2119
+    },
+    "first_timestamp": 1608310095.0,
+    "last_timestamp": 1608310107.0,
+    "first_frame": 1400001,
+    "last_frame": 1450000,
+    "rows": 50000,
+    "numbering_gaps": []
+  },
+  {
+    "path": "CSV/2.Disas/Disas_29.csv",
+    "bytes": 70171630,
+    "url": "https://www.kaggle.com/api/v1/datasets/download/suumia/awid3-dataset/CSV%2F2.Disas%2FDisas_29.csv?datasetVersionNumber=1",
+    "sha256": "8f568c0f39c37dff12d2c25041622c926104bd35b061cd35dda26855b6f04f01",
+    "labels": {
+      "Normal": 47761,
+      "Disas": 2238
+    },
+    "first_timestamp": 1608310107.0,
+    "last_timestamp": 1608310118.0,
+    "first_frame": 1450001,
+    "last_frame": 1500000,
+    "rows": 49999,
+    "numbering_gaps": [
+      {
+        "previous_frame": 1477920,
+        "next_frame": 1477922,
+        "previous_timestamp": 1608310113.0,
+        "next_timestamp": 1608310113.0,
+        "missing_records": 1
+      }
+    ]
+  },
+  {
+    "path": "CSV/2.Disas/Disas_30.csv",
+    "bytes": 56139096,
+    "url": "https://www.kaggle.com/api/v1/datasets/download/suumia/awid3-dataset/CSV%2F2.Disas%2FDisas_30.csv?datasetVersionNumber=1",
+    "sha256": "30a536ba5350676c595c035f46a9b56aa10c44301bf6164a89d6421812077c72",
+    "labels": {
+      "Normal": 46378,
+      "Disas": 3622
+    },
+    "first_timestamp": 1608310118.0,
+    "last_timestamp": 1608310134.0,
+    "first_frame": 1500001,
+    "last_frame": 1550000,
+    "rows": 50000,
+    "numbering_gaps": []
+  },
+  {
+    "path": "CSV/2.Disas/Disas_31.csv",
+    "bytes": 42066970,
+    "url": "https://www.kaggle.com/api/v1/datasets/download/suumia/awid3-dataset/CSV%2F2.Disas%2FDisas_31.csv?datasetVersionNumber=1",
+    "sha256": "268583831805db4f7719f59d968e59e9451e52a695201a502315eefdb1db35db",
+    "labels": {
+      "Normal": 43840,
+      "Disas": 6160
+    },
+    "first_timestamp": 1608310134.0,
+    "last_timestamp": 1608310161.0,
+    "first_frame": 1550001,
+    "last_frame": 1600000,
+    "rows": 50000,
+    "numbering_gaps": []
+  },
+  {
+    "path": "CSV/2.Disas/Disas_32.csv",
+    "bytes": 72955915,
+    "url": "https://www.kaggle.com/api/v1/datasets/download/suumia/awid3-dataset/CSV%2F2.Disas%2FDisas_32.csv?datasetVersionNumber=1",
+    "sha256": "49582ee8829d3c7e30356d9b795f7a2d66f980cb0379749c92719ec5faff63b9",
+    "labels": {
+      "Normal": 49207,
+      "Disas": 793
+    },
+    "first_timestamp": 1608310161.0,
+    "last_timestamp": 1608310168.0,
+    "first_frame": 1600001,
+    "last_frame": 1650000,
+    "rows": 50000,
+    "numbering_gaps": []
+  },
+  {
+    "path": "CSV/2.Disas/Disas_33.csv",
+    "bytes": 56708571,
+    "url": "https://www.kaggle.com/api/v1/datasets/download/suumia/awid3-dataset/CSV%2F2.Disas%2FDisas_33.csv?datasetVersionNumber=1",
+    "sha256": "f8c2b55813ed13c1d6fbdc5cb37e8d93b0e84733957da8be27f3f2355a880590",
+    "labels": {
+      "Normal": 43417,
+      "Disas": 6583
+    },
+    "first_timestamp": 1608310168.0,
+    "last_timestamp": 1608310178.0,
+    "first_frame": 1650001,
+    "last_frame": 1700000,
+    "rows": 50000,
+    "numbering_gaps": []
+  },
+  {
+    "path": "CSV/2.Disas/Disas_34.csv",
+    "bytes": 40061615,
+    "url": "https://www.kaggle.com/api/v1/datasets/download/suumia/awid3-dataset/CSV%2F2.Disas%2FDisas_34.csv?datasetVersionNumber=1",
+    "sha256": "33c518011bb41eef54d7d3efc2afe76f7e49ade7519fc72b2c4b133d9e4d8193",
+    "labels": {
+      "Normal": 39154,
+      "Disas": 10846
+    },
+    "first_timestamp": 1608310178.0,
+    "last_timestamp": 1608310182.0,
+    "first_frame": 1700001,
+    "last_frame": 1750000,
+    "rows": 50000,
+    "numbering_gaps": []
+  },
+  {
+    "path": "CSV/2.Disas/Disas_35.csv",
+    "bytes": 72216336,
+    "url": "https://www.kaggle.com/api/v1/datasets/download/suumia/awid3-dataset/CSV%2F2.Disas%2FDisas_35.csv?datasetVersionNumber=1",
+    "sha256": "bbfa598ea5e7a7aca51cb337a601cbe9c3800cbae99c56d10e80ff48a92d1195",
+    "labels": {
+      "Disas": 7200,
+      "Normal": 42800
+    },
+    "first_timestamp": 1608310182.0,
+    "last_timestamp": 1608310188.0,
+    "first_frame": 1750001,
+    "last_frame": 1800000,
+    "rows": 50000,
+    "numbering_gaps": []
+  },
+  {
+    "path": "CSV/2.Disas/Disas_36.csv",
+    "bytes": 49200229,
+    "url": "https://www.kaggle.com/api/v1/datasets/download/suumia/awid3-dataset/CSV%2F2.Disas%2FDisas_36.csv?datasetVersionNumber=1",
+    "sha256": "f1cb49a927163598760bf7aa1b613b72dc94932221e15c57d9711ed2e394d9c3",
+    "labels": {
+      "Disas": 8702,
+      "Normal": 41298
+    },
+    "first_timestamp": 1608310188.0,
+    "last_timestamp": 1608310201.0,
+    "first_frame": 1800001,
+    "last_frame": 1850000,
+    "rows": 50000,
+    "numbering_gaps": []
+  },
+  {
+    "path": "CSV/2.Disas/Disas_37.csv",
+    "bytes": 39386770,
+    "url": "https://www.kaggle.com/api/v1/datasets/download/suumia/awid3-dataset/CSV%2F2.Disas%2FDisas_37.csv?datasetVersionNumber=1",
+    "sha256": "c689462b0e7f6204784140e516d8fb6356b27793613d3676bc4efdff276f172d",
+    "labels": {
+      "Normal": 40371,
+      "Disas": 9629
+    },
+    "first_timestamp": 1608310201.0,
+    "last_timestamp": 1608310233.0,
+    "first_frame": 1850001,
+    "last_frame": 1900000,
+    "rows": 50000,
+    "numbering_gaps": []
+  },
+  {
+    "path": "CSV/2.Disas/Disas_38.csv",
+    "bytes": 26573442,
+    "url": "https://www.kaggle.com/api/v1/datasets/download/suumia/awid3-dataset/CSV%2F2.Disas%2FDisas_38.csv?datasetVersionNumber=1",
+    "sha256": "3100e61c5367935a6970bda26c82b42f6bf831527c5f8aeed48834aeb789f093",
+    "labels": {
+      "Disas": 9258,
+      "Normal": 40742
+    },
+    "first_timestamp": 1608310233.0,
+    "last_timestamp": 1608310249.0,
+    "first_frame": 1900001,
+    "last_frame": 1950000,
+    "rows": 50000,
+    "numbering_gaps": []
+  },
+  {
+    "path": "CSV/2.Disas/Disas_39.csv",
+    "bytes": 26779897,
+    "url": "https://www.kaggle.com/api/v1/datasets/download/suumia/awid3-dataset/CSV%2F2.Disas%2FDisas_39.csv?datasetVersionNumber=1",
+    "sha256": "f867cd5649100e53b9a73707dd10f9ea83da4638324e7a995b82fbfe86b6bf07",
+    "labels": {
+      "Normal": 42927,
+      "Disas": 7073
+    },
+    "first_timestamp": 1608310249.0,
+    "last_timestamp": 1608310272.0,
+    "first_frame": 1950001,
+    "last_frame": 2000000,
+    "rows": 50000,
+    "numbering_gaps": []
+  },
+  {
+    "path": "CSV/2.Disas/Disas_40.csv",
+    "bytes": 7287630,
+    "url": "https://www.kaggle.com/api/v1/datasets/download/suumia/awid3-dataset/CSV%2F2.Disas%2FDisas_40.csv?datasetVersionNumber=1",
+    "sha256": "5b26dd2cf6f500bffa2ec299959acbf09c49c54773f83f7eb9354248144f80dc",
+    "labels": {
+      "Normal": 12811,
+      "Disas": 908
+    },
+    "first_timestamp": 1608310272.0,
+    "last_timestamp": 1608310281.0,
+    "first_frame": 2000001,
+    "last_frame": 2013719,
+    "rows": 13719,
+    "numbering_gaps": []
+  }
+]

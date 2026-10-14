@@ -1,0 +1,13 @@
+[ 25%] Built target airlock_akex
+[ 28%] Building CXX object CMakeFiles/airlock_wifi.dir/src/wifi/anomalies.cpp.o
+[ 30%] Building CXX object CMakeFiles/airlock_wifi.dir/src/wifi/report.cpp.o
+[ 35%] Built target akex
+[ 38%] Linking CXX static library libairlock_wifi.a
+[ 61%] Built target airlock_wifi
+[ 64%] Building CXX object CMakeFiles/wifi.dir/tools/wifi.cpp.o
+[ 69%] Building CXX object CMakeFiles/airlock_tests.dir/tests/test_robustness.cpp.o
+[ 69%] Building CXX object CMakeFiles/airlock_tests.dir/tests/test_analyze.cpp.o
+[ 71%] Linking CXX executable wifi
+[ 71%] Built target wifi
+[ 74%] Linking CXX executable airlock_tests
+[100%] Built target airlock_tests

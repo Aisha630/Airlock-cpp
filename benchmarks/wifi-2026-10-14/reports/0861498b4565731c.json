@@ -1,0 +1,59 @@
+{
+  "capture": {
+    "path": "/Users/aysha/Desktop/Projects/airlock-cpp/.cache/wifi-benchmark/0861498b4565731c.pcap",
+    "frames": 2000,
+    "duration_seconds": 0.816,
+    "suspect_frames": 0,
+    "parse_errors": []
+  },
+  "frame_classes": {
+    "management": 12,
+    "control": 457,
+    "data": 1531
+  },
+  "frame_subtypes": {
+    "qos-data": 1523,
+    "block-ack": 169,
+    "rts": 275,
+    "qos-null": 7,
+    "vht-he-ndp-announcement": 13,
+    "action-no-ack": 11,
+    "data": 1,
+    "beacon": 1
+  },
+  "networks": [
+    {
+      "bssid": "04:42:1a:19:88:f8",
+      "ssid": "testnetworkRPT88",
+      "channel": 1,
+      "security": "WPA3-Personal (SAE)",
+      "group_cipher": "CCMP-128",
+      "pairwise_ciphers": [
+        "CCMP-128"
+      ],
+      "akm_suites": [
+        "SAE"
+      ],
+      "mfp": "required",
+      "beacons": 1,
+      "clients": [
+        "01:80:c2:00:00:00",
+        "56:09:29:8d:dc:1f",
+        "a8:42:a1:0e:7f:b2"
+      ]
+    }
+  ],
+  "handshakes": [],
+  "findings": [
+    {
+      "severity": "info",
+      "title": "Low-confidence observations excluded from the findings",
+      "detail": "a real access point beacons about ten times a second, so a BSSID seen once in a capture of any length is far more likely to be a corrupted frame than a network; these are listed here rather than reported as findings",
+      "evidence": [
+        "1 BSSIDs were seen fewer than 2 times and are not reported individually",
+        "04:42:1a:19:88:f8: 1 beacons, ssid 'testnetworkRPT88'"
+      ],
+      "benign_explanation": "a genuine but very distant access point, or one captured for only a moment while channel hopping, can also appear this way"
+    }
+  ]
+}

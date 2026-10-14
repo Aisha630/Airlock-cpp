@@ -1,0 +1,1226 @@
+{
+  "corpus": "1.Deauth",
+  "files": 33,
+  "total_rows": 1626469,
+  "label_counts": {
+    "Normal": 1587527,
+    "Deauth": 38942
+  },
+  "duration_seconds": 602.5174000263214,
+  "complete_windows": 118,
+  "numbering_gaps": [
+    {
+      "previous_frame": 424716,
+      "next_frame": 424718,
+      "previous_timestamp": 1608306463.0,
+      "next_timestamp": 1608306463.0,
+      "missing_records": 1
+    },
+    {
+      "previous_frame": 465323,
+      "next_frame": 465325,
+      "previous_timestamp": 1608306471.0,
+      "next_timestamp": 1608306471.0,
+      "missing_records": 1
+    },
+    {
+      "previous_frame": 468043,
+      "next_frame": 468045,
+      "previous_timestamp": 1608306471.0,
+      "next_timestamp": 1608306471.0,
+      "missing_records": 1
+    }
+  ],
+  "missing_records": 3,
+  "excluded_windows_for_gaps": 2,
+  "benign_windows_with_disconnects": 1,
+  "confusion": {
+    "FP": 0,
+    "TN": 82,
+    "TP": 36,
+    "FN": 0
+  },
+  "false_positive_rate": 0.0,
+  "windows": [
+    {
+      "start_epoch": 1608306180,
+      "end_epoch": 1608306185,
+      "attack_labeled": false,
+      "flood_findings": 0,
+      "outcome": "TN",
+      "deauth_class_frames": 0,
+      "rows": 250,
+      "attacks": 0
+    },
+    {
+      "start_epoch": 1608306185,
+      "end_epoch": 1608306190,
+      "attack_labeled": false,
+      "flood_findings": 0,
+      "outcome": "TN",
+      "deauth_class_frames": 0,
+      "rows": 159,
+      "attacks": 0
+    },
+    {
+      "start_epoch": 1608306190,
+      "end_epoch": 1608306195,
+      "attack_labeled": false,
+      "flood_findings": 0,
+      "outcome": "TN",
+      "deauth_class_frames": 0,
+      "rows": 345,
+      "attacks": 0
+    },
+    {
+      "start_epoch": 1608306195,
+      "end_epoch": 1608306200,
+      "attack_labeled": false,
+      "flood_findings": 0,
+      "outcome": "TN",
+      "deauth_class_frames": 0,
+      "rows": 725,
+      "attacks": 0
+    },
+    {
+      "start_epoch": 1608306200,
+      "end_epoch": 1608306205,
+      "attack_labeled": false,
+      "flood_findings": 0,
+      "outcome": "TN",
+      "deauth_class_frames": 0,
+      "rows": 356,
+      "attacks": 0
+    },
+    {
+      "start_epoch": 1608306205,
+      "end_epoch": 1608306210,
+      "attack_labeled": false,
+      "flood_findings": 0,
+      "outcome": "TN",
+      "deauth_class_frames": 0,
+      "rows": 147,
+      "attacks": 0
+    },
+    {
+      "start_epoch": 1608306210,
+      "end_epoch": 1608306215,
+      "attack_labeled": false,
+      "flood_findings": 0,
+      "outcome": "TN",
+      "deauth_class_frames": 3,
+      "rows": 239,
+      "attacks": 0
+    },
+    {
+      "start_epoch": 1608306215,
+      "end_epoch": 1608306220,
+      "attack_labeled": false,
+      "flood_findings": 0,
+      "outcome": "TN",
+      "deauth_class_frames": 0,
+      "rows": 964,
+      "attacks": 0
+    },
+    {
+      "start_epoch": 1608306220,
+      "end_epoch": 1608306225,
+      "attack_labeled": false,
+      "flood_findings": 0,
+      "outcome": "TN",
+      "deauth_class_frames": 0,
+      "rows": 574,
+      "attacks": 0
+    },
+    {
+      "start_epoch": 1608306225,
+      "end_epoch": 1608306230,
+      "attack_labeled": false,
+      "flood_findings": 0,
+      "outcome": "TN",
+      "deauth_class_frames": 0,
+      "rows": 2060,
+      "attacks": 0
+    },
+    {
+      "start_epoch": 1608306230,
+      "end_epoch": 1608306235,
+      "attack_labeled": false,
+      "flood_findings": 0,
+      "outcome": "TN",
+      "deauth_class_frames": 0,
+      "rows": 497,
+      "attacks": 0
+    },
+    {
+      "start_epoch": 1608306235,
+      "end_epoch": 1608306240,
+      "attack_labeled": false,
+      "flood_findings": 0,
+      "outcome": "TN",
+      "deauth_class_frames": 0,
+      "rows": 402,
+      "attacks": 0
+    },
+    {
+      "start_epoch": 1608306240,
+      "end_epoch": 1608306245,
+      "attack_labeled": false,
+      "flood_findings": 0,
+      "outcome": "TN",
+      "deauth_class_frames": 0,
+      "rows": 395,
+      "attacks": 0
+    },
+    {
+      "start_epoch": 1608306245,
+      "end_epoch": 1608306250,
+      "attack_labeled": false,
+      "flood_findings": 0,
+      "outcome": "TN",
+      "deauth_class_frames": 0,
+      "rows": 199,
+      "attacks": 0
+    },
+    {
+      "start_epoch": 1608306250,
+      "end_epoch": 1608306255,
+      "attack_labeled": false,
+      "flood_findings": 0,
+      "outcome": "TN",
+      "deauth_class_frames": 0,
+      "rows": 163,
+      "attacks": 0
+    },
+    {
+      "start_epoch": 1608306255,
+      "end_epoch": 1608306260,
+      "attack_labeled": false,
+      "flood_findings": 0,
+      "outcome": "TN",
+      "deauth_class_frames": 0,
+      "rows": 438,
+      "attacks": 0
+    },
+    {
+      "start_epoch": 1608306260,
+      "end_epoch": 1608306265,
+      "attack_labeled": false,
+      "flood_findings": 0,
+      "outcome": "TN",
+      "deauth_class_frames": 0,
+      "rows": 761,
+      "attacks": 0
+    },
+    {
+      "start_epoch": 1608306265,
+      "end_epoch": 1608306270,
+      "attack_labeled": false,
+      "flood_findings": 0,
+      "outcome": "TN",
+      "deauth_class_frames": 0,
+      "rows": 1615,
+      "attacks": 0
+    },
+    {
+      "start_epoch": 1608306270,
+      "end_epoch": 1608306275,
+      "attack_labeled": false,
+      "flood_findings": 0,
+      "outcome": "TN",
+      "deauth_class_frames": 0,
+      "rows": 2714,
+      "attacks": 0
+    },
+    {
+      "start_epoch": 1608306275,
+      "end_epoch": 1608306280,
+      "attack_labeled": false,
+      "flood_findings": 0,
+      "outcome": "TN",
+      "deauth_class_frames": 0,
+      "rows": 6507,
+      "attacks": 0
+    },
+    {
+      "start_epoch": 1608306280,
+      "end_epoch": 1608306285,
+      "attack_labeled": false,
+      "flood_findings": 0,
+      "outcome": "TN",
+      "deauth_class_frames": 0,
+      "rows": 603,
+      "attacks": 0
+    },
+    {
+      "start_epoch": 1608306285,
+      "end_epoch": 1608306290,
+      "attack_labeled": false,
+      "flood_findings": 0,
+      "outcome": "TN",
+      "deauth_class_frames": 0,
+      "rows": 232,
+      "attacks": 0
+    },
+    {
+      "start_epoch": 1608306290,
+      "end_epoch": 1608306295,
+      "attack_labeled": false,
+      "flood_findings": 0,
+      "outcome": "TN",
+      "deauth_class_frames": 0,
+      "rows": 329,
+      "attacks": 0
+    },
+    {
+      "start_epoch": 1608306295,
+      "end_epoch": 1608306300,
+      "attack_labeled": false,
+      "flood_findings": 0,
+      "outcome": "TN",
+      "deauth_class_frames": 0,
+      "rows": 332,
+      "attacks": 0
+    },
+    {
+      "start_epoch": 1608306300,
+      "end_epoch": 1608306305,
+      "attack_labeled": false,
+      "flood_findings": 0,
+      "outcome": "TN",
+      "deauth_class_frames": 0,
+      "rows": 195,
+      "attacks": 0
+    },
+    {
+      "start_epoch": 1608306305,
+      "end_epoch": 1608306310,
+      "attack_labeled": false,
+      "flood_findings": 0,
+      "outcome": "TN",
+      "deauth_class_frames": 0,
+      "rows": 145,
+      "attacks": 0
+    },
+    {
+      "start_epoch": 1608306310,
+      "end_epoch": 1608306315,
+      "attack_labeled": false,
+      "flood_findings": 0,
+      "outcome": "TN",
+      "deauth_class_frames": 0,
+      "rows": 185,
+      "attacks": 0
+    },
+    {
+      "start_epoch": 1608306315,
+      "end_epoch": 1608306320,
+      "attack_labeled": false,
+      "flood_findings": 0,
+      "outcome": "TN",
+      "deauth_class_frames": 0,
+      "rows": 152,
+      "attacks": 0
+    },
+    {
+      "start_epoch": 1608306320,
+      "end_epoch": 1608306325,
+      "attack_labeled": false,
+      "flood_findings": 0,
+      "outcome": "TN",
+      "deauth_class_frames": 0,
+      "rows": 250,
+      "attacks": 0
+    },
+    {
+      "start_epoch": 1608306325,
+      "end_epoch": 1608306330,
+      "attack_labeled": false,
+      "flood_findings": 0,
+      "outcome": "TN",
+      "deauth_class_frames": 0,
+      "rows": 248,
+      "attacks": 0
+    },
+    {
+      "start_epoch": 1608306330,
+      "end_epoch": 1608306335,
+      "attack_labeled": false,
+      "flood_findings": 0,
+      "outcome": "TN",
+      "deauth_class_frames": 0,
+      "rows": 142,
+      "attacks": 0
+    },
+    {
+      "start_epoch": 1608306335,
+      "end_epoch": 1608306340,
+      "attack_labeled": false,
+      "flood_findings": 0,
+      "outcome": "TN",
+      "deauth_class_frames": 0,
+      "rows": 199,
+      "attacks": 0
+    },
+    {
+      "start_epoch": 1608306340,
+      "end_epoch": 1608306345,
+      "attack_labeled": false,
+      "flood_findings": 0,
+      "outcome": "TN",
+      "deauth_class_frames": 0,
+      "rows": 302,
+      "attacks": 0
+    },
+    {
+      "start_epoch": 1608306345,
+      "end_epoch": 1608306350,
+      "attack_labeled": false,
+      "flood_findings": 0,
+      "outcome": "TN",
+      "deauth_class_frames": 0,
+      "rows": 143,
+      "attacks": 0
+    },
+    {
+      "start_epoch": 1608306350,
+      "end_epoch": 1608306355,
+      "attack_labeled": false,
+      "flood_findings": 0,
+      "outcome": "TN",
+      "deauth_class_frames": 0,
+      "rows": 247,
+      "attacks": 0
+    },
+    {
+      "start_epoch": 1608306355,
+      "end_epoch": 1608306360,
+      "attack_labeled": false,
+      "flood_findings": 0,
+      "outcome": "TN",
+      "deauth_class_frames": 0,
+      "rows": 305,
+      "attacks": 0
+    },
+    {
+      "start_epoch": 1608306360,
+      "end_epoch": 1608306365,
+      "attack_labeled": false,
+      "flood_findings": 0,
+      "outcome": "TN",
+      "deauth_class_frames": 0,
+      "rows": 1325,
+      "attacks": 0
+    },
+    {
+      "start_epoch": 1608306365,
+      "end_epoch": 1608306370,
+      "attack_labeled": false,
+      "flood_findings": 0,
+      "outcome": "TN",
+      "deauth_class_frames": 0,
+      "rows": 528,
+      "attacks": 0
+    },
+    {
+      "start_epoch": 1608306370,
+      "end_epoch": 1608306375,
+      "attack_labeled": false,
+      "flood_findings": 0,
+      "outcome": "TN",
+      "deauth_class_frames": 0,
+      "rows": 625,
+      "attacks": 0
+    },
+    {
+      "start_epoch": 1608306375,
+      "end_epoch": 1608306380,
+      "attack_labeled": false,
+      "flood_findings": 0,
+      "outcome": "TN",
+      "deauth_class_frames": 0,
+      "rows": 10266,
+      "attacks": 0
+    },
+    {
+      "start_epoch": 1608306380,
+      "end_epoch": 1608306385,
+      "attack_labeled": false,
+      "flood_findings": 0,
+      "outcome": "TN",
+      "deauth_class_frames": 0,
+      "rows": 32567,
+      "attacks": 0
+    },
+    {
+      "start_epoch": 1608306385,
+      "end_epoch": 1608306390,
+      "attack_labeled": false,
+      "flood_findings": 0,
+      "outcome": "TN",
+      "deauth_class_frames": 0,
+      "rows": 31093,
+      "attacks": 0
+    },
+    {
+      "start_epoch": 1608306390,
+      "end_epoch": 1608306395,
+      "attack_labeled": false,
+      "flood_findings": 0,
+      "outcome": "TN",
+      "deauth_class_frames": 0,
+      "rows": 20670,
+      "attacks": 0
+    },
+    {
+      "start_epoch": 1608306395,
+      "end_epoch": 1608306400,
+      "attack_labeled": false,
+      "flood_findings": 0,
+      "outcome": "TN",
+      "deauth_class_frames": 0,
+      "rows": 22415,
+      "attacks": 0
+    },
+    {
+      "start_epoch": 1608306400,
+      "end_epoch": 1608306405,
+      "attack_labeled": false,
+      "flood_findings": 0,
+      "outcome": "TN",
+      "deauth_class_frames": 0,
+      "rows": 32191,
+      "attacks": 0
+    },
+    {
+      "start_epoch": 1608306405,
+      "end_epoch": 1608306410,
+      "attack_labeled": false,
+      "flood_findings": 0,
+      "outcome": "TN",
+      "deauth_class_frames": 0,
+      "rows": 30086,
+      "attacks": 0
+    },
+    {
+      "start_epoch": 1608306410,
+      "end_epoch": 1608306415,
+      "attack_labeled": false,
+      "flood_findings": 0,
+      "outcome": "TN",
+      "deauth_class_frames": 0,
+      "rows": 8949,
+      "attacks": 0
+    },
+    {
+      "start_epoch": 1608306415,
+      "end_epoch": 1608306420,
+      "attack_labeled": false,
+      "flood_findings": 0,
+      "outcome": "TN",
+      "deauth_class_frames": 0,
+      "rows": 9935,
+      "attacks": 0
+    },
+    {
+      "start_epoch": 1608306420,
+      "end_epoch": 1608306425,
+      "attack_labeled": false,
+      "flood_findings": 0,
+      "outcome": "TN",
+      "deauth_class_frames": 0,
+      "rows": 20415,
+      "attacks": 0
+    },
+    {
+      "start_epoch": 1608306425,
+      "end_epoch": 1608306430,
+      "attack_labeled": false,
+      "flood_findings": 0,
+      "outcome": "TN",
+      "deauth_class_frames": 0,
+      "rows": 10062,
+      "attacks": 0
+    },
+    {
+      "start_epoch": 1608306430,
+      "end_epoch": 1608306435,
+      "attack_labeled": false,
+      "flood_findings": 0,
+      "outcome": "TN",
+      "deauth_class_frames": 0,
+      "rows": 3963,
+      "attacks": 0
+    },
+    {
+      "start_epoch": 1608306435,
+      "end_epoch": 1608306440,
+      "attack_labeled": false,
+      "flood_findings": 0,
+      "outcome": "TN",
+      "deauth_class_frames": 0,
+      "rows": 35649,
+      "attacks": 0
+    },
+    {
+      "start_epoch": 1608306440,
+      "end_epoch": 1608306445,
+      "attack_labeled": false,
+      "flood_findings": 0,
+      "outcome": "TN",
+      "deauth_class_frames": 0,
+      "rows": 38825,
+      "attacks": 0
+    },
+    {
+      "start_epoch": 1608306445,
+      "end_epoch": 1608306450,
+      "attack_labeled": false,
+      "flood_findings": 0,
+      "outcome": "TN",
+      "deauth_class_frames": 0,
+      "rows": 19861,
+      "attacks": 0
+    },
+    {
+      "start_epoch": 1608306450,
+      "end_epoch": 1608306455,
+      "attack_labeled": false,
+      "flood_findings": 0,
+      "outcome": "TN",
+      "deauth_class_frames": 0,
+      "rows": 31221,
+      "attacks": 0
+    },
+    {
+      "start_epoch": 1608306455,
+      "end_epoch": 1608306460,
+      "attack_labeled": false,
+      "flood_findings": 0,
+      "outcome": "TN",
+      "deauth_class_frames": 0,
+      "rows": 22299,
+      "attacks": 0
+    },
+    {
+      "start_epoch": 1608306465,
+      "end_epoch": 1608306470,
+      "attack_labeled": false,
+      "flood_findings": 0,
+      "outcome": "TN",
+      "deauth_class_frames": 0,
+      "rows": 27654,
+      "attacks": 0
+    },
+    {
+      "start_epoch": 1608306475,
+      "end_epoch": 1608306480,
+      "attack_labeled": false,
+      "flood_findings": 0,
+      "outcome": "TN",
+      "deauth_class_frames": 0,
+      "rows": 30520,
+      "attacks": 0
+    },
+    {
+      "start_epoch": 1608306480,
+      "end_epoch": 1608306485,
+      "attack_labeled": false,
+      "flood_findings": 0,
+      "outcome": "TN",
+      "deauth_class_frames": 0,
+      "rows": 27081,
+      "attacks": 0
+    },
+    {
+      "start_epoch": 1608306485,
+      "end_epoch": 1608306490,
+      "attack_labeled": false,
+      "flood_findings": 0,
+      "outcome": "TN",
+      "deauth_class_frames": 0,
+      "rows": 23409,
+      "attacks": 0
+    },
+    {
+      "start_epoch": 1608306490,
+      "end_epoch": 1608306495,
+      "attack_labeled": false,
+      "flood_findings": 0,
+      "outcome": "TN",
+      "deauth_class_frames": 0,
+      "rows": 27712,
+      "attacks": 0
+    },
+    {
+      "start_epoch": 1608306495,
+      "end_epoch": 1608306500,
+      "attack_labeled": false,
+      "flood_findings": 0,
+      "outcome": "TN",
+      "deauth_class_frames": 0,
+      "rows": 26849,
+      "attacks": 0
+    },
+    {
+      "start_epoch": 1608306500,
+      "end_epoch": 1608306505,
+      "attack_labeled": false,
+      "flood_findings": 0,
+      "outcome": "TN",
+      "deauth_class_frames": 0,
+      "rows": 31939,
+      "attacks": 0
+    },
+    {
+      "start_epoch": 1608306505,
+      "end_epoch": 1608306510,
+      "attack_labeled": false,
+      "flood_findings": 0,
+      "outcome": "TN",
+      "deauth_class_frames": 0,
+      "rows": 18317,
+      "attacks": 0
+    },
+    {
+      "start_epoch": 1608306510,
+      "end_epoch": 1608306515,
+      "attack_labeled": false,
+      "flood_findings": 0,
+      "outcome": "TN",
+      "deauth_class_frames": 0,
+      "rows": 26887,
+      "attacks": 0
+    },
+    {
+      "start_epoch": 1608306515,
+      "end_epoch": 1608306520,
+      "attack_labeled": false,
+      "flood_findings": 0,
+      "outcome": "TN",
+      "deauth_class_frames": 0,
+      "rows": 27046,
+      "attacks": 0
+    },
+    {
+      "start_epoch": 1608306520,
+      "end_epoch": 1608306525,
+      "attack_labeled": false,
+      "flood_findings": 0,
+      "outcome": "TN",
+      "deauth_class_frames": 0,
+      "rows": 15325,
+      "attacks": 0
+    },
+    {
+      "start_epoch": 1608306525,
+      "end_epoch": 1608306530,
+      "attack_labeled": false,
+      "flood_findings": 0,
+      "outcome": "TN",
+      "deauth_class_frames": 0,
+      "rows": 16677,
+      "attacks": 0
+    },
+    {
+      "start_epoch": 1608306530,
+      "end_epoch": 1608306535,
+      "attack_labeled": false,
+      "flood_findings": 0,
+      "outcome": "TN",
+      "deauth_class_frames": 0,
+      "rows": 18021,
+      "attacks": 0
+    },
+    {
+      "start_epoch": 1608306535,
+      "end_epoch": 1608306540,
+      "attack_labeled": false,
+      "flood_findings": 0,
+      "outcome": "TN",
+      "deauth_class_frames": 0,
+      "rows": 23391,
+      "attacks": 0
+    },
+    {
+      "start_epoch": 1608306540,
+      "end_epoch": 1608306545,
+      "attack_labeled": false,
+      "flood_findings": 0,
+      "outcome": "TN",
+      "deauth_class_frames": 0,
+      "rows": 19604,
+      "attacks": 0
+    },
+    {
+      "start_epoch": 1608306545,
+      "end_epoch": 1608306550,
+      "attack_labeled": false,
+      "flood_findings": 0,
+      "outcome": "TN",
+      "deauth_class_frames": 0,
+      "rows": 25355,
+      "attacks": 0
+    },
+    {
+      "start_epoch": 1608306550,
+      "end_epoch": 1608306555,
+      "attack_labeled": false,
+      "flood_findings": 0,
+      "outcome": "TN",
+      "deauth_class_frames": 0,
+      "rows": 20103,
+      "attacks": 0
+    },
+    {
+      "start_epoch": 1608306555,
+      "end_epoch": 1608306560,
+      "attack_labeled": false,
+      "flood_findings": 0,
+      "outcome": "TN",
+      "deauth_class_frames": 0,
+      "rows": 25891,
+      "attacks": 0
+    },
+    {
+      "start_epoch": 1608306560,
+      "end_epoch": 1608306565,
+      "attack_labeled": false,
+      "flood_findings": 0,
+      "outcome": "TN",
+      "deauth_class_frames": 0,
+      "rows": 16972,
+      "attacks": 0
+    },
+    {
+      "start_epoch": 1608306565,
+      "end_epoch": 1608306570,
+      "attack_labeled": false,
+      "flood_findings": 0,
+      "outcome": "TN",
+      "deauth_class_frames": 0,
+      "rows": 19937,
+      "attacks": 0
+    },
+    {
+      "start_epoch": 1608306570,
+      "end_epoch": 1608306575,
+      "attack_labeled": false,
+      "flood_findings": 0,
+      "outcome": "TN",
+      "deauth_class_frames": 0,
+      "rows": 18439,
+      "attacks": 0
+    },
+    {
+      "start_epoch": 1608306575,
+      "end_epoch": 1608306580,
+      "attack_labeled": false,
+      "flood_findings": 0,
+      "outcome": "TN",
+      "deauth_class_frames": 0,
+      "rows": 16928,
+      "attacks": 0
+    },
+    {
+      "start_epoch": 1608306580,
+      "end_epoch": 1608306585,
+      "attack_labeled": false,
+      "flood_findings": 0,
+      "outcome": "TN",
+      "deauth_class_frames": 0,
+      "rows": 29772,
+      "attacks": 0
+    },
+    {
+      "start_epoch": 1608306585,
+      "end_epoch": 1608306590,
+      "attack_labeled": false,
+      "flood_findings": 0,
+      "outcome": "TN",
+      "deauth_class_frames": 0,
+      "rows": 33990,
+      "attacks": 0
+    },
+    {
+      "start_epoch": 1608306590,
+      "end_epoch": 1608306595,
+      "attack_labeled": false,
+      "flood_findings": 0,
+      "outcome": "TN",
+      "deauth_class_frames": 0,
+      "rows": 27515,
+      "attacks": 0
+    },
+    {
+      "start_epoch": 1608306595,
+      "end_epoch": 1608306600,
+      "attack_labeled": false,
+      "flood_findings": 0,
+      "outcome": "TN",
+      "deauth_class_frames": 0,
+      "rows": 27072,
+      "attacks": 0
+    },
+    {
+      "start_epoch": 1608306600,
+      "end_epoch": 1608306605,
+      "attack_labeled": true,
+      "flood_findings": 2,
+      "outcome": "TP",
+      "deauth_class_frames": 478,
+      "rows": 19369,
+      "attacks": 476
+    },
+    {
+      "start_epoch": 1608306605,
+      "end_epoch": 1608306610,
+      "attack_labeled": true,
+      "flood_findings": 2,
+      "outcome": "TP",
+      "deauth_class_frames": 1220,
+      "rows": 11162,
+      "attacks": 1212
+    },
+    {
+      "start_epoch": 1608306610,
+      "end_epoch": 1608306615,
+      "attack_labeled": true,
+      "flood_findings": 2,
+      "outcome": "TP",
+      "deauth_class_frames": 1122,
+      "rows": 12005,
+      "attacks": 1119
+    },
+    {
+      "start_epoch": 1608306615,
+      "end_epoch": 1608306620,
+      "attack_labeled": true,
+      "flood_findings": 4,
+      "outcome": "TP",
+      "deauth_class_frames": 1215,
+      "rows": 9904,
+      "attacks": 1206
+    },
+    {
+      "start_epoch": 1608306620,
+      "end_epoch": 1608306625,
+      "attack_labeled": true,
+      "flood_findings": 2,
+      "outcome": "TP",
+      "deauth_class_frames": 1191,
+      "rows": 11512,
+      "attacks": 1189
+    },
+    {
+      "start_epoch": 1608306625,
+      "end_epoch": 1608306630,
+      "attack_labeled": true,
+      "flood_findings": 4,
+      "outcome": "TP",
+      "deauth_class_frames": 1162,
+      "rows": 10827,
+      "attacks": 1158
+    },
+    {
+      "start_epoch": 1608306630,
+      "end_epoch": 1608306635,
+      "attack_labeled": true,
+      "flood_findings": 2,
+      "outcome": "TP",
+      "deauth_class_frames": 1195,
+      "rows": 12607,
+      "attacks": 1192
+    },
+    {
+      "start_epoch": 1608306635,
+      "end_epoch": 1608306640,
+      "attack_labeled": true,
+      "flood_findings": 4,
+      "outcome": "TP",
+      "deauth_class_frames": 1179,
+      "rows": 12269,
+      "attacks": 1177
+    },
+    {
+      "start_epoch": 1608306640,
+      "end_epoch": 1608306645,
+      "attack_labeled": true,
+      "flood_findings": 3,
+      "outcome": "TP",
+      "deauth_class_frames": 1003,
+      "rows": 24542,
+      "attacks": 999
+    },
+    {
+      "start_epoch": 1608306645,
+      "end_epoch": 1608306650,
+      "attack_labeled": true,
+      "flood_findings": 2,
+      "outcome": "TP",
+      "deauth_class_frames": 563,
+      "rows": 30801,
+      "attacks": 561
+    },
+    {
+      "start_epoch": 1608306650,
+      "end_epoch": 1608306655,
+      "attack_labeled": true,
+      "flood_findings": 4,
+      "outcome": "TP",
+      "deauth_class_frames": 793,
+      "rows": 23417,
+      "attacks": 790
+    },
+    {
+      "start_epoch": 1608306655,
+      "end_epoch": 1608306660,
+      "attack_labeled": true,
+      "flood_findings": 2,
+      "outcome": "TP",
+      "deauth_class_frames": 1020,
+      "rows": 10578,
+      "attacks": 1017
+    },
+    {
+      "start_epoch": 1608306660,
+      "end_epoch": 1608306665,
+      "attack_labeled": true,
+      "flood_findings": 4,
+      "outcome": "TP",
+      "deauth_class_frames": 836,
+      "rows": 22106,
+      "attacks": 834
+    },
+    {
+      "start_epoch": 1608306665,
+      "end_epoch": 1608306670,
+      "attack_labeled": true,
+      "flood_findings": 2,
+      "outcome": "TP",
+      "deauth_class_frames": 822,
+      "rows": 27884,
+      "attacks": 818
+    },
+    {
+      "start_epoch": 1608306670,
+      "end_epoch": 1608306675,
+      "attack_labeled": true,
+      "flood_findings": 3,
+      "outcome": "TP",
+      "deauth_class_frames": 959,
+      "rows": 20681,
+      "attacks": 957
+    },
+    {
+      "start_epoch": 1608306675,
+      "end_epoch": 1608306680,
+      "attack_labeled": true,
+      "flood_findings": 4,
+      "outcome": "TP",
+      "deauth_class_frames": 820,
+      "rows": 26072,
+      "attacks": 817
+    },
+    {
+      "start_epoch": 1608306680,
+      "end_epoch": 1608306685,
+      "attack_labeled": true,
+      "flood_findings": 2,
+      "outcome": "TP",
+      "deauth_class_frames": 1105,
+      "rows": 14226,
+      "attacks": 1103
+    },
+    {
+      "start_epoch": 1608306685,
+      "end_epoch": 1608306690,
+      "attack_labeled": true,
+      "flood_findings": 4,
+      "outcome": "TP",
+      "deauth_class_frames": 984,
+      "rows": 12341,
+      "attacks": 982
+    },
+    {
+      "start_epoch": 1608306690,
+      "end_epoch": 1608306695,
+      "attack_labeled": true,
+      "flood_findings": 2,
+      "outcome": "TP",
+      "deauth_class_frames": 927,
+      "rows": 17780,
+      "attacks": 927
+    },
+    {
+      "start_epoch": 1608306695,
+      "end_epoch": 1608306700,
+      "attack_labeled": true,
+      "flood_findings": 4,
+      "outcome": "TP",
+      "deauth_class_frames": 957,
+      "rows": 17099,
+      "attacks": 957
+    },
+    {
+      "start_epoch": 1608306700,
+      "end_epoch": 1608306705,
+      "attack_labeled": true,
+      "flood_findings": 3,
+      "outcome": "TP",
+      "deauth_class_frames": 919,
+      "rows": 18309,
+      "attacks": 919
+    },
+    {
+      "start_epoch": 1608306705,
+      "end_epoch": 1608306710,
+      "attack_labeled": true,
+      "flood_findings": 2,
+      "outcome": "TP",
+      "deauth_class_frames": 1063,
+      "rows": 16544,
+      "attacks": 1063
+    },
+    {
+      "start_epoch": 1608306710,
+      "end_epoch": 1608306715,
+      "attack_labeled": true,
+      "flood_findings": 4,
+      "outcome": "TP",
+      "deauth_class_frames": 968,
+      "rows": 19594,
+      "attacks": 968
+    },
+    {
+      "start_epoch": 1608306715,
+      "end_epoch": 1608306720,
+      "attack_labeled": true,
+      "flood_findings": 2,
+      "outcome": "TP",
+      "deauth_class_frames": 1048,
+      "rows": 14799,
+      "attacks": 1047
+    },
+    {
+      "start_epoch": 1608306720,
+      "end_epoch": 1608306725,
+      "attack_labeled": true,
+      "flood_findings": 4,
+      "outcome": "TP",
+      "deauth_class_frames": 1129,
+      "rows": 17323,
+      "attacks": 1128
+    },
+    {
+      "start_epoch": 1608306725,
+      "end_epoch": 1608306730,
+      "attack_labeled": true,
+      "flood_findings": 2,
+      "outcome": "TP",
+      "deauth_class_frames": 1347,
+      "rows": 8536,
+      "attacks": 1347
+    },
+    {
+      "start_epoch": 1608306730,
+      "end_epoch": 1608306735,
+      "attack_labeled": true,
+      "flood_findings": 2,
+      "outcome": "TP",
+      "deauth_class_frames": 1419,
+      "rows": 4436,
+      "attacks": 1412
+    },
+    {
+      "start_epoch": 1608306735,
+      "end_epoch": 1608306740,
+      "attack_labeled": true,
+      "flood_findings": 2,
+      "outcome": "TP",
+      "deauth_class_frames": 1407,
+      "rows": 4279,
+      "attacks": 1407
+    },
+    {
+      "start_epoch": 1608306740,
+      "end_epoch": 1608306745,
+      "attack_labeled": true,
+      "flood_findings": 2,
+      "outcome": "TP",
+      "deauth_class_frames": 1385,
+      "rows": 4359,
+      "attacks": 1385
+    },
+    {
+      "start_epoch": 1608306745,
+      "end_epoch": 1608306750,
+      "attack_labeled": true,
+      "flood_findings": 2,
+      "outcome": "TP",
+      "deauth_class_frames": 1336,
+      "rows": 7323,
+      "attacks": 1336
+    },
+    {
+      "start_epoch": 1608306750,
+      "end_epoch": 1608306755,
+      "attack_labeled": true,
+      "flood_findings": 2,
+      "outcome": "TP",
+      "deauth_class_frames": 1321,
+      "rows": 8417,
+      "attacks": 1321
+    },
+    {
+      "start_epoch": 1608306755,
+      "end_epoch": 1608306760,
+      "attack_labeled": true,
+      "flood_findings": 2,
+      "outcome": "TP",
+      "deauth_class_frames": 1388,
+      "rows": 4798,
+      "attacks": 1388
+    },
+    {
+      "start_epoch": 1608306760,
+      "end_epoch": 1608306765,
+      "attack_labeled": true,
+      "flood_findings": 2,
+      "outcome": "TP",
+      "deauth_class_frames": 1271,
+      "rows": 8654,
+      "attacks": 1271
+    },
+    {
+      "start_epoch": 1608306765,
+      "end_epoch": 1608306770,
+      "attack_labeled": true,
+      "flood_findings": 2,
+      "outcome": "TP",
+      "deauth_class_frames": 981,
+      "rows": 15214,
+      "attacks": 981
+    },
+    {
+      "start_epoch": 1608306770,
+      "end_epoch": 1608306775,
+      "attack_labeled": true,
+      "flood_findings": 2,
+      "outcome": "TP",
+      "deauth_class_frames": 1068,
+      "rows": 18979,
+      "attacks": 1068
+    },
+    {
+      "start_epoch": 1608306775,
+      "end_epoch": 1608306780,
+      "attack_labeled": true,
+      "flood_findings": 2,
+      "outcome": "TP",
+      "deauth_class_frames": 1120,
+      "rows": 19376,
+      "attacks": 1120
+    }
+  ]
+}

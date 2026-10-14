@@ -1,0 +1,54 @@
+{
+  "capture": {
+    "path": "/Users/aysha/Desktop/Projects/airlock-cpp/.cache/wifi-benchmark/benign-window-003.pcap",
+    "frames": 329,
+    "duration_seconds": 4.784,
+    "suspect_frames": 0,
+    "parse_errors": []
+  },
+  "frame_classes": {
+    "management": 1,
+    "control": 328
+  },
+  "frame_subtypes": {
+    "cts": 110,
+    "rts": 195,
+    "block-ack-request": 11,
+    "block-ack": 3,
+    "ack": 9,
+    "probe-response": 1
+  },
+  "networks": [
+    {
+      "bssid": "c2:e3:fb:a3:02:d8",
+      "ssid": "SUPERONLINE_WiFi_82AA",
+      "channel": 2,
+      "security": "WPA3-Personal (SAE)",
+      "group_cipher": "CCMP-128",
+      "pairwise_ciphers": [
+        "CCMP-128"
+      ],
+      "akm_suites": [
+        "SAE"
+      ],
+      "mfp": "required",
+      "beacons": 0,
+      "clients": [
+        "22:ab:13:9c:73:e9"
+      ]
+    }
+  ],
+  "handshakes": [],
+  "findings": [
+    {
+      "severity": "info",
+      "title": "Low-confidence observations excluded from the findings",
+      "detail": "a real access point beacons about ten times a second, so a BSSID seen once in a capture of any length is far more likely to be a corrupted frame than a network; these are listed here rather than reported as findings",
+      "evidence": [
+        "1 BSSIDs were seen fewer than 2 times and are not reported individually",
+        "c2:e3:fb:a3:02:d8: 0 beacons, ssid 'SUPERONLINE_WiFi_82AA'"
+      ],
+      "benign_explanation": "a genuine but very distant access point, or one captured for only a moment while channel hopping, can also appear this way"
+    }
+  ]
+}

@@ -222,7 +222,7 @@ void classify_management(ByteView body, FrameInfo& info, Capture& capture) {
     info.auth_algorithm = auth_algorithm_name(get_le16(body, 0));
     info.auth_seq = get_le16(body, 2);
     info.status_code = get_le16(body, 4);
-  } else if (subtype == 1 && fixed(6)) {  // association response
+  } else if ((subtype == 1 || subtype == 3) && fixed(6)) {  // (re)association response
     info.status_code = get_le16(body, 2);
   }
 }

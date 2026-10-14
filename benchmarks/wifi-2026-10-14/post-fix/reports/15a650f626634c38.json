@@ -1,0 +1,95 @@
+{
+  "capture": {
+    "path": "/Users/aysha/Desktop/Projects/airlock-cpp/.cache/wifi-benchmark/15a650f626634c38.cap",
+    "frames": 6261,
+    "duration_seconds": 144.668,
+    "suspect_frames": 0,
+    "parse_errors": []
+  },
+  "frame_classes": {
+    "management": 229,
+    "control": 5975,
+    "data": 57
+  },
+  "frame_subtypes": {
+    "ack": 481,
+    "block-ack-request": 171,
+    "beacon": 1,
+    "rts": 2450,
+    "cts": 2740,
+    "block-ack": 68,
+    "probe-response": 198,
+    "cf-end": 65,
+    "data": 57,
+    "authentication": 29,
+    "action": 1
+  },
+  "networks": [
+    {
+      "bssid": "c2:e3:fb:a3:02:d8",
+      "ssid": "SUPERONLINE_WiFi_82AA",
+      "channel": 7,
+      "security": "WPA3-Personal (SAE)",
+      "group_cipher": "CCMP-128",
+      "pairwise_ciphers": [
+        "CCMP-128"
+      ],
+      "akm_suites": [
+        "SAE"
+      ],
+      "mfp": "required",
+      "beacons": 1,
+      "clients": [
+        "00:08:22:a8:ed:cf",
+        "00:0c:e7:39:21:44",
+        "01:00:5e:7f:ff:fa",
+        "0a:02:1c:e5:0b:3e",
+        "16:ac:26:8c:d4:e2",
+        "1a:26:39:04:da:58",
+        "1a:a0:41:e6:d9:c0",
+        "22:ab:13:9c:73:e9",
+        "2a:a2:a8:0a:a7:fb",
+        "33:33:00:00:00:01",
+        "33:33:00:00:00:02",
+        "33:33:ff:77:86:0b",
+        "33:33:ff:e4:6f:60",
+        "3a:37:99:8f:b1:6c",
+        "3a:3b:68:b8:70:71",
+        "3a:da:79:e9:16:69",
+        "42:20:76:68:87:64",
+        "4c:5f:70:0c:59:f9",
+        "4c:63:71:f6:38:63",
+        "52:ef:b8:f3:12:bb",
+        "56:80:6c:de:68:39",
+        "62:78:5b:1a:bf:89",
+        "66:f9:41:21:81:5a",
+        "70:c9:32:36:53:13",
+        "9a:60:38:f2:51:5d",
+        "9a:7a:29:64:2e:7b",
+        "9a:a5:8c:78:5c:99",
+        "9a:ca:9a:b8:2f:56",
+        "9e:0c:71:e9:32:1e",
+        "a2:92:ad:73:7a:06",
+        "aa:2c:43:5a:7b:e5",
+        "aa:93:69:3d:0a:b7",
+        "b6:85:21:61:51:f4",
+        "ba:2c:8c:63:eb:84",
+        "be:7a:cc:aa:2a:db",
+        "c8:51:42:c6:98:00",
+        "da:1b:e2:19:15:87",
+        "dc:6a:e7:bf:17:1c",
+        "dc:b7:2e:1a:24:8a",
+        "e2:2c:1d:25:73:94",
+        "e2:3b:bd:44:44:26",
+        "e6:cb:9d:42:5f:39",
+        "e6:df:5f:ad:23:c2",
+        "ee:b3:55:c7:76:11",
+        "f2:53:3b:62:d6:8d",
+        "f2:f5:ec:6b:fd:9f",
+        "fa:f1:66:9f:93:89"
+      ]
+    }
+  ],
+  "handshakes": [],
+  "findings": []
+}

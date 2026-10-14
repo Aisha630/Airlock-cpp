@@ -1,0 +1,6 @@
+{
+  "analyzer_base_revision": "5f0da54995adc2c2439d112b3e9b967ff4b4e781",
+  "source_diff_sha256": "8e10bc124687778d61eaa0d4115b87947b8f9f98ab695cac6751f972400d2f45",
+  "binary_sha256": "1491f38acf96357519ccd75e58f9808b2afe4afb69101448bf550e92b64ad5f8",
+  "run_command": "python3 benchmarks/wifi-2026-10-14/evaluate_fixed.py"
+}

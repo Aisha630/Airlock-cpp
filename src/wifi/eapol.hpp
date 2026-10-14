@@ -87,11 +87,9 @@ struct EapolKeyFrame {
 
   // Extract a PMKID from message 1's key data, if the AP included one.
   //
-  // An AP that volunteers a PMKID in M1 enables the "PMKID attack": the
-  // PMKID is HMAC-SHA1(PMK, "PMK Name" || AP MAC || STA MAC), so an attacker
-  // needs only this single frame (no client, no full handshake, no
-  // deauthentication) to mount an offline dictionary attack on the
-  // passphrase. Worth flagging wherever it appears.
+  // PSK-derived PMKIDs can support offline password guesses. SAE and other
+  // AKMs have different key establishment; extraction alone is not a risk
+  // assessment, and the PMKID calculation depends on the selected AKM.
   std::optional<Bytes> pmkid() const;
 };
 
