@@ -1,19 +1,5 @@
 # Airlock (C++)
 
-This is a C++20 port of Airlock, which I built to work through two sides of
-the same question: what a key exchange has to do to resist an active
-attacker, and how much of a wireless network stays visible to a passive one
-even after encryption is applied.
-
-It has the same two halves as the original. In `src/akex/` I implemented an
-authenticated Diffie-Hellman key exchange: ephemeral DH over RFC 3526 MODP
-groups, keys derived with HKDF-SHA256, and the handshake transcript
-authenticated with HMAC-SHA256 under a pre-shared key. In `src/wifi/` I wrote
-an 802.11 capture analyzer that reads pcap and pcapng files recorded in
-monitor mode, classifies frames, parses the security capabilities an access
-point advertises, reconstructs WPA2 four-way handshakes, and reports
-findings.
-
 It needs a C++20 compiler, CMake 3.20 or later, and OpenSSL 3. GoogleTest is
 used if installed and fetched otherwise. There are 199 tests.
 
