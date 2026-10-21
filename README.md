@@ -1,7 +1,9 @@
 # Airlock (C++)
 
 It needs a C++20 compiler, CMake 3.20 or later, and OpenSSL 3. GoogleTest is
-used if installed and fetched otherwise. There are 209 tests.
+used if installed and fetched otherwise. Flood detection also needs Python 3
+with PyTorch (`pip install torch`); without them the report says flood
+detection was skipped. There are 211 tests.
 
 ## Running it
 
@@ -100,9 +102,9 @@ is immune to unprotected disconnects. Every finding carries its evidence and
 a benign explanation where one exists.
 
 The flood detector is learned rather than hand-written: a 193-parameter
-network trained in PyTorch on labeled AWID2 and AWID3 traffic. Its weights
-are exported to a generated C++ header and run by a hand-written forward pass,
-so the analyzer needs no ML runtime. On a held-out AWID3 corpus it matches the fixed
+network trained in PyTorch on labeled AWID2 and AWID3 traffic. The analyzer
+computes its features in C++ and runs the model in PyTorch through
+`ml/score.py`. On a held-out AWID3 corpus it matches the fixed
 rule it replaced, and removes that rule's false alarms on AWID2. The
 shortcuts it learned along the way are recorded in `ml/README.md`.
 
@@ -155,11 +157,12 @@ src/wifi/   pcap       pcap and pcapng reader, pcap writer
             rsn        RSN and legacy WPA element parser
             eapol      EAPOL-Key parsing and handshake tracking
             anomalies  Detectors
-            flood_model  Learned flood classifier: features, inference, weights
+            flood_model  Flood features and the bridge to the PyTorch scorer
             report     Text and JSON reports
             synth      Generated capture
 tools/      akex.cpp, wifi.cpp command line entry points
-ml/         prepare.py, train.py: AWID data preparation and PyTorch training
+ml/         prepare.py, train.py, score.py: AWID data, PyTorch training and
+            inference; flood-model.pt is the trained model
 ```
 
 `THREAT_MODEL.md` has a STRIDE analysis of both halves with mitigations

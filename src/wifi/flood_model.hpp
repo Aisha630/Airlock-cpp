@@ -9,10 +9,11 @@
 // shortcuts that earlier versions of this model learned.
 //
 // The network is tiny, one hidden layer over a handful of header-derived
-// features. ml/train.py exports its weights as constant arrays in
-// flood_model_weights.inc, and the forward pass is written by hand in
-// flood_model.cpp, so the analyzer needs neither LibTorch nor any other
-// inference runtime. Tests check it against PyTorch's own outputs.
+// features. Inference runs in PyTorch itself: the analyzer computes features
+// here and hands them to ml/score.py, which loads the model ml/train.py saved
+// and returns a probability and an explanation for each span. The model is
+// consulted only when a capture contains a span worth scoring, so most
+// analyses never start Python.
 //
 // The features below are the single definition used both to train the model
 // and to run it: the training pipeline extracts them through this library
@@ -21,6 +22,8 @@
 
 #include <array>
 #include <cstddef>
+#include <stdexcept>
+#include <string>
 #include <string_view>
 #include <vector>
 
@@ -62,25 +65,46 @@ const std::array<std::string_view, FLOOD_FEATURE_COUNT>& flood_feature_names();
 // disassociation attacks.
 FloodFeatures flood_features(const std::vector<const FrameInfo*>& frames);
 
-// The model's probability that the span is an attack, in [0, 1].
-double flood_probability(const FloodFeatures& features);
-
-// Probability at or above which a span is reported. Chosen on held-out
-// training data by ml/train.py and compiled in with the weights.
-double flood_threshold();
-
-// How much each feature pushed this prediction up: the drop in probability
-// when that feature alone is reset to its training mean. Positive values
-// argue for "attack". A cheap, model-agnostic explanation, so a finding can
-// say why it fired rather than only that it did.
-std::array<double, FLOOD_FEATURE_COUNT> flood_attribution(const FloodFeatures& features);
-
-// Fixed (features, expected probability) pairs computed by PyTorch at export
-// time, so the test suite can check that C++ inference matches training.
-struct FloodParityCase {
-  FloodFeatures features;
-  double probability;
+// Where the scorer lives. The defaults point into this source tree;
+// AIRLOCK_PYTHON and AIRLOCK_FLOOD_MODEL override the interpreter and the
+// model file.
+struct FloodModelConfig {
+  std::string python;
+  std::string script;
+  std::string model;
 };
-const std::vector<FloodParityCase>& flood_parity_cases();
+FloodModelConfig flood_model_config();
+
+// The model's verdict on one span.
+struct FloodScore {
+  // Probability that the span is an attack, in [0, 1].
+  double probability = 0.0;
+  // How much each feature pushed this prediction up: the drop in probability
+  // when that feature alone is reset to its training mean. Positive values
+  // argue for "attack", so a finding can say why it fired rather than only
+  // that it did.
+  std::array<double, FLOOD_FEATURE_COUNT> attribution{};
+};
+
+struct FloodScores {
+  // Probability at or above which a span is reported, chosen on held-out
+  // training data by ml/train.py and saved with the model.
+  double threshold = 1.0;
+  std::vector<FloodScore> scores;  // one per input span, in order
+};
+
+// The scorer could not run: no interpreter, no PyTorch, no model file, or
+// output that does not parse. The message says which.
+class FloodModelUnavailable : public std::runtime_error {
+ public:
+  using std::runtime_error::runtime_error;
+};
+
+// Score spans with the PyTorch model by running the scorer once for all of
+// them. The interpreter is started directly, never through a shell, and in
+// isolated mode (-I), so neither a crafted path nor the environment's
+// PYTHONPATH can change what runs. Throws FloodModelUnavailable.
+FloodScores score_flood_spans(const std::vector<FloodFeatures>& spans,
+                              const FloodModelConfig& config = flood_model_config());
 
 }  // namespace airlock::wifi

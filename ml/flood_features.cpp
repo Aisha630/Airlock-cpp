@@ -4,7 +4,7 @@
 // per five-second window, then one line per disconnect frame (timestamp,
 // transmitter, receiver, subtype, protected, reason, attack label). Output is
 // one row per (window, transmitter, receiver) group with its frame count,
-// attack-labeled frame count, features and the current model's probability.
+// attack-labeled frame count and features.
 #include <format>
 #include <fstream>
 #include <iostream>
@@ -34,7 +34,7 @@ int main(int argc, char** argv) {
 
   std::cout << "window\ttransmitter\treceiver\tframes\tattack_frames";
   for (std::string_view name : flood_feature_names()) std::cout << '\t' << name;
-  std::cout << "\tprobability\n";
+  std::cout << '\n';
 
   std::string window;
   std::vector<FrameInfo> frames;
@@ -55,7 +55,7 @@ int main(int argc, char** argv) {
       std::cout << window << '\t' << key.first << '\t' << key.second << '\t' << group.size()
                 << '\t' << attacks;
       for (float value : features) std::cout << '\t' << std::format("{:.9g}", value);
-      std::cout << '\t' << std::format("{:.9g}", flood_probability(features)) << '\n';
+      std::cout << '\n';
     }
     frames.clear();
     attack.clear();

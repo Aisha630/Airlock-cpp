@@ -58,6 +58,8 @@ add_library(airlock_wifi STATIC
 )
 target_include_directories(airlock_wifi PUBLIC src)
 target_link_libraries(airlock_wifi PRIVATE airlock_warnings)
+# The flood detector runs its PyTorch model through ml/score.py.
+target_compile_definitions(airlock_wifi PRIVATE AIRLOCK_ML_DIR="${CMAKE_CURRENT_SOURCE_DIR}/ml")
 
 add_executable(akex tools/akex.cpp)
 target_link_libraries(akex PRIVATE airlock_akex airlock_warnings)

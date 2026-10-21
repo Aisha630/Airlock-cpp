@@ -1,8 +1,8 @@
 # Learned flood detector
 
 The deauthentication / disassociation flood detector is a small neural
-network trained in PyTorch and run inside the C++ analyzer by a hand-written
-forward pass, with no inference runtime. It replaces a
+network trained in PyTorch, and PyTorch also runs it: the C++ analyzer
+computes features and hands them to a Python scorer. It replaces a
 fixed rule: eight disconnect frames from one source to one destination
 inside five seconds.
 
@@ -26,15 +26,25 @@ model is more conservative than the rule. It is not more capable.
   reads them through the C++ library (`ml/flood_features.cpp`), so training
   and inference cannot disagree.
 - **Model.** MLP 10-16-1 with ReLU and a sigmoid output, 193 parameters.
-- **Deployment without a runtime.** The PyTorch model is not shipped and
-  nothing converts it automatically. `ml/train.py` exports the trained
-  weights, standardisation constants and threshold as constant arrays in a
-  generated header, `src/wifi/flood_model_weights.inc`. The forward pass
-  (standardise, dense layer, ReLU, dense layer, sigmoid) is about fifteen
-  hand-written lines in `src/wifi/flood_model.cpp`. The analyzer therefore
-  needs neither LibTorch nor ONNX Runtime. The export also writes fixed
-  inputs with PyTorch's outputs for them, and the test suite checks that the
-  C++ forward pass reproduces them to 1e-5.
+- **Inference in PyTorch.** `ml/train.py` saves the model, its
+  standardisation constants and threshold to `ml/flood-model.pt`. It then
+  reloads the file through the scorer and checks that it reproduces the
+  in-memory model. When a capture contains a span of 9 or more disconnect
+  frames, the analyzer starts `python3 -I ml/score.py ml/flood-model.pt` once
+  for all such spans. It writes their features to the scorer's stdin and
+  reads back probabilities and explanations. It starts the interpreter
+  directly, never through a shell, and in isolated mode, so the environment's
+  `PYTHONPATH` cannot change what runs. Captures without such spans never
+  start Python. `AIRLOCK_PYTHON` and `AIRLOCK_FLOOD_MODEL` override the
+  interpreter and the model file.
+- **Safe model loading.** The scorer loads the model with
+  `torch.load(weights_only=True)`. A full pickle load can execute arbitrary
+  code embedded in the file, which is the wrong trust model for a security
+  tool. The saved file holds only tensors, numbers and strings.
+- **When PyTorch is missing.** If Python, PyTorch or the model file is
+  unavailable, the report gains an info finding, "Flood detection skipped".
+  It lists every burst that went unscored, so the capture never appears to
+  have no floods when the question was never asked.
 - **Explanations.** Each finding gives the model's probability and the
   features that pushed it furthest towards "attack". Each feature's push is
   measured by resetting it to its training mean.
@@ -55,7 +65,7 @@ half of its frames carry a non-normal label.
   out to choose the threshold: the middle, in log-odds, of the band with the
   best balanced accuracy. The held-out corpus is never used for this.
 - **Reproducibility.** Seed 0, deterministic algorithms, 600 full-batch Adam
-  epochs. Retraining reproduces the weights byte for byte.
+  epochs. Retraining reproduces `ml/flood-model.pt` byte for byte.
 
 The acceptance bar was fixed before the two-dataset protocol first ran. On
 its held-out AWID3 corpus, the shipped fold must flag every attack window and
@@ -137,7 +147,7 @@ cmake --build build-benchmark -j 4
 python3 benchmarks/additional-wifi-2026-10-14/awid2.py   # fetches AWID2 if not cached
 python3 benchmarks/awid3-2026-10-14/evaluate.py         # fetches AWID3 if not cached
 python3 ml/prepare.py
-python3 ml/train.py        # rewrites src/wifi/flood_model_weights.inc and ml/flood-model.json
+python3 ml/train.py        # rewrites ml/flood-model.pt and ml/flood-model.json
 cmake --build build-benchmark -j 4 && ctest --test-dir build-benchmark
 ```
 
@@ -148,9 +158,9 @@ level, and SHA-256 hashes of every replay file trained or evaluated on.
 ## Wording to quote
 
 > I replaced Airlock's fixed deauthentication-flood rule with a 193-parameter
-> neural network trained in PyTorch on AWID2 and AWID3. I exported its weights
-> to C++ and wrote the inference by hand, so the analyzer needs no ML
-> runtime, and verified it against PyTorch's outputs to 1e-5. On a held-out AWID3 corpus it flagged all 36 attack windows
+> neural network trained in PyTorch on AWID2 and AWID3. The C++ analyzer
+> computes the features and runs the model through PyTorch in a Python
+> subprocess, loading the model with weights_only so the file cannot run code. On a held-out AWID3 corpus it flagged all 36 attack windows
 > with no false alarms, matching the rule. On AWID2's test recording it
 > removed the rule's 4 group-level false alarms, at the cost of lower group
 > recall. Getting there meant finding and removing three dataset shortcuts:

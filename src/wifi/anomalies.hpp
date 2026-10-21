@@ -11,6 +11,7 @@
 #pragma once
 
 #include <map>
+#include <optional>
 #include <string>
 #include <vector>
 
@@ -56,9 +57,11 @@ struct Finding {
 // flood_model.hpp: a genuine disconnect is one or two frames, a flood is a
 // sustained stream aimed at keeping a client off the network, and the model
 // weighs rate, regularity, targeting and reason codes rather than a count.
-// `threshold` defaults to the one chosen when the model was trained.
+// `threshold` defaults to the one chosen when the model was trained. If the
+// PyTorch scorer cannot run, an info finding says so and lists the unscored
+// bursts, rather than the capture silently reporting no flood.
 std::vector<Finding> detect_deauth_flood(const Capture& capture,
-                                         double threshold = flood_threshold());
+                                         std::optional<double> threshold = std::nullopt);
 
 // Flag networks whose deauths are unprotected because MFP is off.
 //

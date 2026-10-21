@@ -45,8 +45,7 @@ std::vector<const FrameInfo*> densest_span(std::vector<const FrameInfo*> frames,
 
 // "peak frames in any 1 s (log) +0.31, frame count (log) +0.22": the
 // features that pushed this prediction furthest towards "attack".
-std::string strongest_features(const FloodFeatures& features) {
-  const auto contribution = flood_attribution(features);
+std::string strongest_features(const std::array<double, FLOOD_FEATURE_COUNT>& contribution) {
   std::vector<std::size_t> order(FLOOD_FEATURE_COUNT);
   for (std::size_t i = 0; i < order.size(); ++i) order[i] = i;
   std::stable_sort(order.begin(), order.end(),
@@ -101,7 +100,7 @@ std::string Finding::render(const std::string& indent) const {
   return out;
 }
 
-std::vector<Finding> detect_deauth_flood(const Capture& capture, double threshold) {
+std::vector<Finding> detect_deauth_flood(const Capture& capture, std::optional<double> threshold) {
   std::vector<Finding> findings;
   std::map<std::pair<std::string, std::string>, std::vector<const FrameInfo*>> groups;
   for (const FrameInfo& frame : capture.frames) {
@@ -113,13 +112,52 @@ std::vector<Finding> detect_deauth_flood(const Capture& capture, double threshol
     groups[{source, destination}].push_back(&frame);
   }
 
+  // Spans worth asking the model about, scored together in one call.
+  struct Candidate {
+    const std::pair<std::string, std::string>* key;
+    const std::vector<const FrameInfo*>* frames;
+    std::vector<const FrameInfo*> span;
+  };
+  std::vector<Candidate> candidates;
+  std::vector<FloodFeatures> features;
   for (const auto& [key, frames] : groups) {
-    const auto& [source, destination] = key;
-    const auto span = densest_span(frames, FLOOD_SPAN_SECONDS);
+    auto span = densest_span(frames, FLOOD_SPAN_SECONDS);
     if (span.size() < FLOOD_MIN_FRAMES) continue;
-    const FloodFeatures features = flood_features(span);
-    const double probability = flood_probability(features);
-    if (probability < threshold) continue;
+    features.push_back(flood_features(span));
+    candidates.push_back({&key, &frames, std::move(span)});
+  }
+  if (candidates.empty()) return findings;
+
+  FloodScores scored;
+  try {
+    scored = score_flood_spans(features);
+  } catch (const FloodModelUnavailable& error) {
+    // Never report "no flood" when the question could not be asked.
+    std::vector<std::string> evidence = {error.what()};
+    for (const Candidate& c : candidates) {
+      evidence.push_back(std::format("unscored: {} frames within {:g} s from {} to {}",
+                                     c.span.size(), FLOOD_SPAN_SECONDS, c.key->first,
+                                     c.key->second));
+    }
+    findings.push_back(Finding{
+        "info",
+        "Flood detection skipped",
+        std::format("{} burst(s) of disconnect frames needed the learned flood model, which "
+                    "could not run, so this capture has not been checked for floods",
+                    candidates.size()),
+        evidence,
+        "",
+    });
+    return findings;
+  }
+  const double cutoff = threshold.value_or(scored.threshold);
+
+  for (std::size_t c = 0; c < candidates.size(); ++c) {
+    const auto& [source, destination] = *candidates[c].key;
+    const auto& frames = *candidates[c].frames;
+    const auto& span = candidates[c].span;
+    const double probability = scored.scores[c].probability;
+    if (probability < cutoff) continue;
     double first_seen = span.front()->timestamp;
     for (const FrameInfo* f : frames) first_seen = std::min(first_seen, f->timestamp);
 
@@ -142,8 +180,8 @@ std::vector<Finding> detect_deauth_flood(const Capture& capture, double threshol
                     frames.size(), span.size(), FLOOD_SPAN_SECONDS,
                     span.front()->timestamp - first_seen),
         std::format("learned flood model: attack probability {:.3f} (reports at {:.3f} or above)",
-                    probability, threshold),
-        "strongest evidence: " + strongest_features(features),
+                    probability, cutoff),
+        "strongest evidence: " + strongest_features(scored.scores[c].attribution),
         std::format("source {} -> target {}", source, target),
         "reason codes seen: " + (reason_list.empty() ? std::string("none decoded") : reason_list),
         std::format("{}/{} frames were cryptographically protected", protected_count,
