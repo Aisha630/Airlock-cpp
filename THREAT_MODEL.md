@@ -96,7 +96,7 @@ need it before any key exists.
 
 | Threat | Detector | Why it works |
 |---|---|---|
-| Deauthentication flood (DoS, or forcing a handshake capture) | `detect_deauth_flood` | Unprotected deauths are unauthenticated: no MIC, no sequence binding, forgeable by anyone in range |
+| Deauthentication flood (DoS, or forcing a handshake capture) | `detect_deauth_flood` (learned model, see below) | Unprotected deauths are unauthenticated: no MIC, no sequence binding, forgeable by anyone in range |
 | Forgeable management frames | `detect_unprotected_deauth` | Correlates observed deauths against the RSN MFP bits: the same burst means something different on an MFP-required network |
 | Possible pre-key connection disruption | `detect_association_disruption` | Repeated association attempts receive conflicting unprotected disconnects and successful responses from the same claimed AP; PMF does not protect every pre-key exchange |
 | Evil twin / rogue AP | `detect_evil_twin` | A clone can copy an SSID but not the credential, so its advertised security disagrees |
@@ -119,7 +119,27 @@ need it before any key exists.
 - **Metadata only.** No payload decryption is attempted, and no key
   recovery or passphrase cracking is implemented.
 - **Thresholds are tuned for short captures** and are parameters of the
-  detectors, so they can be re-tuned for a longer capture.
+  rule-based detectors, so they can be re-tuned for a longer capture. The
+  flood detector's threshold is learned instead, and saved with its model.
+
+### The learned flood model
+
+The flood detector is a neural network trained on labeled AWID traffic and
+run in PyTorch through `ml/score.py` (see `ml/README.md`). That adds two
+things to defend: the model's judgement, which an attacker can study, and
+the scoring path, a Python process and a model file.
+
+| # | STRIDE | Threat | Mitigation | Test |
+|---|---|---|---|---|
+| 1 | Tampering | A replaced model file executes code when loaded (pickle) | Loaded with `torch.load(weights_only=True)`; the file holds only tensors, numbers and strings | n/a |
+| 2 | Tampering | `PYTHONPATH` or user site-packages substitute the code the scorer imports | Interpreter started in isolated mode (`-I`), directly by `posix_spawnp`, never through a shell | n/a |
+| 3 | Tampering | A different `python3` earlier on `PATH` runs instead | **Partly accepted.** The interpreter is looked up on `PATH`; set `AIRLOCK_PYTHON` to an absolute path where that matters | n/a |
+| 4 | Denial of service | Scoring cannot run (no Python, no PyTorch, no model), so floods go unreported | An info finding, "Flood detection skipped", lists every unscored burst; the capture never looks clean by default | `FloodModel.MissingModelIsReportedNotSilent`, `FloodModel.MissingInterpreterIsReportedNotSilent` |
+| 5 | Evasion | Staying under the 9-frame floor per sender/receiver pair, or spreading a flood across forged source addresses | **Accepted**, as it was for the rule. Every disconnect is still visible to `detect_unprotected_deauth` and `detect_association_disruption` | `FloodModel.SpansAtTheRetryLimitAreNeverReported` |
+| 6 | Evasion | Shaping a flood like traffic the model learned as benign | **Accepted.** AWID2 labels long, regular, unicast reason-7 bursts from an access point as normal; such floods score lower. Documented in `ml/README.md` | n/a |
+
+The model has seen almost no benign flood-sized traffic, so its false
+positive rate on real access points is largely unmeasured.
 
 ### Legal and ethical scope
 

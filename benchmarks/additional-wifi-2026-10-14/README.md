@@ -1,5 +1,7 @@
 # Additional Wi-Fi evaluation — October 14, 2026
 
+> **Note, October 20, 2026.** This evaluates the original eight-frame flood rule, which has since been replaced by a learned model. `ml/README.md` compares the two on AWID2's test recording and on AWID3.
+
 **AWID2 exposes benchmark false alarms.** The unchanged flood detector raises alerts in three Normal-labeled windows in AWID2's original reduced training recording. The observed false-positive rate is 3/477 = **0.63%** on that recording. The separate original reduced test recording produces 0/152 = **0%**.
 
 | Evaluation | Benign five-second windows | False-positive windows | Observed FPR |

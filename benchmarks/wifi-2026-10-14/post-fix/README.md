@@ -1,5 +1,7 @@
 # Evaluation after fixes — October 14, 2026
 
+> **Note, October 20, 2026.** The "unchanged flood detector" here is the original eight-frame rule, since replaced by a learned model (`ml/README.md`). These captures have not been re-run with the model.
+
 ## Measured false-positive rate
 
 **0% observed on the tested benign sample:** 0 false-positive windows and 28 true-negative windows, using nonoverlapping five-second intervals. The whole capture also produced zero findings: 0 false-positive captures and 1 true-negative capture.

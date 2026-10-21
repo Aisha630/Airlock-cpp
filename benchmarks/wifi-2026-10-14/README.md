@@ -1,5 +1,7 @@
 # External Wi-Fi capture evaluation — October 14, 2026
 
+> **Note, October 20, 2026.** This evaluates the original eight-frame flood rule, which has since been replaced by a learned model (`ml/README.md`). These captures have not been re-run with the model.
+
 This document records the original baseline. The subsequent fixes and measured benign-sample false-positive rate are documented in [post-fix/README.md](post-fix/README.md). The baseline results below are retained unchanged for comparison.
 
 The unmodified analyzer at revision `5f0da54995adc2c2439d112b3e9b967ff4b4e781` was built from source and run on 63 public deauthentication-category capture files from two research repositories. All 62 files in the first repository's deauthentication folder were included; the second repository provides one such capture. No files were selected based on their results, and no detector thresholds were tuned.
