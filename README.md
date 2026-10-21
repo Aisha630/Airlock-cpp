@@ -1,7 +1,7 @@
 # Airlock (C++)
 
 It needs a C++20 compiler, CMake 3.20 or later, and OpenSSL 3. GoogleTest is
-used if installed and fetched otherwise. There are 202 tests.
+used if installed and fetched otherwise. There are 209 tests.
 
 ## Running it
 
@@ -99,6 +99,13 @@ PMF protects established associations but does not guarantee connection setup
 is immune to unprotected disconnects. Every finding carries its evidence and
 a benign explanation where one exists.
 
+The flood detector is learned rather than hand-written: a 193-parameter
+network trained in PyTorch on labeled AWID2 and AWID3 traffic. Its weights
+are exported to a generated C++ header and run by a hand-written forward pass,
+so the analyzer needs no ML runtime. On a held-out AWID3 corpus it matches the fixed
+rule it replaced, and removes that rule's false alarms on AWID2. The
+shortcuts it learned along the way are recorded in `ml/README.md`.
+
 ## How I checked the port
 
 The generated capture is the same scenario as before, so I could compare the
@@ -124,7 +131,9 @@ An attacker who records a handshake can still test guesses against a
 low-entropy pre-shared key offline; fixing that needs a password
 authenticated key exchange such as SAE or OPAQUE. The analyzer does no
 passphrase recovery, key recovery or payload decryption, and its detectors
-are heuristics with documented false-positive modes. All capture work was
+are heuristics with documented false-positive modes. The flood model has
+seen almost no benign flood-sized traffic, so its false-positive rate on
+real access points is largely unmeasured. All capture work was
 done against hardware I own, and the deauthentication frames in the
 generated capture were never transmitted.
 
@@ -146,9 +155,11 @@ src/wifi/   pcap       pcap and pcapng reader, pcap writer
             rsn        RSN and legacy WPA element parser
             eapol      EAPOL-Key parsing and handshake tracking
             anomalies  Detectors
+            flood_model  Learned flood classifier: features, inference, weights
             report     Text and JSON reports
             synth      Generated capture
 tools/      akex.cpp, wifi.cpp command line entry points
+ml/         prepare.py, train.py: AWID data preparation and PyTorch training
 ```
 
 `THREAT_MODEL.md` has a STRIDE analysis of both halves with mitigations

@@ -16,17 +16,13 @@
 
 #include "wifi/capture.hpp"
 #include "wifi/eapol.hpp"
+#include "wifi/flood_model.hpp"
 
 namespace airlock::wifi {
 
 // Rank of each severity, most severe first. Unknown severities sort last.
 int severity_rank(const std::string& severity);
 
-// A deauth flood is defined by rate, not by count: a handful of deauths over a
-// long capture is normal roaming. These thresholds are tuned for a small
-// capture and are arguments to the detector so they can be re-tuned.
-inline constexpr double DEAUTH_WINDOW_SECONDS = 5.0;
-inline constexpr int DEAUTH_BURST_THRESHOLD = 8;
 inline constexpr double ASSOCIATION_REPLY_WINDOW_SECONDS = 1.0;
 inline constexpr std::size_t MIN_CONFLICTING_ASSOCIATIONS = 2;
 
@@ -55,12 +51,14 @@ struct Finding {
 // protection it carries no authentication whatsoever, so anyone within radio
 // range can forge one from any address and knock a client off. That is the
 // entire attack: no key material, no association, no knowledge of the
-// passphrase. Detection is a sliding window over frames grouped by (source,
-// destination): a genuine disconnect is one or two frames, a flood is a
-// sustained stream aimed at keeping a client off the network.
+// passphrase. Frames are grouped by (source, destination), and the densest
+// five-second span of each group is scored by the learned model in
+// flood_model.hpp: a genuine disconnect is one or two frames, a flood is a
+// sustained stream aimed at keeping a client off the network, and the model
+// weighs rate, regularity, targeting and reason codes rather than a count.
+// `threshold` defaults to the one chosen when the model was trained.
 std::vector<Finding> detect_deauth_flood(const Capture& capture,
-                                         double window = DEAUTH_WINDOW_SECONDS,
-                                         int threshold = DEAUTH_BURST_THRESHOLD);
+                                         double threshold = flood_threshold());
 
 // Flag networks whose deauths are unprotected because MFP is off.
 //

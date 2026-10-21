@@ -110,6 +110,8 @@ Security findings
 [  HIGH] Deauthentication / disassociation flood
          12 deauth-class frames from 02:00:00:aa:00:01 inside a 5-second window -- the signature of a forced disconnect, used either as denial of service or to make a client reconnect so its four-way handshake can be captured
          - 12 frames total, peak 12 within 5 s starting at t+0.00 s
+         - learned flood model: attack probability 0.988 (reports at 0.987 or above)
+         - strongest evidence: span occupied +0.06, distinct reason codes (log) +0.02
          - source 02:00:00:aa:00:01 -> target 02:00:00:11:11:11
          - reason codes seen: 7 (class 3 frame received from nonassociated STA)
          - 0/12 frames were cryptographically protected
@@ -119,6 +121,8 @@ Security findings
 [  HIGH] Deauthentication / disassociation flood
          12 deauth-class frames from 02:00:00:aa:00:01 inside a 5-second window -- the signature of a forced disconnect, used either as denial of service or to make a client reconnect so its four-way handshake can be captured
          - 12 frames total, peak 12 within 5 s starting at t+0.00 s
+         - learned flood model: attack probability 0.999 (reports at 0.987 or above)
+         - strongest evidence: no single feature dominates
          - source 02:00:00:aa:00:01 -> target the whole BSS (broadcast)
          - reason codes seen: 7 (class 3 frame received from nonassociated STA)
          - 0/12 frames were cryptographically protected

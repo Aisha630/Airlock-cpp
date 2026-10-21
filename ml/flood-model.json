@@ -1,0 +1,256 @@
+{
+  "model": "MLP 10-16-1, ReLU, sigmoid output",
+  "features": [
+    "frame count (log)",
+    "peak frames in any 1 s (log)",
+    "protected share",
+    "group-addressed target",
+    "transmitter missing",
+    "distinct reason codes (log)",
+    "reason code missing share",
+    "median gap in ms (log)",
+    "gap irregularity",
+    "span occupied"
+  ],
+  "epochs": 600,
+  "seed": 0,
+  "torch": "2.10.0",
+  "shipped_fold": "A",
+  "min_frames": 9,
+  "group_label": "attack when at least half its frames carry a non-normal label",
+  "replay_sha256": {
+    "awid2-train": "891a8a4631cea060c304f75c739a793ffbe6ca162289ce0e10ed5b962ab96a1e",
+    "awid2-test": "49aff3710cb91f857b4ecb8c135ddc1f48ea41aab3d8df09a5a5cb68b496cc0e",
+    "awid3-deauth": "b367eeaf057c45e4641493ab6c5bd55e7fb92e420333d336574fe6d2881da655",
+    "awid3-disas": "54d42d1f0d153025a8ad3c893b0c85e49295926d3da9ca5272f0ce5ad07fd4de"
+  },
+  "folds": {
+    "A": {
+      "trained_on": [
+        "AWID2 CLS-R training recording",
+        "AWID3 Deauth corpus"
+      ],
+      "held_out": "AWID3 Disas corpus",
+      "threshold": 0.9871470928192139,
+      "training": {
+        "groups": 643,
+        "positive_groups": 514,
+        "final_loss": 0.10586337000131607,
+        "validation": {
+          "groups": 22,
+          "model": {
+            "tp": 17,
+            "fp": 0,
+            "fn": 3,
+            "tn": 2,
+            "precision": 1.0,
+            "recall": 0.85,
+            "false_positive_rate": 0.0
+          }
+        }
+      },
+      "evaluation": {
+        "AWID2 CLS-R test recording": {
+          "groups": 81,
+          "model": {
+            "groups": {
+              "tp": 14,
+              "fp": 0,
+              "fn": 49,
+              "tn": 18,
+              "precision": 1.0,
+              "recall": 0.2222222222222222,
+              "false_positive_rate": 0.0
+            },
+            "windows": {
+              "tp": 7,
+              "fp": 0,
+              "fn": 80,
+              "tn": 152,
+              "precision": 1.0,
+              "recall": 0.08045977011494253,
+              "false_positive_rate": 0.0
+            }
+          },
+          "rule": {
+            "groups": {
+              "tp": 33,
+              "fp": 4,
+              "fn": 30,
+              "tn": 14,
+              "precision": 0.8918918918918919,
+              "recall": 0.5238095238095238,
+              "false_positive_rate": 0.2222222222222222
+            },
+            "windows": {
+              "tp": 15,
+              "fp": 0,
+              "fn": 72,
+              "tn": 152,
+              "precision": 1.0,
+              "recall": 0.1724137931034483,
+              "false_positive_rate": 0.0
+            }
+          }
+        },
+        "AWID3 Disas corpus": {
+          "groups": 238,
+          "model": {
+            "groups": {
+              "tp": 119,
+              "fp": 0,
+              "fn": 107,
+              "tn": 12,
+              "precision": 1.0,
+              "recall": 0.5265486725663717,
+              "false_positive_rate": 0.0
+            },
+            "windows": {
+              "tp": 36,
+              "fp": 0,
+              "fn": 0,
+              "tn": 81,
+              "precision": 1.0,
+              "recall": 1.0,
+              "false_positive_rate": 0.0
+            }
+          },
+          "rule": {
+            "groups": {
+              "tp": 182,
+              "fp": 0,
+              "fn": 44,
+              "tn": 12,
+              "precision": 1.0,
+              "recall": 0.8053097345132744,
+              "false_positive_rate": 0.0
+            },
+            "windows": {
+              "tp": 36,
+              "fp": 0,
+              "fn": 0,
+              "tn": 81,
+              "precision": 1.0,
+              "recall": 1.0,
+              "false_positive_rate": 0.0
+            }
+          }
+        }
+      }
+    },
+    "B": {
+      "trained_on": [
+        "AWID2 CLS-R training recording",
+        "AWID3 Disas corpus"
+      ],
+      "held_out": "AWID3 Deauth corpus",
+      "threshold": 0.9922747015953064,
+      "training": {
+        "groups": 747,
+        "positive_groups": 629,
+        "final_loss": 0.12980955839157104,
+        "validation": {
+          "groups": 22,
+          "model": {
+            "tp": 20,
+            "fp": 0,
+            "fn": 0,
+            "tn": 2,
+            "precision": 1.0,
+            "recall": 1.0,
+            "false_positive_rate": 0.0
+          }
+        }
+      },
+      "evaluation": {
+        "AWID2 CLS-R test recording": {
+          "groups": 81,
+          "model": {
+            "groups": {
+              "tp": 20,
+              "fp": 0,
+              "fn": 43,
+              "tn": 18,
+              "precision": 1.0,
+              "recall": 0.31746031746031744,
+              "false_positive_rate": 0.0
+            },
+            "windows": {
+              "tp": 12,
+              "fp": 0,
+              "fn": 75,
+              "tn": 152,
+              "precision": 1.0,
+              "recall": 0.13793103448275862,
+              "false_positive_rate": 0.0
+            }
+          },
+          "rule": {
+            "groups": {
+              "tp": 33,
+              "fp": 4,
+              "fn": 30,
+              "tn": 14,
+              "precision": 0.8918918918918919,
+              "recall": 0.5238095238095238,
+              "false_positive_rate": 0.2222222222222222
+            },
+            "windows": {
+              "tp": 15,
+              "fp": 0,
+              "fn": 72,
+              "tn": 152,
+              "precision": 1.0,
+              "recall": 0.1724137931034483,
+              "false_positive_rate": 0.0
+            }
+          }
+        },
+        "AWID3 Deauth corpus": {
+          "groups": 134,
+          "model": {
+            "groups": {
+              "tp": 76,
+              "fp": 0,
+              "fn": 35,
+              "tn": 23,
+              "precision": 1.0,
+              "recall": 0.6846846846846847,
+              "false_positive_rate": 0.0
+            },
+            "windows": {
+              "tp": 35,
+              "fp": 0,
+              "fn": 1,
+              "tn": 82,
+              "precision": 1.0,
+              "recall": 0.9722222222222222,
+              "false_positive_rate": 0.0
+            }
+          },
+          "rule": {
+            "groups": {
+              "tp": 92,
+              "fp": 0,
+              "fn": 19,
+              "tn": 23,
+              "precision": 1.0,
+              "recall": 0.8288288288288288,
+              "false_positive_rate": 0.0
+            },
+            "windows": {
+              "tp": 36,
+              "fp": 0,
+              "fn": 0,
+              "tn": 82,
+              "precision": 1.0,
+              "recall": 1.0,
+              "false_positive_rate": 0.0
+            }
+          }
+        }
+      }
+    }
+  },
+  "threshold": 0.9871470928192139
+}

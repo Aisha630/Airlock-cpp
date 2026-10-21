@@ -13,3 +13,7 @@ captures/*.pcap
 captures/*.pcapng
 captures/*.wcap
 !captures/synthetic.pcap
+
+# Python bytecode from ml/ and benchmark scripts, and macOS folder metadata.
+__pycache__/
+.DS_Store

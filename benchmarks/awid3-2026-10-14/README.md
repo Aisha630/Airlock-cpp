@@ -44,6 +44,10 @@ It does **not** evaluate PCAP/radiotap parsing, configuration findings, PMKID re
 
 The windows come from two related recordings in the AWID3 testbed; they are not 164 independent network environments. No confidence interval assuming independent windows is claimed. The result is not a universal zero false-positive guarantee. Per-window replay also differs from analyzing an entire capture at once: a burst spanning a five-second bin boundary can be split, even though the whole-capture detector uses sliding windows.
 
+## Correction, October 20, 2026
+
+The mirror stores `frame.time_epoch` rounded to whole seconds in 21 of the 33 Deauth shards and 24 of the 41 Disas shards. `frame.time_relative` keeps microsecond precision throughout. This evaluation used the epoch column, so frames in those shards were placed up to half a second from their true time. The windows were re-scored on exact timestamps (a per-corpus offset plus `frame.time_relative`, see `ml/prepare.py`). The rule's result is unchanged: 72/72 attack windows flagged and no false alarms. The Disas corpus has 117 scored windows rather than 118. The flood detector has since been replaced by a learned model; `ml/README.md` compares it with this rule on the corrected windows.
+
 ## Wording to quote
 
 > On the AWID3 Deauth and Disas recordings, Airlock's default deauthentication/disassociation flood detector achieved an observed false-positive rate of 0%: zero false alarms across 164 benign five-second windows. It flagged all 72 attack-labeled windows evaluated. These results use labeled CSV metadata replay and apply to this detector, not to the complete Wi-Fi analyzer or every real-world deployment.

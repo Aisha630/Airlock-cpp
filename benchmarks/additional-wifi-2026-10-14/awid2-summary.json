@@ -1,0 +1,63 @@
+{
+  "source": "https://www.kaggle.com/datasets/zhiqingcui/awidclsr",
+  "version": 1,
+  "download_url": "https://www.kaggle.com/api/v1/datasets/download/zhiqingcui/awidclsr?datasetVersionNumber=1",
+  "archive_sha256": "b08a10bc937e40e2372e74efc2b64517c196374e8e7a802f377e2022f7271f77",
+  "columns": {
+    "timestamp": 3,
+    "type_subtype": 63,
+    "type": 65,
+    "subtype": 66,
+    "protected": 72,
+    "ra": 75,
+    "ta": 77,
+    "reason": 109,
+    "label": 154
+  },
+  "benchmark_script_sha256": "4acda20439958863f020cd00a9723faaf5c2367943a2ce8145ebe85e4b2f17a6",
+  "analyzer_revision": "62d750db6b1bc88898d0ff6781d4180c47e41b81",
+  "replay_binary_sha256": "981bf0a92778dd38ac377ede9b0b776ede98837349b0eee0286a016608d9a0a8",
+  "results": [
+    {
+      "dataset": "AWID2 CLS-R",
+      "split": "train",
+      "packet_rows": 1795575,
+      "labels": {
+        "normal": 1633190,
+        "flooding": 48484,
+        "injection": 65379,
+        "impersonation": 48522
+      },
+      "duration_seconds": 3599.5712871551514,
+      "benign_windows": 477,
+      "false_positives": 3,
+      "true_negatives": 474,
+      "false_positive_rate": 0.006289308176100629,
+      "benign_windows_with_disconnects": 20,
+      "benign_disconnect_frames": 1836,
+      "nonbenign_windows": 242,
+      "nonbenign_windows_flagged": 94
+    },
+    {
+      "dataset": "AWID2 CLS-R",
+      "split": "test",
+      "packet_rows": 575643,
+      "labels": {
+        "normal": 530785,
+        "injection": 16682,
+        "flooding": 8097,
+        "impersonation": 20079
+      },
+      "duration_seconds": 1200.289871931076,
+      "benign_windows": 152,
+      "false_positives": 0,
+      "true_negatives": 152,
+      "false_positive_rate": 0.0,
+      "benign_windows_with_disconnects": 5,
+      "benign_disconnect_frames": 5,
+      "nonbenign_windows": 87,
+      "nonbenign_windows_flagged": 15
+    }
+  ],
+  "false_positive_rate_combined": 0.0047694753577106515
+}

@@ -1,0 +1,23 @@
+[
+  {
+    "start_epoch": 1393662930,
+    "benign": true,
+    "alerts": 1,
+    "rows": 2511,
+    "disconnect_frames": 1108
+  },
+  {
+    "start_epoch": 1393663405,
+    "benign": true,
+    "alerts": 2,
+    "rows": 5196,
+    "disconnect_frames": 142
+  },
+  {
+    "start_epoch": 1393663700,
+    "benign": true,
+    "alerts": 1,
+    "rows": 1199,
+    "disconnect_frames": 565
+  }
+]

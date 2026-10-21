@@ -7,6 +7,7 @@
 #include <set>
 #include <utility>
 
+#include "wifi/flood_model.hpp"
 #include "wifi/text.hpp"
 
 namespace airlock::wifi {
@@ -21,29 +22,41 @@ std::string upper(std::string text) {
   return text;
 }
 
-// Largest number of frames inside any `window`-second span, and where that
-// span starts relative to the first frame.
+// The frames inside the densest `window`-second span.
 //
 // Two pointers over time-sorted frames: O(n) rather than O(n^2), and it finds
 // the true peak instead of only checking fixed bucket boundaries, which would
 // miss a burst that straddles two buckets.
-std::pair<int, double> max_in_window(const std::vector<const FrameInfo*>& frames, double window) {
-  if (frames.empty()) return {0, 0.0};
-  std::vector<double> times;
-  for (const FrameInfo* f : frames) times.push_back(f->timestamp);
-  std::sort(times.begin(), times.end());
-  int best = 0;
-  double best_start = times[0];
-  std::size_t left = 0;
-  for (std::size_t right = 0; right < times.size(); ++right) {
-    while (times[right] - times[left] > window) ++left;
-    const int count = static_cast<int>(right - left + 1);
-    if (count > best) {
-      best = count;
-      best_start = times[left];
+std::vector<const FrameInfo*> densest_span(std::vector<const FrameInfo*> frames, double window) {
+  std::stable_sort(frames.begin(), frames.end(), [](const FrameInfo* a, const FrameInfo* b) {
+    return a->timestamp < b->timestamp;
+  });
+  std::size_t best = 0, best_left = 0, left = 0;
+  for (std::size_t right = 0; right < frames.size(); ++right) {
+    while (frames[right]->timestamp - frames[left]->timestamp > window) ++left;
+    if (right - left + 1 > best) {
+      best = right - left + 1;
+      best_left = left;
     }
   }
-  return {best, best_start - times[0]};
+  return {frames.begin() + static_cast<std::ptrdiff_t>(best_left),
+          frames.begin() + static_cast<std::ptrdiff_t>(best_left + best)};
+}
+
+// "peak frames in any 1 s (log) +0.31, frame count (log) +0.22": the
+// features that pushed this prediction furthest towards "attack".
+std::string strongest_features(const FloodFeatures& features) {
+  const auto contribution = flood_attribution(features);
+  std::vector<std::size_t> order(FLOOD_FEATURE_COUNT);
+  for (std::size_t i = 0; i < order.size(); ++i) order[i] = i;
+  std::stable_sort(order.begin(), order.end(),
+                   [&](std::size_t a, std::size_t b) { return contribution[a] > contribution[b]; });
+  std::vector<std::string> parts;
+  for (std::size_t i : order) {
+    if (parts.size() == 3 || contribution[i] < 0.01) break;
+    parts.push_back(std::format("{} {:+.2f}", flood_feature_names()[i], contribution[i]));
+  }
+  return parts.empty() ? std::string("no single feature dominates") : join(parts, ", ");
 }
 
 // True when there is enough evidence that this network is real.
@@ -88,7 +101,7 @@ std::string Finding::render(const std::string& indent) const {
   return out;
 }
 
-std::vector<Finding> detect_deauth_flood(const Capture& capture, double window, int threshold) {
+std::vector<Finding> detect_deauth_flood(const Capture& capture, double threshold) {
   std::vector<Finding> findings;
   std::map<std::pair<std::string, std::string>, std::vector<const FrameInfo*>> groups;
   for (const FrameInfo& frame : capture.frames) {
@@ -102,8 +115,13 @@ std::vector<Finding> detect_deauth_flood(const Capture& capture, double window, 
 
   for (const auto& [key, frames] : groups) {
     const auto& [source, destination] = key;
-    const auto [peak, peak_start] = max_in_window(frames, window);
-    if (peak < threshold) continue;
+    const auto span = densest_span(frames, FLOOD_SPAN_SECONDS);
+    if (span.size() < FLOOD_MIN_FRAMES) continue;
+    const FloodFeatures features = flood_features(span);
+    const double probability = flood_probability(features);
+    if (probability < threshold) continue;
+    double first_seen = span.front()->timestamp;
+    for (const FrameInfo* f : frames) first_seen = std::min(first_seen, f->timestamp);
 
     std::set<int> reasons;
     int protected_count = 0;
@@ -121,7 +139,11 @@ std::vector<Finding> detect_deauth_flood(const Capture& capture, double window, 
 
     std::vector<std::string> evidence = {
         std::format("{} frames total, peak {} within {:g} s starting at t+{:.2f} s",
-                    frames.size(), peak, window, peak_start),
+                    frames.size(), span.size(), FLOOD_SPAN_SECONDS,
+                    span.front()->timestamp - first_seen),
+        std::format("learned flood model: attack probability {:.3f} (reports at {:.3f} or above)",
+                    probability, threshold),
+        "strongest evidence: " + strongest_features(features),
         std::format("source {} -> target {}", source, target),
         "reason codes seen: " + (reason_list.empty() ? std::string("none decoded") : reason_list),
         std::format("{}/{} frames were cryptographically protected", protected_count,
@@ -138,7 +160,7 @@ std::vector<Finding> detect_deauth_flood(const Capture& capture, double window, 
         std::format("{} deauth-class frames from {} inside a {:g}-second window -- the signature "
                     "of a forced disconnect, used either as denial of service or to make a "
                     "client reconnect so its four-way handshake can be captured",
-                    peak, source, window),
+                    span.size(), source, FLOOD_SPAN_SECONDS),
         evidence,
         "an access point rebooting, shedding clients under load, or steering a client to "
         "another band also emits deauths, though rarely this many this fast from one address",

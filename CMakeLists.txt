@@ -47,6 +47,7 @@ add_library(airlock_wifi STATIC
   src/wifi/build.cpp
   src/wifi/capture.cpp
   src/wifi/eapol.cpp
+  src/wifi/flood_model.cpp
   src/wifi/frames.cpp
   src/wifi/json.cpp
   src/wifi/pcap.cpp
@@ -81,6 +82,7 @@ if(AIRLOCK_BUILD_TESTS)
     tests/test_channel.cpp
     tests/test_dh.cpp
     tests/test_eapol.cpp
+    tests/test_flood_model.cpp
     tests/test_frames.cpp
     tests/test_kdf.cpp
     tests/test_pcap.cpp
